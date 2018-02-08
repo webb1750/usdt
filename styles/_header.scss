@@ -1,0 +1,57 @@
+.usdt-header {
+  background: $color-primary;
+  border-bottom: none;
+  text-align: left;
+  height: $header-height;
+  width: 100%;
+  @include page-padding;
+  @include flex($align-middle: true, $space-between: true);
+  &.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .usdt-logo a {
+    font-family: $font-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background: url(../assets/img/logo.svg) 0px center no-repeat;
+    background-size: contain;
+    padding-left: 3.25rem;
+  }
+  .login-section {
+    .user-name {
+      color: #fff;
+      @include uppercase($spacing: true, $bold: true);
+      margin-right: 1rem;
+    }
+  }
+  .logo-slogan {
+    font-family: $font-sans;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: block;
+  }
+}
+.usdt-header-fixed {
+  margin-top: $header-height + $sub-header-height;
+}
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.usdt-sub-header {
+  height: $sub-header-height;
+  background: $color-gray-lightest;
+  @include page-padding;
+  @include flex($align-middle: true, $space-between: true);
+}

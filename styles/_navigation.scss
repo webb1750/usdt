@@ -1,0 +1,19 @@
+.usdt-sub-nav {
+  ul {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+    @include flex($align-middle: true, $space-between: true);
+    li {
+      margin-right: 2rem;
+      @include uppercase($spacing: true, $bold: true);
+      a {
+        text-decoration: none;
+        color: $color-gray-dark;
+        &.active {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

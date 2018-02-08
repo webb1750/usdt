@@ -1,0 +1,20 @@
+/*STYLE GUIDE*/
+.style-guide {
+  background-color: #fff;
+  overflow: auto;
+  @include page-padding;
+  h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  div.codeblock,
+  pre.codeblock,
+  pre[class*="language-"],
+  pre.cke_widget_element {
+    background-color: #f7f7f7;
+    color: #4e4e4e;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT Component Library</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/usdt.processed.css">
+</head>
+
+<body>
+  <div class="header-fixed">
+    <header class="usdt-header">
+      <div class="usdt-logo">
+        <a href="#" title="Home">TWAVES<span class="logo-slogan">Treasury Workers and Visitors Entry System</span></a>
+      </div>
+      <div class="login-section">
+        <span class="user-name">
+          Jonathan James Longname
+        </span>
+        <button class="usdt-button-small secondary-light">Log Out</button>
+        <button name="apps" class="usdt-button usdt-button-small primary-light ui-down-triangle">Other Apps</button>
+      </div>
+    </header>
+    <div class="usdt-sub-header">
+      <nav class="usdt-sub-nav">
+        <ul>
+          <li><a href="#" class="active">Appointments</a></li>
+          <li><a href="#">Visitors</a></li> 
+         </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="style-guide usdt-header-fixed">
+    <h1>USDT Styleguide 1.0</h1>
+    <p class="usdt-lead-statement">This type of text is great for leading off a landing page. Each of these pages is flexible; you can add or remove components or sub-components to suit your needs. These templates are great starting point for prototyping or for trying the Design System
+      to see if they’re a good fit for you.</p>
+    <hr />
+    <header>
+      <p class="usdt-site-subheading">UI components</p>
+      <h2 id="buttons">Buttons</h2>
+    </header>
+    <h3 class="usdt-section-heading">Primary Buttons</h3>
+    <button>Regular Button</button>
+    <button class="usdt-button-big">Big Button</button>
+    <button class="usdt-button-small">Small Button</button>
+    <h3 class="usdt-section-heading">Secondary Buttons</h3>
+    <button class="secondary">Regular Button</button>
+    <button class="usdt-button-big secondary">Big Button</button>
+    <button class="usdt-button-small secondary">Small Button</button>
+    <h3 class="usdt-section-heading">UI Buttons</h3>
+    <button class="usdt-button-small action ui-plus-symbol">Add Button</button>
+    <button class="ui-button-round" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit" /></button>
+    <button class="ui-button-round primary-action" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit" /></button>
+    <button class="ui-button-round delete-action" aria-label="Delete"><img src="assets/img/pencil.svg" alt="Delete" /></button>
+    <div class="usdt-section">
+      <ul class="usdt-accordion-bordered">
+        <li>
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="a1">
+          View Source Code Example
+        </button>
+          <div id="a1" class="usdt-accordion-content" aria-hidden="true">
+            <pre class="language-html">
+            <code>
+          &lt;!-- Primary --&gt;
+          &lt;button&gt;Regular Button&lt;/button&gt;  
+          &lt;button class="usdt-button-big"&gt;Big Button&lt;/button&gt;  
+          &lt;button class="usdt-button-small"&gt;Small Button&lt;/button&gt;
+
+          &lt;!-- Secondary --&gt;
+          &lt;button class="secondary"&gt;Regular Button&lt;/button&gt;  
+          &lt;button class="usdt-button-big secondary"&gt;Big Button&lt;/button&gt;  
+          &lt;button class="usdt-button-small secondary"&gt;Small Button&lt;/button&gt;</code>
+          </pre>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <header>
+      <p class="usdt-site-subheading">UI components</p>
+      <h2 id="buttons">Form Controls</h2>
+    </header>
+    <h3 class="usdt-section-heading">Text inputs</h3>
+    <label for="input-type-text">Text input label</label>
+    <input id="input-type-text" name="input-type-text" type="text">
+    <div class="usdt-input-error">
+      <label class="usdt-input-error-label" for="input-error">Text input error</label>
+      <span class="usdt-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
+      <input id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
+    </div>
+
+    <label for="input-success">Text input success</label>
+    <input class="usdt-input-success" id="input-success" name="input-success" type="text">
+
+    <label for="input-type-textarea">Text area label</label>
+    <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+    <div class="usdt-section">
+      <ul class="usdt-accordion-bordered">
+        <li>
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="a2">
+          View Source Code Example
+        </button>
+          <div id="a2" class="usdt-accordion-content" aria-hidden="true">
+            <pre class="language-html">
+            <code>
+    &lt;label for=&quot;input-type-text&quot;&gt;Text input label&lt;/label&gt;
+    &lt;input id=&quot;input-type-text&quot; name=&quot;input-type-text&quot; type=&quot;text&quot;&gt;
+    
+    &lt;div class=&quot;usdt-input-error&quot;&gt;
+      &lt;label class=&quot;usdt-input-error-label&quot; for=&quot;input-error&quot;&gt;Text input error&lt;/label&gt;
+      &lt;span class=&quot;usdt-input-error-message&quot; id=&quot;input-error-message&quot; role=&quot;alert&quot;&gt;Helpful error message&lt;/span&gt;
+      &lt;input id=&quot;input-error&quot; name=&quot;input-error&quot; type=&quot;text&quot; aria-describedby=&quot;input-error-message&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;label for=&quot;input-success&quot;&gt;Text input success&lt;/label&gt;
+    &lt;input class=&quot;usdt-input-success&quot; id=&quot;input-success&quot; name=&quot;input-success&quot; type=&quot;text&quot;&gt;
+
+    &lt;label for=&quot;input-type-textarea&quot;&gt;Text area label&lt;/label&gt;
+    &lt;textarea id=&quot;input-type-textarea&quot; name=&quot;input-type-textarea&quot;&gt;&lt;/textarea&gt;
+            </code>
+          </pre>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <h3 class="usdt-section-heading">Dropdown</h3>
+    <form class="usdt-form">
+      <label for="options">Dropdown label</label>
+      <select name="options" id="options">
+        <option value>- Select -</option>
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+      </select>
+    </form>
+    <hr/>
+    <header>
+      <p class="usdt-site-subheading">UI components</p>
+      <h2 id="buttons">Tables</h2>
+    </header>
+    <div class="usdt-table-scroll-mobile">
+      <table class="usdt-table">
+        <thead>
+          <tr>
+            <th scope="col">Appt. ID</th>
+            <th scope="col">Type</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Location</th>
+            <th scope="col">Room #</th>
+            <th scope="col">Treasury POC</th>
+            <th scope="col">Status</th>
+            <th scope="col">Visitors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"><a href="#">00034</a></td>
+            <td>Appointment</td>
+            <td>11/15/2018 2:45 PM</td>
+            <td>11/16/2018 2:45 PM</td>
+            <td>Main Building</td>
+            <td>1234567890</td>
+            <td>Alexander Hamilton</td>
+            <td>Active</td>
+            <td><a href="#">88</a></td>
+          </tr>
+          <tr>
+            <td scope="row"><a href="#">00034</a></td>
+            <td>Appointment</td>
+            <td>11/15/2018 2:45 PM</td>
+            <td>11/16/2018 2:45 PM</td>
+            <td>Main Building</td>
+            <td>1234567890</td>
+            <td>Alexander Hamilton</td>
+            <td>Active</td>
+            <td><a href="#">88</a></td>
+          </tr>
+          <tr>
+            <td scope="row"><a href="#">00034</a></td>
+            <td>Appointment</td>
+            <td>11/15/2018 2:45 PM</td>
+            <td>11/16/2018 2:45 PM</td>
+            <td>Main Building</td>
+            <td>1234567890</td>
+            <td>Alexander Hamilton</td>
+            <td>Active</td>
+            <td><a href="#">88</a></td>
+          </tr>
+          <tr>
+            <td scope="row"><a href="#">00034</a></td>
+            <td>Appointment</td>
+            <td>11/15/2018 2:45 PM</td>
+            <td>11/16/2018 2:45 PM</td>
+            <td>Main Building</td>
+            <td>1234567890</td>
+            <td>Alexander Hamilton</td>
+            <td>Active</td>
+            <td><a href="#">88</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/usdt.js"></script>
+</body>
+
+</html>

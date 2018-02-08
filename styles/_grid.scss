@@ -1,0 +1,35 @@
+/*GRID*/
+.usdt-grid,
+.usdt-grid-full {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.usdt-grid::after,
+.usdt-grid-full::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.usdt-grid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .usdt-grid {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.usdt-grid-full {
+  padding: 0;
+}
+
+.usdt-section {
+  display: block;
+  margin: 2rem 0;
+}

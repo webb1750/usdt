@@ -1,0 +1,155 @@
+/*BUTTONS*/
+.usdt-button,
+.usdt-button-primary,
+.usdt-button:visited,
+.usdt-button-primary:visited,
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="image"] {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $color-primary;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  line-height: 1;
+  padding: 1.08rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-primary-darker;
+  }
+  &:active {
+    background-color: $color-primary-darkest;
+  }
+  @media screen and (min-width: $small-screen) {
+    width: auto;
+  }
+  &.secondary {
+    color: $color-primary;
+    background-color: white;
+    border: solid 2px $color-primary;
+    &:hover {
+      color: $color-primary-darker;
+      border-color: $color-primary-darker;
+    }
+    &:active {
+      color: $color-primary-darkest;
+      border-color: $color-primary-darkest;
+    }
+  }
+  &.primary-light {
+    color: $color-primary;
+    background-color: #fff;
+    border: solid 2px transparent;
+    &:hover {
+      background-color: #fff;
+      color: $color-primary;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &.secondary-light {
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #fff;
+    &:hover {
+      background-color: #fff;
+      color: $color-primary;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &:disabled {
+    background-color: $color-gray-lighter;
+    pointer-events: none;
+  }
+  &.action {
+    background-color: $color-action;
+    &:hover {
+      background-color: $color-action-darker;
+    }
+    &:active {
+      background-color: $color-action-darkest;
+    }
+  }
+  &.ui-plus-symbol {
+    padding-left: 3.5rem;
+    background-image: url(../assets/img/add.svg);
+    background-position: left 1rem center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    &.usdt-button-big {
+      padding-left: 4rem;
+    }
+    &.usdt-button-small {
+      padding-left: 2.6rem;
+    }
+  }
+  &.ui-down-triangle {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-image: url(../assets/img/down-triangle.svg);
+    background-size: 0.8rem;
+    padding-right: 2.2rem;
+  }
+}
+
+.usdt-button-big {
+  font-size: 1.45rem;
+  padding: 1.2rem 3rem;
+  border-radius: 5rem;
+}
+.usdt-button-small {
+  font-size: 0.95rem;
+  padding: 0.54rem 1.5rem;
+  border-radius: 2rem;
+}
+
+// UI buttons
+.ui-button-round {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    border: solid 3px $color-gray-light;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .5rem;
+    vertical-align: bottom;
+    background-color: transparent;
+    color: $color-gray-light;
+  &.primary-action {
+    border-color:$color-cool-blue;
+    color:$color-cool-blue;
+  }
+  &.delete-action {
+    border-color:$color-secondary;
+    color:$color-secondary;
+  }
+}

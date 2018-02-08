@@ -1,0 +1,10 @@
+/*SECTION 508*/
+*:focus,
+.usdt-focus,
+.focus-outline:focus{
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+}
+[hidden] {
+  display: none !important;
+}

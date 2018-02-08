@@ -1,0 +1,17 @@
+@mixin flex($align-middle, $space-between) {
+  display: -webkit-flex;
+  display: flex;
+  @if $align-middle {
+    align-items: center;
+  }
+  @if $space-between {
+    justify-content: space-between;
+  }
+}
+
+@mixin page-padding {
+  padding: 0 1rem;
+  @media screen and (min-width: 600px) {
+    padding: 0 1.8rem;
+  }
+}

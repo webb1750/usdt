@@ -1,0 +1,101 @@
+hr {
+  margin: 2rem 0;
+   border: 0;
+   height: 1px;
+   background: $color-gray-lighter;
+}
+
+// Tables
+.usdt-table {
+  text-align: left;
+  margin: 1em 0;
+  tbody tr {
+    &:nth-child(odd) {
+      background-color: $color-gray-lightest-lite;
+    }
+    th {
+      font-weight: 400;
+    }
+  }
+  td {
+    padding: .5rem 1rem;
+    font-weight: 400;
+  }
+  th {
+    padding: .5rem 1rem;
+    font-weight: 700;
+  }
+}
+.usdt-table-scroll-mobile {
+  @media screen and (max-width: $medium-screen) {
+    overflow-x: scroll;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+// Accordion
+.usdt-accordion,
+.usdt-accordion-bordered {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: $color-black-light;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  & > li {
+    background-color: $color-gray-lightest;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .usdt-accordion-content {
+    background-color: #ffffff;
+    overflow: auto;
+    padding: 1rem 1rem;
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+}
+.usdt-accordion-bordered {
+  .usdt-accordion-content {
+    border-bottom: 3px solid $color-gray-lightest;
+    border-left: 3px solid $color-gray-lightest;
+    border-right: 3px solid $color-gray-lightest;
+  }
+}
+.usdt-accordion-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: $color-gray-lightest;
+  background-image: url(../assets/img/minus.svg);
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  color: $color-black-light;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.2rem 5.5rem 1.2rem 2rem;
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 0px;
+  &:hover {
+    background-color: $color-gray-lighter;
+  }
+  &[aria-expanded="false"] {
+    background-image: url(../assets/img/plus.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+  }
+}
