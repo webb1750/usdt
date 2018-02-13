@@ -145,6 +145,7 @@ $focus-spacing:                 3px !default;
 $nav-width:                     951px !default;
 $header-height:                 72px !default;
 $sub-header-height:             48px !default;
+$total-header-height:           $header-height + $sub-header-height;
 $sidenav-current-border-width:  0.4rem !default; // must be in rem for math
 
 // 44 x 44 pixels hit target following Apple iOS Human Interface

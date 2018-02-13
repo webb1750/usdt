@@ -1061,3 +1061,7 @@ select {
     margin-bottom: 0;
     padding: 0;
     margin-top: 0; }
+  .style-guide .page-anchor {
+    display: block;
+    padding-top: 120px;
+    margin-top: -120px; }

@@ -17,4 +17,9 @@
     padding: 0;
     margin-top: 0;
   }
+  .page-anchor{
+    display:block;
+    padding-top: $total-header-height;
+    margin-top: $total-header-height * -1;   
+  }
 }
