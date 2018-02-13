@@ -99,3 +99,18 @@ hr {
     background-size: 1.5rem;
   }
 }
+.usdt-option-menu {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  padding: 1rem;
+  @include box-shadow;
+  li {
+    padding: .2rem;
+  }
+}
+
+.hidden {
+  display: none;
+}

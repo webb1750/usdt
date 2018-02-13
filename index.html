@@ -16,23 +16,20 @@
   <div class="header-fixed">
     <header class="usdt-header">
       <div class="usdt-logo">
-        <a href="#" title="Home">TWAVES<span class="logo-slogan">Treasury Workers and Visitors Entry System</span></a>
+        <a href="#" title="Home">USDT 1.0<span class="logo-slogan">Treasury Component Library & Style Guide</span></a>
       </div>
       <div class="login-section">
-        <span class="user-name">
-          Jonathan James Longname
-        </span>
-        <button class="usdt-button-small secondary-light">Log Out</button>
-        <button name="apps" class="usdt-button usdt-button-small primary-light ui-down-triangle">Other Apps</button>
+        <button name="sections" class="usdt-button usdt-button-small primary-light ui-down-triangle usdt-option">Components</button>
+        <ul role="navigation" class="usdt-option-menu hidden">
+          <li><a href="#Buttons">Buttons</a></li>
+          <li><a href="#Forms">Form Controls</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#Nav">Header &amp; Navigation</a></li>
+        </ul>
       </div>
     </header>
     <div class="usdt-sub-header">
-      <nav class="usdt-sub-nav">
-        <ul>
-          <li><a href="#" class="active">Appointments</a></li>
-          <li><a href="#">Visitors</a></li> 
-         </ul>
-      </nav>
+
     </div>
   </div>
   <div class="style-guide usdt-header-fixed">
@@ -41,46 +38,79 @@
       to see if they’re a good fit for you.</p>
     <hr />
     <header>
+      <a name="Buttons"></a>
       <p class="usdt-site-subheading">UI components</p>
       <h2 id="buttons">Buttons</h2>
     </header>
     <h3 class="usdt-section-heading">Primary Buttons</h3>
     <button>Regular Button</button>
     <button class="usdt-button-big">Big Button</button>
+    <button class="usdt-button-medium">Medium Button</button>
     <button class="usdt-button-small">Small Button</button>
     <h3 class="usdt-section-heading">Secondary Buttons</h3>
     <button class="secondary">Regular Button</button>
     <button class="usdt-button-big secondary">Big Button</button>
+    <button class="usdt-button-medium secondary">Medium Button</button>
     <button class="usdt-button-small secondary">Small Button</button>
-    <h3 class="usdt-section-heading">UI Buttons</h3>
-    <button class="usdt-button-small action ui-plus-symbol">Add Button</button>
-    <button class="ui-button-round" aria-label="View Detail"><img src="assets/img/documents.svg" alt="View Details" /></button>
-    <button class="ui-button-round primary-action" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit" /></button>
-    <button class="ui-button-round delete-action" aria-label="Delete"><img src="assets/img/close.svg" alt="Delete" /></button>
     <div class="usdt-section">
       <ul class="usdt-accordion-bordered">
         <li>
-          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="a1">
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="button1">
           View Source Code Example
         </button>
-          <div id="a1" class="usdt-accordion-content" aria-hidden="true">
+          <div id="button1" class="usdt-accordion-content" aria-hidden="true">
             <pre class="language-html">
             <code>
           &lt;!-- Primary --&gt;
           &lt;button&gt;Regular Button&lt;/button&gt;  
-          &lt;button class="usdt-button-big"&gt;Big Button&lt;/button&gt;  
+          &lt;button class="usdt-button-big"&gt;Big Button&lt;/button&gt;
+          &lt;button class="usdt-button-medium"&gt;Medium Button&lt;/button&gt;   
           &lt;button class="usdt-button-small"&gt;Small Button&lt;/button&gt;
 
           &lt;!-- Secondary --&gt;
           &lt;button class="secondary"&gt;Regular Button&lt;/button&gt;  
-          &lt;button class="usdt-button-big secondary"&gt;Big Button&lt;/button&gt;  
+          &lt;button class="usdt-button-big secondary"&gt;Big Button&lt;/button&gt;
+          &lt;button class="usdt-button-medium secondary"&gt;Medium Button&lt;/button&gt;    
           &lt;button class="usdt-button-small secondary"&gt;Small Button&lt;/button&gt;</code>
           </pre>
           </div>
         </li>
       </ul>
     </div>
+    <h3 class="usdt-section-heading">UI Buttons</h3>
+    <button class="usdt-button-medium action ui-plus-symbol">Action Button</button>
+    <button class="ui-button-round" aria-label="View Detail"><img src="assets/img/documents.svg" alt="View Details" /></button>
+    <button class="ui-button-round primary-action" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit" /></button>
+    <button class="ui-button-round delete-action" aria-label="Delete"><img src="assets/img/close.svg" alt="Delete" /></button>
+    <div class="usdt-section">
+      <ul class="usdt-accordion-bordered">
+        <li>
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="button2">
+          View Source Code Example
+        </button>
+          <div id="button2" class="usdt-accordion-content" aria-hidden="true">
+            <pre class="language-html">
+            <code>
+          &lt;!-- Action button --&gt;
+          &lt;button class="usdt-button-medium action ui-plus-symbol"&gt;Action Button&lt;/button&gt;  
+
+          &lt;!-- Round UI buttons --&gt;
+          &lt;button class="ui-button-round" aria-label="View Details"&gt;
+            &lt;img src="assets/img/documents.svg" alt="View Details" /&gt;
+          &lt;/button&gt;
+          &lt;button class="ui-button-round primary-action" aria-label="Edit"&gt;
+            &lt;img src="assets/img/pencil.svg" alt="Edit" /&gt;
+          &lt;/button&gt;
+          &lt;button class="ui-button-round delete-action" aria-label="Delete"&gt;
+            &lt;img src="assets/img/close.svg" alt="Delete" /&gt;
+          &lt;/button&gt;</code>
+          </pre>
+          </div>
+        </li>
+      </ul>
+    </div>
     <hr />
+    <a name="Forms"></a>
     <header>
       <p class="usdt-site-subheading">UI components</p>
       <h2 id="buttons">Form Controls</h2>
@@ -102,24 +132,28 @@
     <div class="usdt-section">
       <ul class="usdt-accordion-bordered">
         <li>
-          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="a2">
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="forms1">
           View Source Code Example
         </button>
-          <div id="a2" class="usdt-accordion-content" aria-hidden="true">
+          <div id="forms1" class="usdt-accordion-content" aria-hidden="true">
             <pre class="language-html">
             <code>
+    &lt;!-- Text Input --&gt;
     &lt;label for=&quot;input-type-text&quot;&gt;Text input label&lt;/label&gt;
     &lt;input id=&quot;input-type-text&quot; name=&quot;input-type-text&quot; type=&quot;text&quot;&gt;
     
+    &lt;!-- Text Input Error --&gt;
     &lt;div class=&quot;usdt-input-error&quot;&gt;
       &lt;label class=&quot;usdt-input-error-label&quot; for=&quot;input-error&quot;&gt;Text input error&lt;/label&gt;
       &lt;span class=&quot;usdt-input-error-message&quot; id=&quot;input-error-message&quot; role=&quot;alert&quot;&gt;Helpful error message&lt;/span&gt;
       &lt;input id=&quot;input-error&quot; name=&quot;input-error&quot; type=&quot;text&quot; aria-describedby=&quot;input-error-message&quot;&gt;
     &lt;/div&gt;
 
+    &lt;!-- Text Input Success --&gt;
     &lt;label for=&quot;input-success&quot;&gt;Text input success&lt;/label&gt;
     &lt;input class=&quot;usdt-input-success&quot; id=&quot;input-success&quot; name=&quot;input-success&quot; type=&quot;text&quot;&gt;
 
+    &lt;!-- Text Area --&gt;
     &lt;label for=&quot;input-type-textarea&quot;&gt;Text area label&lt;/label&gt;
     &lt;textarea id=&quot;input-type-textarea&quot; name=&quot;input-type-textarea&quot;&gt;&lt;/textarea&gt;
             </code>
@@ -138,7 +172,33 @@
         <option value="value3">Option C</option>
       </select>
     </form>
+    <div class="usdt-section">
+      <ul class="usdt-accordion-bordered">
+        <li>
+          <button class="usdt-accordion-button" aria-expanded="false" aria-controls="forms2">
+          View Source Code Example
+        </button>
+          <div id="forms2" class="usdt-accordion-content" aria-hidden="true">
+            <pre class="language-html">
+            <code>
+    &lt;!-- Dropdown --&gt;
+    &lt;form class="usdt-form"&gt;
+      &lt;label for=&quot;options&quot;&gt;Dropdown label&lt;/label&gt;
+      &lt;select id=&quot;options&quot; name=&quot;options&quot;&gt;
+        &lt;option value&gt;- Select -&lt;/option&gt;
+        &lt;option value="value1"&gt;Option A&lt;/option&gt;
+        &lt;option value="value2"&gt;Option B&lt;/option&gt; 
+        &lt;option value="value3"&gt;Option C&lt;/option&gt; 
+      &lt;/select&gt;
+    &lt;/form&gt;
+            </code>
+          </pre>
+          </div>
+        </li>
+      </ul>
+    </div>
     <hr/>
+    <a name="Tables"></a>
     <header>
       <p class="usdt-site-subheading">UI components</p>
       <h2 id="buttons">Tables</h2>
@@ -206,6 +266,125 @@
         </tbody>
       </table>
     </div>
+    <div class="usdt-section">
+        <ul class="usdt-accordion-bordered">
+          <li>
+            <button class="usdt-accordion-button" aria-expanded="false" aria-controls="table1">
+            View Source Code Example
+          </button>
+            <div id="table1" class="usdt-accordion-content" aria-hidden="true">
+              <pre class="language-html">
+              <code>
+      &lt;!-- Table --&gt;
+      &lt;div class="usdt-table-scroll-mobile"&gt;
+        &lt;table class="usdt-table"&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th scope="col"&gt;Appt. ID&lt;/th&gt;
+              &lt;th scope="col"&gt;Type&lt;/th&gt;
+              &lt;th scope="col"&gt;Start Date&lt;/th&gt;
+              &lt;th scope="col"&gt;End Date&lt;/th&gt;
+              &lt;th scope="col"&gt;Location&lt;/th&gt;
+              &lt;th scope="col"&gt;Room #&lt;/th&gt;
+              &lt;th scope="col"&gt;Treasury PoC&lt;/th&gt;
+              &lt;th scope="col"&gt;Status&lt;/th&gt;
+              &lt;th scope="col"&gt;Visitors&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
+              &lt;td&gt;Appointment&lt;/td&gt;
+              &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
+              &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
+              &lt;td&gt;Main Building&lt;/td&gt;
+              &lt;td&gt;1234567890&lt;/td&gt;
+              &lt;td&gt;Alexander Hamilton&lt;/td&gt;
+              &lt;td&gt;Active&lt;/td&gt;
+              &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
+              &lt;td&gt;Appointment&lt;/td&gt;
+              &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
+              &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
+              &lt;td&gt;Main Building&lt;/td&gt;
+              &lt;td&gt;1234567890&lt;/td&gt;
+              &lt;td&gt;Alexander Hamilton&lt;/td&gt;
+              &lt;td&gt;Active&lt;/td&gt;
+              &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/form&gt;
+              </code>
+            </pre>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <hr/>
+    <a name="Nav"></a>
+    <header>
+      <p class="usdt-site-subheading">UI components</p>
+      <h2 id="buttons">Header &amp; Navigation</h2>
+    </header>
+    <h3 class="usdt-section-heading">Header</h3>
+    <header class="usdt-header">
+      <div class="usdt-logo">
+        <a href="#" title="Home">TWAVES<span class="logo-slogan">Treasury Workers and Visitors Entry System</span></a>
+      </div>
+      <div class="login-section">
+        <span class="user-name">
+          Jonathan James Longname
+        </span>
+        <button class="usdt-button-small secondary-light">Log Out</button>
+        <button name="apps" class="usdt-button usdt-button-small primary-light ui-down-triangle">Other Apps</button>
+      </div>
+    </header>
+    <div class="usdt-sub-header">
+      <nav class="usdt-sub-nav">
+        <ul>
+          <li><a href="#" class="active">Appointments</a></li>
+          <li><a href="#">Visitors</a></li> 
+          </ul>
+      </nav>
+    </div>
+    <div class="usdt-section">
+        <ul class="usdt-accordion-bordered">
+          <li>
+            <button class="usdt-accordion-button" aria-expanded="false" aria-controls="nav1">
+            View Source Code Example
+          </button>
+            <div id="nav1" class="usdt-accordion-content" aria-hidden="true">
+              <pre class="language-html">
+              <code>
+            &lt;!-- Header --&gt;
+            &lt;header class="usdt-header">
+              &lt;div class="usdt-logo">
+                &lt;a href="#" title="Home">TWAVES&lt;span class="logo-slogan">Treasury Workers and Visitors Entry System&lt;/span>&lt;/a>
+              &lt;/div>
+              &lt;div class="login-section">
+                &lt;span class="user-name">Jonathan James Longname&lt;/span>
+                &lt;button class="usdt-button-small secondary-light">Log Out&lt;/button>
+                &lt;button name="apps" class="usdt-button usdt-button-small primary-light ui-down-triangle">Other Apps&lt;/button>
+              &lt;/div>
+            &lt;/header>
+            &lt;div class="usdt-sub-header">
+              &lt;!-- Navigation -->
+              &lt;nav class="usdt-sub-nav">
+                &lt;ul>
+                  &lt;li>&lt;a href="#" class="active">Appointments&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#">Visitors&lt;/a>&lt;/li> 
+                &lt;/ul>
+              &lt;/nav>
+            &lt;/div>
+            </code>
+            </pre>
+            </div>
+          </li>
+        </ul>
+      </div>
   </div>
   <!-- Scripts -->
   <script src="scripts/jquery.js"></script>

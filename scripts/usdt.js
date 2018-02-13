@@ -16,3 +16,8 @@ $(BUTTON).on('click', function(){
     $(this).attr('aria-expanded','false');
   }
 });
+
+$(".usdt-option").on('click', function() {
+  $(this).toggleClass("on");
+  $(this).next('.usdt-option-menu').toggleClass('hidden');
+});

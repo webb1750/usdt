@@ -14,5 +14,5 @@ The USDT library contains UI components and style information for building websi
 
 ### Components and Style Guide
 
-To get started, navigate to the index.html page to see a list of styled components and how to implement them in your application or website. There are examples for each component in the style guide and source code to help you implement it within your project.
+To get started, navigate to the index.html page to see a list of styled components and how to implement them in your application or website. There are examples for each component in the style guide along with source code to help you implement it within your project.
 

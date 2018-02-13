@@ -565,6 +565,19 @@ hr {
     background-repeat: no-repeat;
     background-size: 1.5rem; }
 
+.usdt-option-menu {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17); }
+  .usdt-option-menu li {
+    padding: .2rem; }
+
+.hidden {
+  display: none; }
+
 /*BUTTONS*/
 .usdt-button,
 .usdt-button-primary,
@@ -804,6 +817,16 @@ button,
     [type="reset"].ui-plus-symbol.usdt-button-small,
     [type="image"].ui-plus-symbol.usdt-button-small {
       padding-left: 2.6rem; }
+    .usdt-button.ui-plus-symbol.usdt-button-medium,
+    .usdt-button-primary.ui-plus-symbol.usdt-button-medium,
+    .usdt-button:visited.ui-plus-symbol.usdt-button-medium,
+    .usdt-button-primary:visited.ui-plus-symbol.usdt-button-medium,
+    button.ui-plus-symbol.usdt-button-medium,
+    [type="button"].ui-plus-symbol.usdt-button-medium,
+    [type="submit"].ui-plus-symbol.usdt-button-medium,
+    [type="reset"].ui-plus-symbol.usdt-button-medium,
+    [type="image"].ui-plus-symbol.usdt-button-medium {
+      padding-left: 3.3rem; }
   .usdt-button.ui-down-triangle,
   .usdt-button-primary.ui-down-triangle,
   .usdt-button:visited.ui-down-triangle,
@@ -823,6 +846,11 @@ button,
   font-size: 1.45rem;
   padding: 1.2rem 3rem;
   border-radius: 5rem; }
+
+.usdt-button-medium {
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 3.5rem; }
 
 .usdt-button-small {
   font-size: 0.95rem;

@@ -103,6 +103,9 @@ button,
     &.usdt-button-small {
       padding-left: 2.6rem;
     }
+    &.usdt-button-medium {
+      padding-left: 3.3rem;
+    }
   }
   &.ui-down-triangle {
     background-repeat: no-repeat;
@@ -117,6 +120,11 @@ button,
   font-size: 1.45rem;
   padding: 1.2rem 3rem;
   border-radius: 5rem;
+}
+.usdt-button-medium {
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 3.5rem;
 }
 .usdt-button-small {
   font-size: 0.95rem;
