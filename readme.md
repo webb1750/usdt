@@ -6,10 +6,11 @@ The USDT library contains UI components and style information for building websi
 
 ### Quick Start Setup:
 
-1. Copy the following folders to your project:
+1. Copy the following folders:
 * assets
 * css
 * scripts
+* index.html
 
 ### Components and Style Guide
 
