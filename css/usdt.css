@@ -796,7 +796,7 @@ button,
     background-image: url(../assets/img/add.svg);
     background-position: left 1rem center;
     background-repeat: no-repeat;
-    background-size: auto 50%; }
+    background-size: 1.5rem 50%; }
     .usdt-button.ui-plus-symbol.usdt-button-big,
     .usdt-button-primary.ui-plus-symbol.usdt-button-big,
     .usdt-button:visited.ui-plus-symbol.usdt-button-big,
