@@ -6,11 +6,3 @@ The USDT library contains UI components and style information for building websi
 
 To get started, navigate to the index.html page to see a list of styled components and how to implement them in your application or website.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-

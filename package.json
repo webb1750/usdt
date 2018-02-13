@@ -1,0 +1,27 @@
+{
+  "name": "usdt",
+  "version": "1.0.0",
+  "description": "Component Library and Style Guide for Treasury web assets",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webb1750/usdt.git"
+  },
+  "author": "Jonathan Webb (jonathan.webb@treasury.gov)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webb1750/usdt/issues"
+  },
+  "homepage": "https://github.com/webb1750/usdt#readme"
+}
