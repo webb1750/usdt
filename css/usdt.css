@@ -943,7 +943,7 @@ select {
   justify-content: space-between; }
   @media screen and (min-width: 600px) {
     .usdt-header {
-      padding: 0 1.8rem; } }
+      padding: 0 2rem; } }
   .usdt-header.header-fixed {
     position: fixed;
     top: 0;
@@ -992,7 +992,7 @@ select {
   justify-content: space-between; }
   @media screen and (min-width: 600px) {
     .usdt-sub-header {
-      padding: 0 1.8rem; } }
+      padding: 0 2rem; } }
 
 .usdt-sub-nav ul {
   padding: 0;
@@ -1020,7 +1020,7 @@ select {
   padding: 0 1rem; }
   @media screen and (min-width: 600px) {
     .style-guide {
-      padding: 0 1.8rem; } }
+      padding: 0 2rem; } }
   .style-guide h2 {
     margin: 0;
     font-weight: 300; }
