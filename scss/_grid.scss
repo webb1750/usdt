@@ -73,6 +73,7 @@
     }
     .usdt-row {
       @include flex($align-middle:false, $space-between:true, $no-wrap:false);
+      flex-basis: 100%; // This is necessary ensure the row breaks from a column based layout
     }
   }
 }
