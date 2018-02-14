@@ -22,4 +22,16 @@
     padding-top: $total-header-height;
     margin-top: $total-header-height * -1;   
   }
+  .usdt-grid, .usdt-grid-full {
+    &.grid-example {
+      background: $color-gray-lightest;
+
+      *[class^="usdt-col"]{
+        background: #fff;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+      }
+    }
+  }
 }

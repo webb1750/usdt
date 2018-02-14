@@ -22,6 +22,21 @@
   .usdt-grid {
     padding-right: 3rem;
     padding-left: 3rem;
+    &::before, &::after {
+      content: none;
+    }
+    @include flex($align-middle:false, $space-between:true, $no-wrap:false);
+    
+  }
+  .usdt-grid-full {
+    @include flex($align-middle:false, $space-between:true, $no-wrap:false);
+    &::before, &::after {
+      content: none;
+    }
+  }
+  .usdt-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -29,7 +44,35 @@
   padding: 0;
 }
 
-.usdt-section {
-  display: block;
-  margin: 2rem 0;
+
+// COLUMNS
+@media screen and (min-width: 600px) {
+  .usdt-col-one-half {
+    width: 48.5%;
+  }
+  .usdt-col-two-thirds {
+    width: 65.5%;
+  }
+  .usdt-col-one-third {
+    width: 31.5%;
+  }
+  .usdt-auto-grid {
+    .usdt-col {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .usdt-col-one-half {
+      width: 50%;
+    }
+    .usdt-col-two-thirds {
+      width: 66.666%;
+    }
+    .usdt-col-one-third {
+      width: 33.333%;
+    }
+    .usdt-row {
+      @include flex($align-middle:false, $space-between:true, $no-wrap:false);
+    }
+  }
 }

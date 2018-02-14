@@ -3,7 +3,7 @@
     padding: 0;
     margin:0;
     list-style-type: none;
-    @include flex($align-middle: true, $space-between: true);
+    @include flex($align-middle: true, $space-between: true, $no-wrap: false);
     li {
       margin-right: 2rem;
       @include uppercase($spacing: true, $bold: true);

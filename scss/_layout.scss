@@ -1,11 +1,16 @@
-@mixin flex($align-middle, $space-between) {
+@mixin flex($align-middle, $space-between, $no-wrap) {
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   @if $align-middle {
     align-items: center;
   }
   @if $space-between {
     justify-content: space-between;
+  }
+  @if $no-wrap{
+    flex-wrap: nowrap;
   }
 }
 
