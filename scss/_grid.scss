@@ -71,6 +71,15 @@
     .usdt-col-one-third {
       width: 33.333%;
     }
+    .usdt-col-one-quarter {
+      width: 25%;
+    }
+    .usdt-col-one-eighth {
+      width: 12.5%;
+    }
+    .usdt-col-one-twelfth {
+      width: 8.333%;
+    }
     .usdt-row {
       @include flex($align-middle:false, $space-between:true, $no-wrap:false);
       flex-basis: 100%; // This is necessary ensure the row breaks from a column based layout
