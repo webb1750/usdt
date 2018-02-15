@@ -61,9 +61,18 @@
       flex-basis: 0;
       flex-grow: 1;
       max-width: 100%;
+      padding-left: 0.95rem;
+      padding-right: 0.95rem;
+    }
+    *[class^="usdt-col-"] {
+      padding-left: 0.95rem;
+      padding-right: 0.95rem;
     }
     .usdt-col-one-half {
       width: 50%;
+    }
+    .usdt-col-three-fourths {
+      width: 75%;
     }
     .usdt-col-two-thirds {
       width: 66.666%;
@@ -71,7 +80,7 @@
     .usdt-col-one-third {
       width: 33.333%;
     }
-    .usdt-col-one-quarter {
+    .usdt-col-one-fourth {
       width: 25%;
     }
     .usdt-col-one-eighth {
@@ -83,6 +92,7 @@
     .usdt-row {
       @include flex($align-middle:false, $space-between:true, $no-wrap:false);
       flex-basis: 100%; // This is necessary ensure the row breaks from a column based layout
+      max-width: 100%;
     }
   }
 }

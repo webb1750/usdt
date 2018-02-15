@@ -2,7 +2,6 @@
 .style-guide {
   background-color: #fff;
   overflow: auto;
-  @include page-padding;
   h2 {
     margin: 0;
     font-weight: 300;
@@ -27,11 +26,12 @@
       //background: $color-gray-lightest;
 
       *[class^="usdt-col"]{
-        background: #fff;
+        background: $color-aqua-lightest;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        padding: 1rem;
-        border:solid 1px $color-gray;
+        padding-top: 0.95rem;
+        padding-bottom: 0.95rem;
+        border:solid 1px $color-aqua-light;
       }
     }
   }
