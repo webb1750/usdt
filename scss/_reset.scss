@@ -259,7 +259,8 @@ pre {
 code,
 kbd,
 pre,
-samp {
+samp,
+code * {
   font-family: monospace, monospace;
   font-size: 1em;
 }

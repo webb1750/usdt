@@ -17,7 +17,10 @@
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
-
+.usdt-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 @media screen and (min-width: 600px) {
   .usdt-grid {
     padding-right: 3rem;
@@ -46,6 +49,12 @@
 
 
 // COLUMNS
+.usdt-auto-grid {
+  *[class^="usdt-col-"], .usdt-col {
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
+  }
+}
 @media screen and (min-width: 600px) {
   .usdt-col-one-half {
     width: 48.5%;
@@ -64,9 +73,9 @@
       padding-left: 0.95rem;
       padding-right: 0.95rem;
     }
-    *[class^="usdt-col-"] {
-      padding-left: 0.95rem;
-      padding-right: 0.95rem;
+    
+    .usdt-col-full {
+      width: 100%;
     }
     .usdt-col-one-half {
       width: 50%;
@@ -93,6 +102,21 @@
       @include flex($align-middle:false, $space-between:true, $no-wrap:false);
       flex-basis: 100%; // This is necessary ensure the row breaks from a column based layout
       max-width: 100%;
+
+      &.no-gutters {
+        *[class^="usdt-col-"], .usdt-col {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 599px) {
+  .usdt-auto-grid {
+    *[class^="usdt-col-"], .usdt-col {
+      padding-left: 3.5vw;
+      padding-right: 3.5vw;
     }
   }
 }
