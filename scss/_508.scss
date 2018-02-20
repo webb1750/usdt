@@ -8,3 +8,7 @@
 [hidden] {
   display: none !important;
 }
+.sr-only {
+  text-indent: -9999rem;
+  position: absolute;
+}

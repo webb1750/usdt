@@ -79,3 +79,25 @@ select {
     position: relative;
     right: 1rem;
 }
+
+.usdt-search-form {
+  @include flex($align-middle: false, $space-between: false, $no-wrap: true);
+  .usdt-search-input {
+    margin: 0;
+    border-radius: 3rem 0 0 3rem;
+    border-right: none;
+    padding: 2px 1rem;
+  }
+  .usdt-search-button {
+    background-color: #fff;
+    border: solid 1px $color-gray;
+    margin: 0;
+    border-radius: 0 3rem 3rem 0;
+    border-left: 0;
+    padding: 1rem 1.5rem;
+    background-image: url(../assets/img/search.svg);
+    background-position: 50%;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+  }
+}

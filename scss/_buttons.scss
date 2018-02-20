@@ -100,6 +100,21 @@ button,
       background-color: $color-cool-blue-darkest;
     }
   }
+  &.action-outline {
+    background-color: transparent;
+    color: $color-gray-medium;
+    border-color: $color-gray-medium;
+    &:hover {
+      background-color: transparent;
+      color: $color-gray;
+      border-color: $color-gray;
+    }
+    &:active {
+      background-color: transparent;
+      color: $color-gray-dark;
+      border-color: $color-gray-dark;
+    }
+  }
 
   &.ui-plus-symbol {
     padding-left: 3.5rem;
