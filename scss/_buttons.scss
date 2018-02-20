@@ -91,6 +91,16 @@ button,
       background-color: $color-action-darkest;
     }
   }
+  &.action-secondary {
+    background-color: $color-cool-blue;
+    &:hover {
+      background-color: $color-cool-blue-dark;
+    }
+    &:active {
+      background-color: $color-cool-blue-darkest;
+    }
+  }
+
   &.ui-plus-symbol {
     padding-left: 3.5rem;
     background-image: url(../assets/img/add.svg);
