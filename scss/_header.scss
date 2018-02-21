@@ -21,7 +21,7 @@
     font-size: 1.5rem;
     font-weight: 300;
     background: url(../assets/img/logo.svg) 0px center no-repeat;
-    background-size: contain;
+    background-size: 44px 44px; // using pixels to fix blurry svg in IE11
     padding-left: 3.25rem;
   }
   .login-section {
