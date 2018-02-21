@@ -29,12 +29,17 @@
       content: none;
     }
     @include flex($align-middle:false, $space-between:true, $no-wrap:false);
-    
+    &.grid-center {
+      justify-content: center;
+    }
   }
   .usdt-grid-full {
     @include flex($align-middle:false, $space-between:true, $no-wrap:false);
     &::before, &::after {
       content: none;
+    }
+    &.grid-center {
+      justify-content: center;
     }
   }
   .usdt-section {
