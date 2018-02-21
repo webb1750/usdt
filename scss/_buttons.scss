@@ -121,7 +121,7 @@ button,
     background-image: url(../assets/img/add.svg);
     background-position: left 1.2rem center;
     background-repeat: no-repeat;
-    background-size: 1.5rem 50%;
+    background-size: 24px 24px; // using pixels to fix blurry svg in IE11
     &.usdt-button-big {
       padding-left: 4rem;
     }
@@ -136,7 +136,7 @@ button,
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-image: url(../assets/img/down-triangle.svg);
-    background-size: 0.8rem;
+    background-size: 14px 14px; // using pixels to fix blurry svg in IE11
     padding-right: 2.2rem;
   }
 }

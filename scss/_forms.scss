@@ -39,13 +39,13 @@ select {
     background-image: url(../assets/img/down-chevron-primary.svg);
   background-position: right 1rem center;
   background-repeat: no-repeat;
-  background-size: 1.5rem;
+  background-size: 26px 26px; // using pixels to prevent blurry icon in IE11
   &::-ms-expand {
     display: none;
   }
   &.usdt-select-triangle {
     background-image: url(../assets/img/down-triangle.svg);
-    background-size: 0.8rem;
+    background-size: 14px 14px; // using pixels to prevent blurry icon in IE11
     padding-right: 2.2rem;
   }
   option {
@@ -97,7 +97,8 @@ select {
     padding: 1rem 1.5rem;
     background-image: url(../assets/img/search.svg);
     background-position: 50%;
-    background-size: 60% auto;
+    background-size: 30px 30px; // Using pixels to prevent blurry svg icons in IE11
     background-repeat: no-repeat;
+    width: 15%;
   }
 }
