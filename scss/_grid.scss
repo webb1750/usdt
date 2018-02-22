@@ -21,7 +21,7 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .usdt-grid {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -48,8 +48,22 @@
   }
 }
 
+.usdt-app-section {
+  padding: 3rem 4rem;
+  &.secondary {
+    background-color: $color-gray-lightest-lite;
+  }
+  @media screen and (max-width:1200px){
+    padding: 1rem 2rem;
+  }
+  @media screen and (max-width:767px){
+    padding: .5rem 0;
+  }
+}
+
 .usdt-grid-full {
   padding: 0;
+  max-width: none;
 }
 
 
@@ -60,7 +74,7 @@
     padding-right: 0.95rem;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .usdt-col-one-half {
     width: 48.5%;
   }
@@ -85,17 +99,29 @@
     .usdt-col-one-half {
       width: 50%;
     }
+    .usdt-col-four-fifths {
+      width: 80%;
+    }
     .usdt-col-three-fourths {
       width: 75%;
     }
     .usdt-col-two-thirds {
       width: 66.666%;
     }
+    .usdt-col-three-fifths {
+      width: 60%;
+    }
+    .usdt-col-two-fifths {
+      width: 40%;
+    }
     .usdt-col-one-third {
       width: 33.333%;
     }
     .usdt-col-one-fourth {
       width: 25%;
+    }
+    .usdt-col-one-fifth {
+      width: 20%;
     }
     .usdt-col-one-eighth {
       width: 12.5%;
@@ -117,11 +143,19 @@
     }
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .usdt-auto-grid {
     *[class^="usdt-col-"], .usdt-col {
       padding-left: 3.5vw;
       padding-right: 3.5vw;
     }
+  }
+}
+
+.usdt-app-grid {
+  display: flex;
+  flex-flow: nowrap;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 }

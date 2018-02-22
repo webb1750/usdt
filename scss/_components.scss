@@ -5,6 +5,11 @@ hr {
    background: $color-gray-lighter;
 }
 
+.img-fluid
+ {
+   max-width: 100%;
+   height: auto;
+ }
 // Tables
 .usdt-table {
   text-align: left;
@@ -98,6 +103,11 @@ hr {
     background-repeat: no-repeat;
     background-size: 1.5rem;
   }
+  &.secondary {
+    background-color: #fff;
+    border-color: transparent;
+    color: $color-gray-dark;
+  }
 }
 .usdt-option-menu {
   list-style-type: none;
@@ -108,6 +118,50 @@ hr {
   @include box-shadow;
   li {
     padding: .2rem;
+  }
+}
+
+.usdt-hero {
+  padding-bottom: 0px;
+  background: #fff;
+  
+  h1 {
+    font-size: 2.85rem;
+    margin-top: 2rem;
+  }
+} 
+
+.usdt-user-info-card {
+  padding: 30px 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+  .user-avatar {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 10px;
+  }
+  .user-name {
+    font-family: $font-serif;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 300;
+    display: block;
+  }
+  .user-title {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+    margin-top: 8px;
+  }
+}
+.usdt-app-logo {
+  flex: 0 0 50%;
+  @media screen and (min-width: $medium-screen){
+    flex: 0 0 25%;
   }
 }
 

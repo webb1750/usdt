@@ -21,3 +21,8 @@ $(".usdt-option").on('click', function() {
   $(this).toggleClass("on");
   $(this).next('.usdt-option-menu').toggleClass('hidden');
 });
+$(".usdt-side-nav-toggle").on('click', function() {
+  var targetMenu = $(this).attr('aria-controls');
+  $(this).toggleClass("open");
+  $('#' + targetMenu).toggleClass('open');
+});

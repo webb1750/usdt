@@ -9,6 +9,8 @@
     "gulp-sass": "^3.1.0"
   },
   "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-svgstore": "^1.0.0",
     "gulp-clean-css": "^3.9.2",
     "gulp-sass": "^3.1.0"
   },

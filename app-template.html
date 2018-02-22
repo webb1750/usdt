@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT Component Library</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/usdt.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+  <div class="header-fixed">
+    <header class="usdt-header">
+      <div class="usdt-app-logo">
+        <a href="#" title="Home"><img src="assets/templates/DataInsight-logo-web.png" alt="Data Insight logo" class="img-fluid" /><span class="sr-only">Data Insight</span></a>
+      </div>
+      <div class="login-section">
+        <button name="sections" class="usdt-button usdt-button-small secondary-light hidden-mobile">Log Out</button>
+        <button class="usdt-side-nav-toggle" aria-expanded="false" aria-controls="sidenav">
+          <span class="sr-only">Menu</span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>        
+      </div>
+    </header>
+  </div>
+  <div class="usdt-header-fixed usdt-app-grid">
+    <aside id="sidenav" class="usdt-side-nav">
+      <div class="usdt-side-nav-wrapper">
+        <div class="usdt-user-info-card">
+          <div class="user-avatar"><img src="assets/img/logo.svg" alt="U.S. Treasury Seal" class="img-fluid" /></div>
+          <span class="user-name">Johnathan James Longname</span>
+          <div class="user-title">Treasury DO (91)</div>
+        </div>
+        <ul class="nav" role="navigation">
+          <li><a href="#" class="active"><span class="icon-dashboard nav-icon"></span>Dashboards</a></li>
+          <li><a href="#"><span class="icon-paper nav-icon"></span>Reports</a></li>
+          <li><a href="#"><span class="icon-heart nav-icon"></span>Favorites</a></li>
+          <li><a href="#"><span class="icon-star nav-icon"></span>Knowledgebase</a></li>
+          <li><a href="#"><span class="icon-support nav-icon"></span>Support</a></li>
+          <li><a href="#"><span class="icon-check-box nav-icon"></span>Authorizations</a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="usdt-app-content usdt-grid-full usdt-auto-grid">
+      <section class="usdt-row usdt-hero usdt-app-section">
+          <div class="usdt-col-two-thirds">
+            <h1>Data driven insight.</h1>
+            <p class="usdt-lead-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Dapibus ultrices in iaculis nunc sed augue lacus viverra.</p>
+            <button class="secondary">Learn more</button>
+          </div>
+          <div class="usdt-col hidden-mobile">
+            <img class="img-fluid" src="assets/templates/graphic-smartphone.png" alt="smart phone with data insights app on the screen" />
+          </div>
+        </section>
+        <section class="usdt-row usdt-app-section usdt-app-search-block">
+          <div class="usdt-col-one-half">
+            <form class="usdt-search-form">
+              <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
+              <button class="usdt-search-button"><span class="sr-only">Search</span></button>
+            </form>
+          </div>
+        </section>
+        <section class="usdt-row usdt-app-section secondary">
+          <div class="usdt-col">
+              <ul class="usdt-accordion">
+                  <li>
+                    <button class="usdt-accordion-button secondary" aria-expanded="true" aria-controls="a1">
+                    Example Accordion Menu
+                  </button>
+                    <div id="a1" class="usdt-accordion-content" aria-hidden="false">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Dapibus ultrices in iaculis nunc sed augue lacus viverra. Pulvinar proin gravida hendrerit lectus a. Nunc sed velit dignissim sodales. Cursus risus at ultrices mi. Senectus et netus et malesuada. Tellus orci ac auctor augue mauris augue neque gravida. Integer eget aliquet nibh praesent tristique magna sit. Ut placerat orci nulla pellentesque dignissim enim sit amet. Lectus proin nibh nisl condimentum id venenatis.</p>
+                    </div>
+                  </li>
+                </ul>
+          </div>
+        </section>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/usdt.js"></script>
+</body>
+
+</html>

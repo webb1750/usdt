@@ -84,9 +84,8 @@ select {
   @include flex($align-middle: false, $space-between: false, $no-wrap: true);
   .usdt-search-input {
     margin: 0;
-    border-radius: 3rem 0 0 3rem;
-    border-right: none;
-    padding: 2px 1rem;
+    padding: 0.5rem 1rem;
+    padding-right: 3rem;
   }
   .usdt-search-button {
     background-color: #fff;
@@ -94,11 +93,22 @@ select {
     margin: 0;
     border-radius: 0 3rem 3rem 0;
     border-left: 0;
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
     background-image: url(../assets/img/search.svg);
     background-position: 50%;
     background-size: 30px 30px; // Using pixels to prevent blurry svg icons in IE11
     background-repeat: no-repeat;
-    width: 15%;
+    width: 1rem;
+    margin-left:-3rem;
+  }
+
+}
+
+.usdt-app-search-block {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: $color-gray-lightest;
+  .usdt-search-input {
+    max-width: 380px;
   }
 }

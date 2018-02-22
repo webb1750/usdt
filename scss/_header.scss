@@ -4,7 +4,7 @@
   text-align: left;
   height: $header-height;
   width: 100%;
-  @include page-padding;
+  @include header-padding;
   @include flex($align-middle: true, $space-between: true, $no-wrap: false);
   &.header-fixed {
     position: fixed;
@@ -25,6 +25,9 @@
     padding-left: 3.25rem;
   }
   .login-section {
+    display: flex;
+    align-items: center;
+    
     .user-name {
       color: #fff;
       @include uppercase($spacing: true, $bold: true);
@@ -39,6 +42,9 @@
   }
 }
 .usdt-header-fixed {
+  margin-top: $header-height;
+}
+.usdt-sub-header-fixed {
   margin-top: $header-height + $sub-header-height;
 }
 .header-fixed {
@@ -52,6 +58,6 @@
 .usdt-sub-header {
   height: $sub-header-height;
   background: $color-gray-lightest;
-  @include page-padding;
+  @include header-padding;
   @include flex($align-middle: true, $space-between: true, $no-wrap: false);
 }
