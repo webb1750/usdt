@@ -157,6 +157,10 @@ hr {
     width: 72px;
     height: 72px;
     margin: 0 auto 10px;
+    img {
+      max-height: 72px;
+      max-width: 72px;
+    }
   }
   .user-name {
     font-family: $font-serif;

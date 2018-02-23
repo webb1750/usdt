@@ -25,6 +25,7 @@
   .usdt-grid {
     padding-right: 3rem;
     padding-left: 3rem;
+    flex-basis: 100%;
     &::before, &::after {
       content: none;
     }
@@ -35,6 +36,7 @@
   }
   .usdt-grid-full {
     @include flex($align-middle:false, $space-between:true, $no-wrap:false);
+    flex-basis: 100%;
     &::before, &::after {
       content: none;
     }
