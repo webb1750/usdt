@@ -189,3 +189,22 @@ button,
     background-color: transparent;
   }
 }
+
+// Icon Buttons no background color
+.usdt-icon-button {
+  background-color: transparent;
+  color: $color-gray-medium;
+  padding: 0 0;
+  font-size: 1.3rem;
+  border-radius: 0;
+  margin: 0 5px 0 0;
+  &:hover {
+    background-color: transparent;
+  }
+  .favorite {
+    color: $color-red;
+  }
+  .launch {
+    color: $color-green;
+  }
+}

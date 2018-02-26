@@ -65,9 +65,10 @@ hr {
     }
   }
   &.app-secondary {
-    @include box-shadow;
     > li {
+      @include box-shadow;
       background-color: #fff;
+      margin-bottom: 2rem;
     }
     .usdt-accordion-button {
       background-color: #fff;
@@ -81,6 +82,10 @@ hr {
       margin-left:2rem;
       margin-right: 2rem;
       border-top: solid 1px $color-gray-lightest;
+      @media screen and (max-width: 767px){
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
   }
 }
@@ -192,7 +197,44 @@ hr {
     flex: 0 0 25%;
   }
 }
+.usdt-app-action-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li {
+    display: flex;
+    align-items: center;
+    padding:0.5rem 1rem;
+    line-height: 1.25;
+    @media screen and (max-width:767px){
+      display: block;
+    }
 
+    &:nth-child(odd){
+      background-color: $color-gray-lightest-lite;
+    }
+  }
+  .item-type-icon {
+    margin-right: 0.75rem;
+    font-size: 1.3rem;
+    color: $color-cool-blue;
+  }
+  .action-icons {
+    margin-left: auto;
+    display: flex;
+    padding-left: 1rem;
+    @media screen and (max-width:767px){
+      margin-top: 0.75rem;
+      padding-left: 0;
+    }
+  }
+}
+
+.app-action-heading {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+}
 .hidden {
   display: none;
 }

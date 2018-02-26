@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 21 21" style="enable-background:new 0 0 21 21;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#ffffff;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<rect x="3" y="5.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.5308 10.2966)" class="st0" width="14.4" height="10.3"/>
-<polyline class="st0" points="1.5,12.5 1.5,19.5 8.5,19.5 "/>
-<rect x="8.8" y="5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 8.9093 -7.8801)" class="st0" width="10.3" height="3.6"/>
+
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-edit" transform="translate(1.000000, 1.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M0.12877653,20.1522175 C-0.417314058,20.1522175 -0.862421811,19.7141256 -0.871097272,19.1681039 L-0.999873802,11.0630844 C-1.00417469,10.7923925 -0.898539057,10.5315234 -0.707106781,10.3400912 L10.3400912,-0.707106781 C10.7306155,-1.09763107 11.3637804,-1.09763107 11.7543047,-0.707106781 L19.6856238,7.22421226 C20.0761481,7.61473655 20.0761481,8.24790153 19.6856238,8.63842582 L8.46472535,19.8593242 C8.27718897,20.0468606 8.02283506,20.1522175 7.75761857,20.1522175 L0.12877653,20.1522175 Z M1.11301425,18.1522175 L7.34340501,18.1522175 L17.5643034,7.93131904 L11.047198,1.41421356 L1.00660254,11.454809 L1.11301425,18.1522175 Z" id="Path-2"></path>
+            <polygon id="Path-3" points="-0.707106781 11.7071068 0.707106781 10.2928932 8.97369242 18.5594789 7.55947886 19.9736924"></polygon>
+            <polygon id="Path-4" points="7.29289322 2.70710678 8.70710678 1.29289322 17.7071068 10.2928932 16.2928932 11.7071068"></polygon>
+        </g>
+    </g>
 </svg>
