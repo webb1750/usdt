@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
-
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>USDT Component Library</title>
 
   <!--  Styles  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/usdt.css">
   <link rel="stylesheet" href="css/iconfont.css">
 </head>
@@ -50,7 +48,7 @@
       </div>
     </aside>
     <div class="usdt-app-content usdt-grid-full usdt-auto-grid">
-      <section class="usdt-row usdt-hero usdt-app-section">
+      <section id="hero" class="usdt-row usdt-hero usdt-app-section" aria-hidden="false">
           <div class="usdt-col-two-thirds">
             <h1>Data driven insight.</h1>
             <p class="usdt-lead-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Dapibus ultrices in iaculis nunc sed augue lacus viverra.</p>
@@ -66,6 +64,12 @@
               <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
               <button class="usdt-search-button"><span class="sr-only">Search</span></button>
             </form>
+          </div>
+          <div class="usdt-col-one-half text-right">
+            <a href="#" class="usdt-section-toggle" aria-expanded="true" aria-controls="hero">
+              <span class="icon-chevron-up icon"></span>
+              <span class="toggle-text">news section</span>
+            </a>
           </div>
         </section>
         <section class="usdt-row usdt-app-section secondary">

@@ -236,6 +236,24 @@ hr {
   padding-left: 1rem;
   font-size: 0.95rem;
 }
-.hidden {
-  display: none;
+
+.usdt-section-toggle {
+  text-decoration: none;
+  color: $color-black-light;
+  .icon {
+    margin-right: 0.5rem;
+  }
+  &[aria-expanded="false"] {
+    .toggle-text:before{
+      content: 'Show ';
+      font-family: $font-sans;
+    }
+    .icon:before {
+      content: "\e90a";
+    }
+  }
+  &[aria-expanded="true"] .toggle-text:before{
+    content: 'Hide ';
+    font-family: $font-sans;
+  }
 }

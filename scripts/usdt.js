@@ -21,8 +21,21 @@ $(".usdt-option").on('click', function() {
   $(this).toggleClass("on");
   $(this).next('.usdt-option-menu').toggleClass('hidden');
 });
+
 $(".usdt-side-nav-toggle").on('click', function() {
   var targetMenu = $(this).attr('aria-controls');
   $(this).toggleClass("open");
   $('#' + targetMenu).toggleClass('open');
+});
+
+$(".usdt-section-toggle").on('click', function() {
+  var targetSection = $(this).attr('aria-controls');
+  var condition = $('#' + targetSection).attr('aria-hidden');
+  if(condition == 'true'){
+    condition = $('#' + targetSection).attr('aria-hidden','false');
+    $(this).attr('aria-expanded','true');
+  } else {
+    condition = $('#' + targetSection).attr('aria-hidden','true');
+    $(this).attr('aria-expanded','false');
+  }
 });

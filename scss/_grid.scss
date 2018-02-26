@@ -61,6 +61,9 @@
   @media screen and (max-width:767px){
     padding: .5rem 0;
   }
+  &[aria-hidden="true"] {
+    display: none !important;
+  }
 }
 
 .usdt-grid-full {
