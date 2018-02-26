@@ -11,6 +11,7 @@ The USDT library contains UI components and style information for building websi
 * css
 * scripts
 * index.html
+* app-template.html
 
 ### Components and Style Guide
 
