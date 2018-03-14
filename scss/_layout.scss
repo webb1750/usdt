@@ -25,16 +25,31 @@
   padding: 0 1rem;
 }
 
-.hidden-mobile {
-  @media screen and (max-width: 767px) {
-    display:none !important;
-  }
+@mixin box-sizing {
+  box-sizing: border-box;
 }
 
+// Hiding elements based on screen size
 .hidden {
   display: none;
-}
-
-.text-right {
-  text-align: right;
+  &-sm {
+    @media screen and (max-width: $screen-sm) {
+      display:none !important;
+    }
+  }
+  &-md-down {
+    @media screen and (max-width: $screen-md) {
+      display:none !important;
+    }
+  }
+  &-lg-down {
+    @media screen and (max-width: $screen-lg) {
+      display:none !important;
+    }
+  }
+  &-xl-down {
+    @media screen and (max-width: $screen-xl) {
+      display:none !important;
+    }
+  }
 }

@@ -48,6 +48,11 @@ h4 {
 h5 {
   font-size:1rem;
 }
+
+.no-margin {
+  margin:0 0 0 0;
+}
+
 .usdt-lead-statement {
   font-family: $font-sans;
   font-size: 1.2rem;
@@ -84,4 +89,97 @@ h5 {
   line-height: 1.18;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.usdt-font-sans {
+  font-family: $font-sans !important;
+}
+.usdt-font-serif {
+  font-family: $font-serif !important;
+}
+.bold {
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+  &-800 {
+    font-weight: 800;
+  }
+  &-900 {
+    font-weight: 900;
+  }
+}
+.text-left {
+  text-align: left;
+  @media screen and (min-width: $screen-sm){
+    &-sm{
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $screen-md){
+    &-md{
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $screen-lg){
+    &-lg{
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $screen-xl){
+    &-xl{
+      text-align: left;
+    }
+  }
+}
+.text-center {
+  text-align: center;
+  @media screen and (min-width: $screen-sm){
+    &-sm{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $screen-md){
+    &-md{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $screen-lg){
+    &-lg{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $screen-xl){
+    &-xl{
+      text-align: center;
+    }
+  }
+}
+.text-right {
+  text-align: right;
+  @media screen and (min-width: $screen-sm){
+    &-sm{
+      text-align: right;
+    }
+  }
+  @media screen and (min-width: $screen-md){
+    &-md{
+      text-align: right;
+    }
+  }
+  @media screen and (min-width: $screen-lg){
+    &-lg{
+      text-align: right;
+    }
+  }
+  @media screen and (min-width: $screen-xl){
+    &-xl{
+      text-align: right;
+    }
+  }
 }

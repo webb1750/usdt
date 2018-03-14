@@ -42,17 +42,24 @@
   }
 }
 .usdt-header-fixed {
-  margin-top: $header-height;
+  @media screen and (min-width: $screen-lg) {
+    margin-top: $header-height;
+  }
+
 }
 .usdt-sub-header-fixed {
-  margin-top: $header-height + $sub-header-height;
+  @media screen and (min-width: $screen-lg) {
+    margin-top: $header-height + $sub-header-height;
+  }
 }
 .header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
+  @media screen and (min-width: $screen-lg) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
 }
 
 .usdt-sub-header {

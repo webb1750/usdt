@@ -1,64 +1,30 @@
 /*GRID*/
-.usdt-grid,
-.usdt-grid-full {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.usdt-grid::after,
-.usdt-grid-full::after {
-  clear: both;
-  content: "";
-  display: block;
-}
+$grid-columns : 12;
+$grid-gutter: 15px;
 
-.usdt-grid {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
 .usdt-section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .usdt-grid {
-    padding-right: 3rem;
-    padding-left: 3rem;
-    flex-basis: 100%;
-    &::before, &::after {
-      content: none;
-    }
-    @include flex($align-middle:false, $space-between:true, $no-wrap:false);
-    &.grid-center {
-      justify-content: center;
-    }
+  &-md {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
-  .usdt-grid-full {
-    @include flex($align-middle:false, $space-between:true, $no-wrap:false);
-    flex-basis: 100%;
-    &::before, &::after {
-      content: none;
-    }
-    &.grid-center {
-      justify-content: center;
-    }
-  }
-  .usdt-section {
+  &-lg {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 .usdt-app-section {
-  padding: 3rem 4rem;
+  padding: 3rem 3rem;
   &.secondary {
     background-color: $color-gray-lightest-lite;
   }
-  @media screen and (max-width:1200px){
-    padding: 1rem 2rem;
+  @media screen and (max-width: $screen-xl){
+    padding: 1rem 1rem;
   }
-  @media screen and (max-width:767px){
+  @media screen and (max-width: $screen-lg){
     padding: .5rem 0;
   }
   &[aria-hidden="true"] {
@@ -66,106 +32,258 @@
   }
 }
 
-.usdt-grid-full {
-  padding: 0;
-  max-width: none;
-}
-
-
-// COLUMNS
-.usdt-auto-grid {
-  *[class^="usdt-col-"], .usdt-col {
-    padding-left: 0.95rem;
-    padding-right: 0.95rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .usdt-col-one-half {
-    width: 48.5%;
-  }
-  .usdt-col-two-thirds {
-    width: 65.5%;
-  }
-  .usdt-col-one-third {
-    width: 31.5%;
-  }
-  .usdt-auto-grid {
-    .usdt-col {
-      flex-basis: 0;
-      flex-grow: 1;
-      max-width: 100%;
-      padding-left: 0.95rem;
-      padding-right: 0.95rem;
-    }
-    
-    .usdt-col-full {
-      width: 100%;
-    }
-    .usdt-col-one-half {
-      width: 50%;
-    }
-    .usdt-col-four-fifths {
-      width: 80%;
-    }
-    .usdt-col-three-fourths {
-      width: 75%;
-    }
-    .usdt-col-two-thirds {
-      width: 66.666%;
-    }
-    .usdt-col-three-fifths {
-      width: 60%;
-    }
-    .usdt-col-two-fifths {
-      width: 40%;
-    }
-    .usdt-col-one-third {
-      width: 33.333%;
-    }
-    .usdt-col-one-fourth {
-      width: 25%;
-    }
-    .usdt-col-one-fifth {
-      width: 20%;
-    }
-    .usdt-col-one-eighth {
-      width: 12.5%;
-    }
-    .usdt-col-one-twelfth {
-      width: 8.333%;
-    }
-    .usdt-row {
-      @include flex($align-middle:false, $space-between:true, $no-wrap:false);
-      flex-basis: 100%; // This is necessary ensure the row breaks from a column based layout
-      max-width: 100%;
-
-      &.no-gutters {
-        *[class^="usdt-col-"], .usdt-col {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .usdt-auto-grid {
-    *[class^="usdt-col-"], .usdt-col {
-      padding-left: 3.5vw;
-      padding-right: 3.5vw;
-    }
-  }
-}
-
-.usdt-app-grid {
-  display: flex;
-  flex-flow: nowrap;
-  @media screen and (max-width: 1023px) {
-    flex-direction: column;
-  }
-}
-
 .usdt-app-content{
   align-content: flex-start !important;
+  min-height: 100vh;
 }
 
+.usdt-grid-container {
+  max-width: 1200px;
+  @include box-sizing;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
+}
+
+.usdt-grid-container-fluid {
+  width: 100%;
+  @include box-sizing;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
+  &::before, &::after {
+    content: none;
+  }
+}
+
+.usdt-row {
+  @include flex($align-middle:false, $space-between:false, $no-wrap:false);
+  @include box-sizing;
+  flex: auto; // not sure if this is desired, but it prevents columns from shrinking when content is missing
+  // flex-basis: 100%; This was necessary ensure the row breaks from a column based layout, not sure if it is still needed
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
+
+  // Alignment of columns within a row
+  &.align-bottom {
+    align-items: flex-end;
+  }
+  &.align-middle {
+    align-items: center;
+  }
+  &.align-top {
+    align-items: flex-start;
+  }
+  &.align-left {
+    justify-content: flex-start;
+  }
+  &.align-center {
+    justify-content: center;
+  }
+  &.align-right {
+    justify-content: flex-end;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.space-around {
+    justify-content: space-around;
+  }
+  &.no-gutters {
+    margin-left:0;
+    margin-right:0;
+  }
+  @media screen and (max-width: $screen-sm){
+    &.align-bottom-sm {
+      align-items: flex-end;
+    }
+    &.align-middle-sm {
+      align-items: center;
+    }
+    &.align-top-sm {
+      align-items: flex-start;
+    }
+    &.align-left-sm {
+      justify-content: flex-start;
+    }
+    &.align-center-sm {
+      justify-content: center;
+    }
+    &.align-right-sm {
+      justify-content: flex-end;
+    }
+    &.space-between-sm {
+      justify-content: space-between;
+    }
+    &.space-around-sm {
+      justify-content: space-around;
+    }
+  }
+  @media screen and (max-width: $screen-md){
+    &.align-bottom-md {
+      align-items: flex-end;
+    }
+    &.align-middle-md {
+      align-items: center;
+    }
+    &.align-top-md {
+      align-items: flex-start;
+    }
+    &.align-left-md {
+      justify-content: flex-start;
+    }
+    &.align-center-md {
+      justify-content: center;
+    }
+    &.align-right-md {
+      justify-content: flex-end;
+    }
+    &.space-between-md {
+      justify-content: space-between;
+    }
+    &.space-around-md {
+      justify-content: space-around;
+    }
+  }
+}
+.no-gutters > .usdt-col, .no-gutters > [class*="usdt-col-"] {
+  padding-left:0;
+  padding-right:0;
+}
+.usdt-col, *[class^="usdt-col-"], *[class*=" usdt-col-"] {
+  position: relative;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+  width: 100%;
+  min-height: 1px // prevents column from breaking if empty
+}
+.usdt-col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+// Generate grid columns
+@for $i from 1 through $grid-columns {
+  .usdt-col-#{$i} {
+     flex: 0 0 100% / $grid-columns * $i;
+     max-width: 100% / $grid-columns * $i;
+  }
+}
+
+@media screen and (min-width: $screen-sm){
+  .usdt-col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  // Generate grid columns for small
+  @for $i from 1 through $grid-columns {
+    .usdt-col-sm-#{$i} {
+       flex: 0 0 100% / $grid-columns * $i;
+       max-width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md){
+  .usdt-col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  // Generate grid columns for medium
+  @for $i from 1 through $grid-columns {
+    .usdt-col-md-#{$i} {
+       flex: 0 0 100% / $grid-columns * $i;
+       max-width: 100% / $grid-columns * $i;
+    }
+  }
+}
+@media screen and (min-width: $screen-lg){
+  .usdt-col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  // Generate grid columns for large
+  @for $i from 1 through $grid-columns {
+    .usdt-col-lg-#{$i} {
+       flex: 0 0 100% / $grid-columns * $i;
+       max-width: 100% / $grid-columns * $i;
+    }
+  }
+}
+@media screen and (min-width: $screen-xl){
+  .usdt-col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  // Generate grid columns for extra large
+  @for $i from 1 through $grid-columns {
+    .usdt-col-xl-#{$i} {
+       flex: 0 0 100% / $grid-columns * $i;
+       max-width: 100% / $grid-columns * $i;
+    }
+  }
+}
+@media screen and (min-width: $screen-xxl){
+  .usdt-col-xxl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  // Generate grid columns for extra extra large
+  @for $i from 1 through $grid-columns {
+    .usdt-col-xxl-#{$i} {
+       flex: 0 0 100% / $grid-columns * $i;
+       max-width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+// Generates Column ordering 0-10
+$order: 10 !default;
+@for $i from 0 through $order {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+@media screen and (max-width: $screen-sm){ 
+  @for $i from 0 through $order {
+    .order-#{$i}-sm {
+      order: $i;
+    }
+  }
+}
+@media screen and (max-width: $screen-md){ 
+  @for $i from 0 through $order {
+    .order-#{$i}-md {
+      order: $i;
+    }
+  }
+}
+@media screen and (max-width: $screen-lg){ 
+  @for $i from 0 through $order {
+    .order-#{$i}-lg {
+      order: $i;
+    }
+  }
+}
+@media screen and (max-width: $screen-xl){ 
+  @for $i from 0 through $order {
+    .order-#{$i}-xl {
+      order: $i;
+    }
+  }
+}
+@media screen and (max-width: $screen-xxl){ 
+  @for $i from 0 through $order {
+    .order-#{$i}-xxl {
+      order: $i;
+    }
+  }
+}

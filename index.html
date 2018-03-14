@@ -28,6 +28,7 @@
           <li><a href="#Nav">Header &amp; Navigation</a></li>
           <li><a href="#Grid">Grid Layout</a></li>
           <li><a href="#SidebarNav">Side Navigation</a></li>
+          <li><a href="#UiTemplate">UI Templates</a></li>
         </ul>
       </nav>
     </header>
@@ -39,15 +40,15 @@
       </nav>
     </div>
   </div>
-  <div class="style-guide usdt-sub-header-fixed">
-    <section class="usdt-grid-full usdt-auto-grid">
+  <div class="style-guide usdt-sub-header-fixed usdt-grid-container">
+    <section class="usdt-row">
       <div class="usdt-col">
         <h1>USDT Styleguide 1.0</h1>
         <p class="usdt-lead-statement">The U.S. Department of the Treasury Component Library and Style Guide. Use the component navigation button located in the upper right of the header to navigate quickly to components. Each component contains an exmaple of its souce code so you can easily implement it into your project.</p>
         <p><em>This component library is a work in progress.</em></p>
       </div>
     </section>
-    <section class="usdt-grid-full usdt-auto-grid">
+    <section class="usdt-row">
         <div class="usdt-col">
           <header>
             <hr />
@@ -55,120 +56,118 @@
             <p class="usdt-site-subheading">UI components</p>
             <h2 id="buttons">Buttons</h2>
           </header>
-        </div>
-        <div class="usdt-row">
-          <div class="usdt-col-one-half">
-            <h3 class="usdt-section-heading">Primary Buttons</h3>
-            <button>Regular Button</button>
-            <button class="usdt-button-big">Big Button</button>
-            <button class="usdt-button-medium">Medium Button</button>
-            <button class="usdt-button-small">Small Button</button>
-          </div>
-          <div class="usdt-col-one-half">
-            <h3 class="usdt-section-heading">Secondary Buttons</h3>
-            <button class="secondary">Regular Button</button>
-            <button class="usdt-button-big secondary">Big Button</button>
-            <button class="usdt-button-medium secondary">Medium Button</button>
-            <button class="usdt-button-small secondary">Small Button</button>
-          </div>
-        <div class="usdt-col">
-          <h3 class="usdt-section-heading">UI Buttons</h3>
-          <button class="usdt-button-medium action ui-plus-symbol">Action Button</button>
-          <button class="usdt-button-medium action-secondary">Save</button>
-          <button class="usdt-button-medium action-outline">Cancel</button>
-          <button class="ui-button-round" aria-label="Copy"><img src="assets/img/documents.svg" alt="Copy"></button>
-          <button class="ui-button-round primary-action" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit"></button>
-          <button class="ui-button-round delete-action" aria-label="Delete"><img src="assets/img/close.svg" alt="Delete"></button>
-        </div>
-      </div>
-      <div class="usdt-section usdt-row">
-        <ul class="usdt-accordion-bordered usdt-col">
-          <li>
-            <button class="usdt-accordion-button" aria-expanded="false" aria-controls="button1">
-            View Source Code Example
-          </button>
-            <div id="button1" class="usdt-accordion-content" aria-hidden="true">
-              <pre class="language-html">              <code>
-            &lt;!-- Primary --&gt;
-            &lt;button&gt;Regular Button&lt;/button&gt;  
-            &lt;button class="usdt-button-big"&gt;Big Button&lt;/button&gt;
-            &lt;button class="usdt-button-medium"&gt;Medium Button&lt;/button&gt;   
-            &lt;button class="usdt-button-small"&gt;Small Button&lt;/button&gt;
-
-            &lt;!-- Secondary --&gt;
-            &lt;button class="secondary"&gt;Regular Button&lt;/button&gt;  
-            &lt;button class="usdt-button-big secondary"&gt;Big Button&lt;/button&gt;
-            &lt;button class="usdt-button-medium secondary"&gt;Medium Button&lt;/button&gt;    
-            &lt;button class="usdt-button-small secondary"&gt;Small Button&lt;/button&gt;
-
-            &lt;!-- Action buttons --&gt;
-            &lt;button class="usdt-button-medium action ui-plus-symbol"&gt;Action Button&lt;/button&gt;  
-            &lt;button class="usdt-button-medium action-secondary"&gt;Save&lt;/button&gt; 
-            &lt;button class="usdt-button-medium action-outline"&gt;Cancel&lt;/button&gt; 
-
-            &lt;!-- Round UI buttons --&gt;
-            &lt;button class="ui-button-round" aria-label="Copy"&gt;
-              &lt;img src="assets/img/documents.svg" alt="Copy" /&gt;
-            &lt;/button&gt;
-            &lt;button class="ui-button-round primary-action" aria-label="Edit"&gt;
-              &lt;img src="assets/img/pencil.svg" alt="Edit" /&gt;
-            &lt;/button&gt;
-            &lt;button class="ui-button-round delete-action" aria-label="Delete"&gt;
-              &lt;img src="assets/img/close.svg" alt="Delete" /&gt;
-            &lt;/button&gt;
-                </code>
-              </pre>
+          <div class="usdt-row">
+              <div class="usdt-col-md-6">
+                <h3 class="usdt-section-heading">Primary Buttons</h3>
+                <button>Regular Button</button>
+                <button class="usdt-button-big">Big Button</button>
+                <button class="usdt-button-medium">Medium Button</button>
+                <button class="usdt-button-small">Small Button</button>
+              </div>
+              <div class="usdt-col-md-6">
+                <h3 class="usdt-section-heading">Secondary Buttons</h3>
+                <button class="secondary">Regular Button</button>
+                <button class="usdt-button-big secondary">Big Button</button>
+                <button class="usdt-button-medium secondary">Medium Button</button>
+                <button class="usdt-button-small secondary">Small Button</button>
+              </div>
+              <div class="usdt-col">
+                <h3 class="usdt-section-heading">UI Buttons</h3>
+                <button class="usdt-button-medium action ui-plus-symbol">Action Button</button>
+                <button class="usdt-button-medium action-secondary">Save</button>
+                <button class="usdt-button-medium action-outline">Cancel</button>
+                <button class="ui-button-round" aria-label="Copy"><img src="assets/img/documents.svg" alt="Copy"></button>
+                <button class="ui-button-round primary-action" aria-label="Edit"><img src="assets/img/pencil.svg" alt="Edit"></button>
+                <button class="ui-button-round delete-action" aria-label="Delete"><img src="assets/img/close.svg" alt="Delete"></button>
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="usdt-section usdt-row">
+              <div class="usdt-col">
+                <ul class="usdt-accordion-bordered">
+                  <li>
+                    <button class="usdt-accordion-button" aria-expanded="false" aria-controls="button1">
+                    View Source Code Example
+                  </button>
+                    <div id="button1" class="usdt-accordion-content" aria-hidden="true">
+                      <pre class="language-html">              <code>
+  &lt;!-- Primary --&gt;
+  &lt;button&gt;Regular Button&lt;/button&gt;  
+  &lt;button class="usdt-button-big"&gt;Big Button&lt;/button&gt;
+  &lt;button class="usdt-button-medium"&gt;Medium Button&lt;/button&gt;   
+  &lt;button class="usdt-button-small"&gt;Small Button&lt;/button&gt;
+
+  &lt;!-- Secondary --&gt;
+  &lt;button class="secondary"&gt;Regular Button&lt;/button&gt;  
+  &lt;button class="usdt-button-big secondary"&gt;Big Button&lt;/button&gt;
+  &lt;button class="usdt-button-medium secondary"&gt;Medium Button&lt;/button&gt;    
+  &lt;button class="usdt-button-small secondary"&gt;Small Button&lt;/button&gt;
+
+  &lt;!-- Action buttons --&gt;
+  &lt;button class="usdt-button-medium action ui-plus-symbol"&gt;Action Button&lt;/button&gt;  
+  &lt;button class="usdt-button-medium action-secondary"&gt;Save&lt;/button&gt; 
+  &lt;button class="usdt-button-medium action-outline"&gt;Cancel&lt;/button&gt; 
+
+  &lt;!-- Round UI buttons --&gt;
+  &lt;button class="ui-button-round" aria-label="Copy"&gt;
+    &lt;img src="assets/img/documents.svg" alt="Copy" /&gt;
+  &lt;/button&gt;
+  &lt;button class="ui-button-round primary-action" aria-label="Edit"&gt;
+    &lt;img src="assets/img/pencil.svg" alt="Edit" /&gt;
+  &lt;/button&gt;
+  &lt;button class="ui-button-round delete-action" aria-label="Delete"&gt;
+    &lt;img src="assets/img/close.svg" alt="Delete" /&gt;
+  &lt;/button&gt;
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
     </section>
-    <section class="usdt-grid-full usdt-auto-grid">
-      <header class="usdt-row">
-        <div class="usdt-col">
+    <section class="usdt-row">
+      <header class="usdt-col-12">
             <hr />
           <a class="page-anchor" name="Forms"></a>
           <p class="usdt-site-subheading">UI components</p>
           <h2 id="buttons">Form Controls</h2>
-        </div>
       </header>
-      <div class="usdt-row">
-        <div class="usdt-col">
-          <h3 class="usdt-section-heading">Text inputs</h3>
-          <label for="input-type-text">Text input label</label>
-          <input id="input-type-text" name="input-type-text" type="text">
-          <div class="usdt-input-error">
-            <label class="usdt-input-error-label" for="input-error">Text input error</label>
-            <span class="usdt-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
-            <input id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
-          </div>
-          <label for="input-success">Text input success</label>
-          <input class="usdt-input-success" id="input-success" name="input-success" type="text">
+      <div class="usdt-col-lg-4">
+        <h3 class="usdt-section-heading">Text inputs</h3>
+        <label for="input-type-text">Text input label</label>
+        <input id="input-type-text" name="input-type-text" type="text">
+        <div class="usdt-input-error">
+          <label class="usdt-input-error-label" for="input-error">Text input error</label>
+          <span class="usdt-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
+          <input id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
         </div>
-        <div class="usdt-col">
-          <h3 class="usdt-section-heading">Text Area</h3>
-          <label for="input-type-textarea">Text area label</label>
-          <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
-        </div>
-        <div class="usdt-col">
-            <h3 class="usdt-section-heading">Dropdown</h3>
-            <form class="usdt-form">
-              <label for="options">Dropdown label</label>
-              <select name="options" id="options">
-                <option value>- Select -</option>
-                <option value="value1">Option A</option>
-                <option value="value2">Option B</option>
-                <option value="value3">Option C</option>
-              </select>
-            </form>
-            <h3 class="usdt-section-heading">Search</h3>
-            <form class="usdt-search-form">
-              <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
-              <button class="usdt-search-button"><span class="sr-only">Search</span></button>
-            </form>
-        </div>
+        <label for="input-success">Text input success</label>
+        <input class="usdt-input-success" id="input-success" name="input-success" type="text">
       </div>
-    <div class="usdt-section usdt-col">
+      <div class="usdt-col-lg-4">
+        <h3 class="usdt-section-heading">Text Area</h3>
+        <label for="input-type-textarea">Text area label</label>
+        <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+      </div>
+      <div class="usdt-col-lg-4">
+        <h3 class="usdt-section-heading">Dropdown</h3>
+        <form class="usdt-form">
+          <label for="options">Dropdown label</label>
+          <select name="options" id="options">
+            <option value>- Select -</option>
+            <option value="value1">Option A</option>
+            <option value="value2">Option B</option>
+            <option value="value3">Option C</option>
+          </select>
+        </form>
+        <h3 class="usdt-section-heading">Search</h3>
+        <form class="usdt-search-form">
+          <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
+          <button class="usdt-search-button"><span class="sr-only">Search</span></button>
+        </form>
+    </div>
+    <div class="usdt-section usdt-col-12">
       <ul class="usdt-accordion-bordered">
         <li>
           <button class="usdt-accordion-button" aria-expanded="false" aria-controls="forms1">
@@ -219,16 +218,14 @@
       </ul>
     </div>
   </section>
-  <section class="usdt-grid-full usdt-auto-grid">
-    <header class="usdt-row">
-      <div class="usdt-col">
-        <hr />
-        <a class="page-anchor" name="Tables"></a>
-        <p class="usdt-site-subheading">UI components</p>
-        <h2 id="buttons">Tables</h2>
-      </div>
+  <section class="usdt-row">
+    <header class="usdt-col-12">
+      <hr />
+      <a class="page-anchor" name="Tables"></a>
+      <p class="usdt-site-subheading">UI components</p>
+      <h2 id="buttons">Tables</h2>
     </header>
-    <div class="usdt-table-scroll-mobile usdt-col">
+    <div class="usdt-table-scroll-mobile usdt-col-12">
       <h3 class="usdt-section-heading">Table</h3>
       <table class="usdt-table">
         <thead>
@@ -292,8 +289,8 @@
         </tbody>
       </table>
     </div>
-    <div class="usdt-section usdt-row">
-        <ul class="usdt-accordion-bordered usdt-col">
+    <div class="usdt-section usdt-col-12">
+        <ul class="usdt-accordion-bordered">
           <li>
             <button class="usdt-accordion-button" aria-expanded="false" aria-controls="table1">
             View Source Code Example
@@ -301,48 +298,48 @@
             <div id="table1" class="usdt-accordion-content" aria-hidden="true">
               <pre class="language-html">
               <code>
-      &lt;!-- Table --&gt;
-      &lt;div class="usdt-table-scroll-mobile"&gt;
-        &lt;table class="usdt-table"&gt;
-          &lt;thead&gt;
-            &lt;tr&gt;
-              &lt;th scope="col"&gt;Appt. ID&lt;/th&gt;
-              &lt;th scope="col"&gt;Type&lt;/th&gt;
-              &lt;th scope="col"&gt;Start Date&lt;/th&gt;
-              &lt;th scope="col"&gt;End Date&lt;/th&gt;
-              &lt;th scope="col"&gt;Location&lt;/th&gt;
-              &lt;th scope="col"&gt;Room #&lt;/th&gt;
-              &lt;th scope="col"&gt;Treasury PoC&lt;/th&gt;
-              &lt;th scope="col"&gt;Status&lt;/th&gt;
-              &lt;th scope="col"&gt;Visitors&lt;/th&gt;
-            &lt;/tr&gt;
-          &lt;/thead&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
-              &lt;td&gt;Appointment&lt;/td&gt;
-              &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
-              &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
-              &lt;td&gt;Main Building&lt;/td&gt;
-              &lt;td&gt;1234567890&lt;/td&gt;
-              &lt;td&gt;Alexander Hamilton&lt;/td&gt;
-              &lt;td&gt;Active&lt;/td&gt;
-              &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-              &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
-              &lt;td&gt;Appointment&lt;/td&gt;
-              &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
-              &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
-              &lt;td&gt;Main Building&lt;/td&gt;
-              &lt;td&gt;1234567890&lt;/td&gt;
-              &lt;td&gt;Alexander Hamilton&lt;/td&gt;
-              &lt;td&gt;Active&lt;/td&gt;
-              &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/div&gt;
+  &lt;!-- Table --&gt;
+  &lt;div class="usdt-table-scroll-mobile"&gt;
+    &lt;table class="usdt-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope="col"&gt;Appt. ID&lt;/th&gt;
+          &lt;th scope="col"&gt;Type&lt;/th&gt;
+          &lt;th scope="col"&gt;Start Date&lt;/th&gt;
+          &lt;th scope="col"&gt;End Date&lt;/th&gt;
+          &lt;th scope="col"&gt;Location&lt;/th&gt;
+          &lt;th scope="col"&gt;Room #&lt;/th&gt;
+          &lt;th scope="col"&gt;Treasury PoC&lt;/th&gt;
+          &lt;th scope="col"&gt;Status&lt;/th&gt;
+          &lt;th scope="col"&gt;Visitors&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Appointment&lt;/td&gt;
+          &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
+          &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
+          &lt;td&gt;Main Building&lt;/td&gt;
+          &lt;td&gt;1234567890&lt;/td&gt;
+          &lt;td&gt;Alexander Hamilton&lt;/td&gt;
+          &lt;td&gt;Active&lt;/td&gt;
+          &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope="row"&gt;&lt;a href="#"&gt;0034&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Appointment&lt;/td&gt;
+          &lt;td&gt;11/15/2018 2:45 PM&lt;/td&gt;
+          &lt;td&gt;11/16/2018 2:45 PM&lt;/td&gt;
+          &lt;td&gt;Main Building&lt;/td&gt;
+          &lt;td&gt;1234567890&lt;/td&gt;
+          &lt;td&gt;Alexander Hamilton&lt;/td&gt;
+          &lt;td&gt;Active&lt;/td&gt;
+          &lt;td&gt;&lt;a href="#"&gt;88&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
               </code>
             </pre>
             </div>
@@ -351,17 +348,14 @@
       </div>
   </section>
    
-    <section class="usdt-grid-full usdt-auto-grid">
-      <header class="usdt-row">
-        <div class="usdt-col">
-          <hr />
-          <a class="page-anchor" name="Nav"></a>
-          <p class="usdt-site-subheading">UI components</p>
-          <h2 id="buttons">Header &amp; Navigation</h2>
-        </div>
+    <section class="usdt-row">
+      <header class="usdt-col-12">
+        <hr />
+        <a class="page-anchor" name="Nav"></a>
+        <p class="usdt-site-subheading">UI components</p>
+        <h2 id="buttons">Header &amp; Navigation</h2>
       </header>
-      <div class="usdt-row">
-        <div class="usdt-col">
+      <div class="usdt-col-12">
         <h3 class="usdt-section-heading">Header with sub-navigation</h3>
         <header class="usdt-header">
           <div class="usdt-logo">
@@ -384,9 +378,8 @@
           </nav>
         </div>
       </div>
-    </div>
-    <div class="usdt-section usdt-row">
-        <ul class="usdt-accordion-bordered usdt-col">
+    <div class="usdt-section usdt-col-12">
+        <ul class="usdt-accordion-bordered">
           <li>
             <button class="usdt-accordion-button" aria-expanded="false" aria-controls="nav1">
             View Source Code Example
@@ -423,58 +416,55 @@
         </ul>
       </div>
     </section>
-    <section class="usdt-grid-full usdt-auto-grid">
-      <header class="usdt-row">
-        <div class="usdt-col">
+    <section class="usdt-row">
+      <header class="usdt-col-12">
           <hr/>
           <a class="page-anchor" name="Grid"></a>
           <p class="usdt-site-subheading">UI components</p>
           <h2 id="buttons">Grid Layout</h2>
-          <p>The USDT Grid Layout is based on the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox model</a> and doesn't use floats. For easy page layouts, you can use the <code>usdt-auto-grid</code> class to automatically handle the width for each column.</p>
-          <p>For example, if you want a three column layout and each column to have the same width, you simply place three HTML elements with the class of <code>usdt-col</code> inside a wrapping <code>usdt-auto-grid</code> element to achieve that layout.</p>
-        </div>
+          <p>The USDT Grid Layout is based on the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox model</a> and consists of containers, rows, and columns to create a 12 column grid layout structure.</p> 
+          <p><strong>Please note:</strong></p>
+          <ul>
+            <li>When using this grid layout, content must be placed within columns and only columns may be immediate children of rows.</li>
+            <li>You can nest grid rows, but you must nest them within a column.</li>
+            <li>Containers provide a means to horizontally center and add padding to your page. A grid container (<code>.usdt-grid-container</code>) should be used as the main parent (wrapping) element. There is also a full width container (<code>.usdt-grid-container-fluid</code>) that streches 100% width of the page.</li>
+          </ul>
       </header>
-      <div class="usdt-row">
-        <div class="usdt-col">
+      <div class="usdt-col-12 grid-example">
           <h3 class="usdt-section-heading">Auto Grid Layout</h3>
-          <section class="usdt-grid-full usdt-auto-grid grid-example">
-            <div class="usdt-col">
-              <h2>Auto Grid Column</h2>
-              <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
-            </div>
-            <div class="usdt-col">
-              <h2>Auto Grid Column</h2>
-              <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
-            </div>
-            <div class="usdt-col">
+          <section class="usdt-row">
+              <div class="usdt-col">
                 <h2>Auto Grid Column</h2>
                 <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
               </div>
-            <div class="usdt-col-full">
-                <h2>Auto Grid Column Full</h2>
-                <p>This is an full width grid column. It will take up the entire width of the page and push other auto grid columns down to the next row.</p>
-            </div>
-            <div class="usdt-row">
-                <div class="usdt-col-two-thirds">
-                    <h2>Auto Grid Column Two Thirds</h2>
-                    <p>This is an two thirds width column. It will occupy 2/3 of the row and can be combined with one auto grid column, which automatically resize its width based on the remaining space in the row.</p>
-                  </div>
+              <div class="usdt-col">
+                <h2>Auto Grid Column</h2>
+                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+              </div>
+              <div class="usdt-col">
+                  <h2>Auto Grid Column</h2>
+                  <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+                </div>
+          </section>
+          <section class="usdt-row">
+              <div class="usdt-col">
+                <h2>Auto Grid Column</h2>
+                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+              </div>
+              <div class="usdt-col">
+                <h2>Auto Grid Column</h2>
+                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+              </div>
+              <div class="usdt-col">
+                  <h2>Auto Grid Column</h2>
+                  <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+                </div>
                 <div class="usdt-col">
                     <h2>Auto Grid Column</h2>
                     <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
-                </div>
-            </div>
-            <div class="usdt-row">
-              <div class="usdt-col">
-                <h2>Auto Grid Column</h2>
-                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
-              </div>
-              <div class="usdt-col">
-                <h2>Auto Grid Column</h2>
-                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
-              </div>
-            </div>
-            <div class="usdt-row">
+                  </div>
+          </section>
+          <section class="usdt-row">
               <div class="usdt-col">
                 <h2>Auto Grid Column</h2>
                 <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
@@ -491,12 +481,40 @@
                 <h2>Auto Grid Column</h2>
                 <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
               </div>
-            </div>
+              <div class="usdt-col">
+                <h2>Auto Grid Column</h2>
+                <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+              </div>
+          </section>
+      </div>
+      <div class="usdt-col-12 grid-example">
+          <h3 class="usdt-section-heading">Nested Grid Layout</h3>
+          <section class="usdt-row">
+              <div class="usdt-col-6 text-center">
+                <h2>Grid Column Half Width with Nested Rows and Columns</h2>
+                <div class="usdt-row">
+                    <div class="usdt-col">
+                      <h2>Auto Grid Column</h2>
+                      <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+                    </div>
+                    <div class="usdt-col">
+                      <h2>Auto Grid Column</h2>
+                      <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+                    </div>
+                    <div class="usdt-col">
+                        <h2>Auto Grid Column</h2>
+                        <p>This is an auto grid column. It will automatically resize its width based on the number of columns you add in a row.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="usdt-col-6 text-center">
+                  <h2>Grid Column Half Width</h2>
+                  <p>This is an half size grid column (<code>.usdt-col-6</code>).</p>
+              </div>
         </section>
       </div>
-    </div>
-    <div class="usdt-section usdt-row">
-        <ul class="usdt-accordion-bordered usdt-col">
+    <div class="usdt-section usdt-col-12">
+        <ul class="usdt-accordion-bordered">
             <li>
               <button class="usdt-accordion-button" aria-expanded="false" aria-controls="grid1">
               View Source Code Example
@@ -505,11 +523,26 @@
                 <pre class="language-html">
                 <code>
     &lt;!-- 3 Column Grid Layout Using Auto Grid -->
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-grid-full usdt-auto-grid"</span><span class="nt">&gt;</span>                    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-grid-container"</span><span class="nt">&gt;</span>                    
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>col<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>col<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>col<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    &lt;!-- Nested Grid Layout Using Auto Grid -->
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-grid-container"</span><span class="nt">&gt;</span>                    
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col-6"</span><span class="nt">&gt;</span>
+          &lt;!-- Nested Grid Example -->
+           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-row"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>nested col<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>nested col<span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col"</span><span class="nt">&gt;</span>nested col<span class="nt">&lt;/div&gt;</span>
+           <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usdt-col-6"</span><span class="nt">&gt;</span>col-6<span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
                 </code>
@@ -519,17 +552,16 @@
           </ul>
     </div>
     </section>
-    <section class="usdt-grid-full usdt-auto-grid">
-        <header class="usdt-row">
-          <div class="usdt-col">
-            <hr/>
-            <a class="page-anchor" name="SidebarNav"></a>
-            <p class="usdt-site-subheading">UI components</p>
-            <h2 id="buttons">Side Navigation</h2>
-          </div>
+    <section class="usdt-row">
+        <header class="usdt-col-12">
+          <hr/>
+          <a class="page-anchor" name="SidebarNav"></a>
+          <p class="usdt-site-subheading">UI components</p>
+          <h2 id="buttons">Side Navigation</h2>
         </header>
-        <div class="usdt-row">
-          <aside class="usdt-col-one-fourth">
+        <div class="usdt-col-12">
+          <div class="usdt-row">
+          <aside class="usdt-col-md-3">
             <h3 class="usdt-section-heading">App Side Navigation</h3>
             <ul class="usdt-side-nav">
               <li><a href="#" class="active"><span class="icon-dashboard nav-icon"></span>Dashboards</a></li>
@@ -540,8 +572,9 @@
               <li><a href="#"><span class="icon-check-box nav-icon"></span>Authorizations</a></li>
             </ul>
           </aside>
+          </div>
         </div>
-        <div class="usdt-section usdt-row">
+        <div class="usdt-section usdt-col-12">
             <ul class="usdt-accordion-bordered usdt-col">
                 <li>
                   <button class="usdt-accordion-button" aria-expanded="false" aria-controls="sidenav1">
@@ -551,7 +584,7 @@
                     <pre class="language-html">
                     <code>
         &lt;!-- Side Navigation -->
-        <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"usdt-col-one-fourth"</span><span class="nt">&gt;</span>                    
+        <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"usdt-col-md-3"</span><span class="nt">&gt;</span>                    
           <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usdt-side-nav"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-dashboard nav-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>Dashboards<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-paper nav-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>Reports<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -569,6 +602,183 @@
         </div>
     </section>
   </div>
+  <div class="usdt-grid-container">
+    <div class="usdt-row style-guide">
+        <header class="usdt-col-12">
+            <hr/>
+            <a class="page-anchor" name="UiTemplate"></a>
+            <p class="usdt-site-subheading">UI Template</p>
+            <h2 id="buttons">Form UI Template</h2>
+            <h3 class="usdt-section-heading">TWAVES Form Example</h3>
+          </header>
+    </div>
+    <section class="usdt-section-lg">
+      <div class="usdt-row space-between align-middle">
+        <div class="usdt-col-lg-7">
+          <h1 class="no-margin">New Appointment</h1>
+        </div>
+        <div class="usdt-col-lg-5 text-right">
+          <button class="usdt-button-medium action-secondary">Save</button>
+          <button class="usdt-button-medium action-outline">Cancel</button>
+          <button class="usdt-button-medium">Return</button>
+        </div>
+        <div class="usdt-col-12">
+          <hr class="usdt-section-break" />
+        </div>
+        <div class="usdt-col-12">
+          <div class="usdt-row">
+            <div class="usdt-col-md-4">
+              <label for="appointment-type" class="is-required">Appointment Type</label>
+              <input id="appointment-type" name="appointment-type" type="text">
+              <label for="event-name" class="is-required">Event Name</label>
+              <input id="event-name" name="event-name" type="text">
+              <div class="usdt-row">
+                <div class="usdt-col-md-6">
+                  <label for="start-date">Start Date</label>
+                  <input id="start-date" name="start-date" type="text">
+                </div>
+                <div class="usdt-col-md-6">
+                  <label for="start-time">Start Time</label>
+                  <input id="start-time" name="start-time" type="text">
+                </div>
+              </div>
+              <div class="usdt-row">
+                <div class="usdt-col-md-6">
+                  <label for="end-date">End Date</label>
+                  <input id="end-date" name="end-date" type="text">
+                </div>
+                  <div class="usdt-col-md-6">
+                    <label for="end-time">End Time</label>
+                    <input id="end-time" name="end-time" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="usdt-col-md-4">
+              <label for="location" class="is-required">Location</label>
+              <select id="location" name="location">
+                  <option value>- Select Location -</option>
+                  <option value="main">Main Treasury</option>
+                  <option value="annex">Annex</option>
+                  <option value="other">Other</option>
+                  <option value="ground">Ground</option>
+              </select>
+              <label for="room-number" class="is-required">Room Number</label>
+              <input id="room-number" name="room-number" type="text">
+              <label for="treasury-poc" class="is-required">Treasury PoC</label>
+              <input id="treasury-poc" name="treasury-poc" type="text">
+              <label for="treasury-poc-phone" class="is-required">Treasury PoC Phone</label>
+              <input id="treasury-poc-phone" name="treasury-poc-phone" type="text">
+            </div>
+            <div class="usdt-col-md-4">
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments"></textarea>
+              <div class="usdt-row align-bottom">
+                <div class="usdt-col-md-6">
+                  <label for="status">Status</label>
+                  <h2 class="usdt-font-sans no-margin bold-500">Pending</h2>
+                </div>
+                <div class="usdt-col-md-6 text-right-md">
+                  <label for="appointment-id">Appointment ID</label>
+                  <h2 class="usdt-font-sans no-margin bold-500">000034</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="usdt-section usdt-row style-guide">
+        <ul class="usdt-accordion-bordered usdt-col-12">
+          <li>
+            <button class="usdt-accordion-button" aria-expanded="false" aria-controls="example-1">
+            View Source Code Example
+          </button>
+          <div id="example-1" class="usdt-accordion-content" aria-hidden="true">
+  <pre class="language-html"><code>
+    <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-grid-container"</span>&gt;</span>
+      <span class="nt">&lt;<span class="nt">section</span> <span class="na">class</span>=<span class="s">"usdt-section-lg"</span>&gt;</span>
+        <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-row space-between align-middle"</span>&gt;</span>
+          <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-lg-7"</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">h1</span> <span class="na">class</span>=<span class="s">"no-margin"</span>&gt;</span>New Appointment<span class="nt">&lt;/<span class="nt">h1</span>&gt;</span>
+          <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+          <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-lg-5 text-right"</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">button</span> <span class="na">class</span>=<span class="s">"usdt-button-medium action-secondary"</span>&gt;</span>Save<span class="nt">&lt;/<span class="nt">button</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">button</span> <span class="na">class</span>=<span class="s">"usdt-button-medium action-outline"</span>&gt;</span>Cancel<span class="nt">&lt;/<span class="nt">button</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">button</span> <span class="na">class</span>=<span class="s">"usdt-button-medium"</span>&gt;</span>Return<span class="nt">&lt;/<span class="nt">button</span>&gt;</span>
+          <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+          <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-12"</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">hr</span> <span class="na">class</span>=<span class="s">"usdt-section-break"</span> /&gt;</span>
+          <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+          <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-12"</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-row"</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-4"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"appointment-type"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Appointment Type<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"appointment-type"</span> <span class="na">name</span>=<span class="s">"appointment-type"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"event-name"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Event Name<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"event-name"</span> <span class="na">name</span>=<span class="s">"event-name"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-row"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6"</span>&gt;</span>
+                    <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"start-date"</span>&gt;</span>Start Date<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                    <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"start-date"</span> <span class="na">name</span>=<span class="s">"start-date"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                  <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"start-time"</span>&gt;</span>Start Time<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"start-time"</span> <span class="na">name</span>=<span class="s">"start-time"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+              <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-row"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"end-date"</span>&gt;</span>End Date<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"end-date"</span> <span class="na">name</span>=<span class="s">"end-date"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"end-time"</span>&gt;</span>End Time<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"end-time"</span> <span class="na">name</span>=<span class="s">"end-time"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+                <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+              <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+            <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-4"</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"location"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Location<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">select</span> <span class="na">id</span>=<span class="s">"location"</span> <span class="na">name</span>=<span class="s">"location"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">option</span> <span class="na">value</span>&gt;</span>- Select Location -<span class="nt">&lt;/<span class="nt">option</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">option</span> <span class="na">value</span>=<span class="s">"main"</span>&gt;</span>Main Treasury<span class="nt">&lt;/<span class="nt">option</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">option</span> <span class="na">value</span>=<span class="s">"annex"</span>&gt;</span>Annex<span class="nt">&lt;/<span class="nt">option</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">option</span> <span class="na">value</span>=<span class="s">"other"</span>&gt;</span>Other<span class="nt">&lt;/<span class="nt">option</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">option</span> <span class="na">value</span>=<span class="s">"ground"</span>&gt;</span>Ground<span class="nt">&lt;/<span class="nt">option</span>&gt;</span>
+              <span class="nt">&lt;/<span class="nt">select</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"room-number"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Room Number<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"room-number"</span> <span class="na">name</span>=<span class="s">"room-number"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"treasury-poc"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Treasury PoC<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"treasury-poc"</span> <span class="na">name</span>=<span class="s">"treasury-poc"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"treasury-poc-phone"</span> <span class="na">class</span>=<span class="s">"is-required"</span>&gt;</span>Treasury PoC Phone<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">input</span> <span class="na">id</span>=<span class="s">"treasury-poc-phone"</span> <span class="na">name</span>=<span class="s">"treasury-poc-phone"</span> <span class="na">type</span>=<span class="s">"text"</span>&gt;</span>
+            <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+            <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-4"</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"comments"</span>&gt;</span>Comments<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">textarea</span> <span class="na">id</span>=<span class="s">"comments"</span> <span class="na">name</span>=<span class="s">"comments"</span>&gt;</span><span class="nt">&lt;/<span class="nt">textarea</span>&gt;</span>
+              <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-row align-bottom"</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"status"</span>&gt;</span>Status<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">h2</span> <span class="na">class</span>=<span class="s">"usdt-font-sans no-margin bold-500"</span>&gt;</span>Pending<span class="nt">&lt;/<span class="nt">h2</span>&gt;</span>
+                <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+                <span class="nt">&lt;<span class="nt">div</span> <span class="na">class</span>=<span class="s">"usdt-col-md-6 text-right-md"</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">label</span> <span class="na">for</span>=<span class="s">"appointment-id"</span>&gt;</span>Appointment ID<span class="nt">&lt;/<span class="nt">label</span>&gt;</span>
+                  <span class="nt">&lt;<span class="nt">h2</span> <span class="na">class</span>=<span class="s">"usdt-font-sans no-margin bold-500"</span>&gt;</span>000034<span class="nt">&lt;/<span class="nt">h2</span>&gt;</span>
+                <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+              <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+            <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+          <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+        <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+      <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+    <span class="nt">&lt;/<span class="nt">section</span>&gt;</span>
+  <span class="nt">&lt;/<span class="nt">div</span>&gt;</span>
+  </code></pre>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+
   <!-- Scripts -->
   <script src="scripts/jquery.js"></script>
   <script src="scripts/usdt.js"></script>

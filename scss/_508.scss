@@ -1,5 +1,5 @@
 /*SECTION 508*/
-*:focus,
+*:not(body):not(html):focus,
 .usdt-focus,
 .focus-outline:focus{
   outline: 2px dotted #aeb0b5;

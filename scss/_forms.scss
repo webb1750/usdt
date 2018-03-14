@@ -34,12 +34,13 @@ label {
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
-    appearance:none;
-    padding: .6rem 1rem;
-    background-image: url(../assets/img/down-chevron-primary.svg);
+  appearance:none;
+  padding: .6rem 1rem;
+  background-image: url(../assets/img/down-chevron-primary.svg);
   background-position: right 1rem center;
   background-repeat: no-repeat;
   background-size: 26px 26px; // using pixels to prevent blurry icon in IE11
+  background-color: #fff;
   &::-ms-expand {
     display: none;
   }
@@ -112,4 +113,8 @@ select {
   .usdt-search-input {
     max-width: 380px;
   }
+}
+
+.is-required {
+  color: $color-red;
 }
