@@ -30,6 +30,11 @@ hr {
     font-weight: 700;
     a {
       text-decoration: none;
+      color: $color-gray-dark;
+      &:hover, &:focus {
+        color: $color-primary;
+        text-decoration: underline;
+      }
     }
   }
 }

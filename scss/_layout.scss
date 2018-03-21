@@ -31,7 +31,7 @@
 
 // Hiding elements based on screen size
 .hidden {
-  display: none;
+  display: none !important;
   &-sm {
     @media screen and (max-width: $screen-sm) {
       display:none !important;
