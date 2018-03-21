@@ -61,6 +61,12 @@ select {
     text-transform:none;
   }
 }
+
+[type=checkbox], [type=radio] {
+  padding: 0;
+  width: auto;
+}
+
 .usdt-input-error {
   input,
   textarea,
