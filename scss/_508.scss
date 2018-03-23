@@ -1,5 +1,7 @@
 /*SECTION 508*/
-*:not(body):not(html):focus,
+a:focus,
+input:focus, select:focus, textarea:focus,
+*[type="button"]:focus, button:focus, *[onclick]:focus,
 .usdt-focus,
 .focus-outline:focus{
   outline: 2px dotted #aeb0b5;
