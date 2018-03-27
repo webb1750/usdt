@@ -67,6 +67,10 @@ select {
     background-color: transparent;
     color: $color-cool-blue;
     border-color: $color-cool-blue;
+    border-width: 2px;
+  }
+  &.display-inline {
+    display: inline;
   }
 }
 
