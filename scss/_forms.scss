@@ -60,6 +60,14 @@ select {
   option {
     text-transform:none;
   }
+  &.select-small {
+    padding: 0.3rem .75rem;
+  }
+  &.action-outline {
+    background-color: transparent;
+    color: $color-cool-blue;
+    border-color: $color-cool-blue;
+  }
 }
 
 [type=checkbox], [type=radio] {
