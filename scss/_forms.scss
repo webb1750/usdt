@@ -68,6 +68,9 @@ select {
     color: $color-cool-blue;
     border-color: $color-cool-blue;
     border-width: 2px;
+    option {
+      color: $color-gray-dark;
+    }
     &.usdt-select-triangle {
       background-image: url(../assets/img/down-triangle-cool-blue.svg);
       padding-right: 2.4rem;
