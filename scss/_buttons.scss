@@ -157,6 +157,13 @@ button,
   border-radius: 2rem;
 }
 
+.usdt-button-wide {
+  @media screen and (min-width: $screen-lg) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 // UI buttons
 .ui-button-round {
     -moz-osx-font-smoothing: grayscale;

@@ -294,5 +294,8 @@ hr {
 }
 
 .usdt-login-panel {
-  padding: 3rem 4rem;
+  padding: 1rem 2rem;
+  @media screen and (min-width:$screen-md){
+    padding: 3rem 4rem;
+  }
 }
