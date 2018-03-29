@@ -278,7 +278,17 @@ hr {
   }
 }
 
-.usdt-background-overlay {
+.usdt-background-overlay::before {
+  content:'';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
   background: url('../assets/img/background-blue-phoneglasses.jpg') no-repeat 0 0;
   background-size: cover;
+  z-index: -1;
+}
+
+.usdt-card {
+  background-color: #fff;
 }
