@@ -158,9 +158,9 @@ button,
 }
 
 .usdt-button-wide {
-  @media screen and (min-width: $screen-lg) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  @media screen and (min-width: $screen-md) {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
