@@ -4,14 +4,16 @@
   "description": "Component Library and Style Guide for Treasury web assets",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-less": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-less": "^3.5.0",
+    "gulp-sass": "^3.1.0",
+    "livingcss": "^5.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.2",
     "grunt-svgstore": "^1.0.0",
     "gulp-clean-css": "^3.9.2",
+    "gulp-livingcss": "^3.0.0",
     "gulp-sass": "^3.1.0"
   },
   "scripts": {

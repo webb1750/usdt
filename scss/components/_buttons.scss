@@ -1,3 +1,60 @@
+/**
+ * Use buttons to signal actions. Buttons should use `<button>` tags, but when necessary can be 
+ * used with `<a>` tags by adding the class `usdt-button`.
+ *
+ * @section Buttons
+ * @page Components
+ * @example
+ * <button>Button</button>
+ * <a href="#buttons" class="usdt-button">Link</a>
+ * <button disabled>Disabled</button>
+ * <button class="usdt-button-small">Small</button>
+ * <button class="usdt-button-medium">Medium</button>
+ * <button class="usdt-button-large">Large</button>
+ * <button class="usdt-button-wide">Wide Button</button>
+ */
+
+ /**
+ *
+ * @section Secondary Buttons
+ * @sectionof Buttons
+ * @example
+ * <button class="secondary">Button</button>
+ * <a href="#buttons" class="usdt-button secondary">Link</a>
+ * <button class="secondary" disabled>Disabled</button>
+ * <button class="usdt-button-small secondary">Small</button>
+ * <button class="usdt-button-medium secondary">Medium</button>
+ * <button class="usdt-button-large secondary">Large</button>
+ * <button class="usdt-button-wide secondary">Wide Button</button>
+ */
+
+ /**
+ * Action buttons and icon buttons can be used to help draw attention to more important tasks on a page.
+ *
+ * @section Action & Icon Buttons
+ * @sectionof Buttons
+ * @example
+ * <button class="action">Button</button>
+ * <a href="#buttons" class="usdt-button action">Link</a>
+ * <button class="action" disabled>Disabled</button>
+ * <button class="action"><span class="icon-launch usdt-button-icon"></span>Font Icon</button>
+ * <button class="action"><img src="../assets/img/add.svg" alt="add" class="usdt-button-icon" />SVG Icon</button>
+ */
+
+ /**
+ * Action buttons and icon buttons can be used to help draw attention to more important tasks on a page.
+ *
+ * @section Secondary Action Buttons
+ * @sectionof Buttons
+ * @example
+ * <button class="action-secondary">Button</button>
+ * <a href="#buttons" class="usdt-button action-secondary">Link</a>
+ * <button class="action-secondary" disabled>Disabled</button>
+ * <button class="action-secondary"><span class="icon-launch usdt-button-icon"></span>Font Icon</button>
+ * <button class="action-secondary"><img src="../assets/img/add.svg" alt="add" class="usdt-button-icon" />SVG Icon</button>
+ */
+
+
 /*BUTTONS*/
 .usdt-button,
 .usdt-button-primary,
@@ -53,6 +110,10 @@ button,
       color: $color-primary-darkest;
       border-color: $color-primary-darkest;
     }
+    &:disabled {
+      opacity: 0.5;
+      background-color: white;
+    }
   }
   &.primary-light {
     color: $color-primary;
@@ -79,7 +140,7 @@ button,
     }
   }
   &:disabled {
-    background-color: $color-gray-lighter;
+    opacity: 0.5;
     pointer-events: none;
   }
   &.action {
@@ -140,8 +201,14 @@ button,
     padding-right: 2.2rem;
   }
 }
-
-.usdt-button-big {
+.usdt-button-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: top;
+  display: inline-block;
+}
+.usdt-button-large, .usdt-button-big {
   font-size: 1.45rem;
   padding: 1.2rem 3rem;
   border-radius: 5rem;

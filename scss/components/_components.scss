@@ -10,23 +10,95 @@ hr {
    max-width: 100%;
    height: auto;
  }
+
+/**
+ * Tables show tabular data in columns and rows.
+ *
+ * #### Accessibility:
+ *
+ *  - Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
+ *  - Complex tables are tables with more than two levels of headers. Each header should be given a unique id 
+ * and each data cell should have a headers attribute with each related header cell's id listed.
+ *  - When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+ *
+ * @section Tables
+ * @page Components
+ * @example
+ * <table class="usdt-table">
+ *  <caption>The title of your table goes here</caption>
+ *  <thead>
+ *    <tr>
+ *      <th scope="col">Appt. ID</th>
+ *      <th scope="col">Type</th>
+ *      <th scope="col">Start Date</th>
+ *      <th scope="col">End Date</th>
+ *      <th scope="col">Location</th>
+ *    </tr>
+ *   </thead>
+ *   <tbody>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *  </tbody>
+ * </table>
+ *
+ * @code 
+ * <table class="usdt-table">
+ *  <caption>The title of your table goes here</caption>
+ *  <thead>
+ *    <tr>
+ *      <th scope="col">Appt. ID</th>
+ *      <th scope="col">Type</th>
+ *      <th scope="col">Start Date</th>
+ *      <th scope="col">End Date</th>
+ *      <th scope="col">Location</th>
+ *    </tr>
+ *   </thead>
+ *   <tbody>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *  </tbody>
+ * </table>
+ *
+ */
+
 // Tables
 .usdt-table {
   text-align: left;
   margin: 1em 0;
   width: 100%;
-  tbody tr {
-    background-color: #fff;
-    &:nth-child(odd) {
-      background-color: $color-gray-lightest-lite;
-    }
+
+  caption {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: left;
   }
-  td {
-    padding: .5rem 1rem;
-    font-weight: 400;
-  }
-  th {
-    padding: .5rem 1rem;
+  thead th {
+    padding: .5rem .5rem;
     font-weight: 700;
     a {
       text-decoration: none;
@@ -37,6 +109,20 @@ hr {
       }
     }
   }
+  tbody tr {
+    background-color: #fff;
+    &:nth-child(odd) {
+      background-color: $color-gray-lightest-lite;
+    }
+    th {
+      font-weight: normal;
+      padding: .5rem .5rem;
+    }
+  }
+  td {
+    padding: .5rem .5rem;
+    font-weight: 400;
+  }
 }
 .usdt-table-scroll-mobile {
   @media screen and (max-width: $medium-screen) {
@@ -45,6 +131,32 @@ hr {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+
+
+/**
+ * Accordions are a list of headers that can be clicked to hide or reveal additional content.
+ *
+ * #### Accessibility
+ * - Code header areas in the accordion as `<button>` so that they are usable with both screen readers and the keyboard.
+ * - Buttons should state if they are expanded with `aria-expanded="true"`. The `aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
+ * - Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element's id.
+ * - Each content area will have its `aria-hidden` attribute set to either `true` or `false` by the component, depending on its corresponding button's `aria-expanded` attribute.
+ * 
+ * @section Accordions
+ * @page Components
+ * @example
+ * <ul class="usdt-accordion-bordered">
+ *  <li>
+ *    <button class="usdt-accordion-button" aria-expanded="true" aria-controls="nav1">Accordion Button</button>
+ *    <div id="nav1" class="usdt-accordion-content">My accordion content goes here.</div>
+ *  </li>
+ *  <li>
+ *    <button class="usdt-accordion-button" aria-expanded="false" aria-controls="nav2">Accordion Button 2</button>
+ *    <div id="nav2" class="usdt-accordion-content" aria-hidden="true">My accordion content goes here.</div>
+ *  </li>
+ * </ul>
+ */
 
 // Accordion
 .usdt-accordion,
@@ -298,4 +410,51 @@ hr {
   @media screen and (min-width:$screen-md){
     padding: 3rem 4rem;
   }
+}
+
+.usdt-overview-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin:0;
+  padding:0;
+  
+  &-item {
+    width: calc(50% - 1rem);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .item-icon {
+      width: 100px;
+      height: 100px;
+      margin-right: 1.4rem;
+      flex-shrink: 0;
+    }
+    .item-title {
+      font-size: 2.20rem;
+      line-height: 2.20rem;
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 300;
+      margin-bottom: .875rem;
+      margin-left: -2px;
+      white-space: nowrap;
+    }
+    .list-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin:0;
+        font-size: .875rem;
+        color: $color-gray;
+        line-height: 1.5;
+        max-width: 310px;
+      }
+    }
+  }
+
 }

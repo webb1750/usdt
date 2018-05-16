@@ -1,6 +1,6 @@
-# U.S. Department of the Treasury (USDT) Component Library and Style Guide
+# USDT Design System
 
-The USDT library contains UI components and style information for building websites and applications using the Treasury branding.
+The USDT Design System contains UI components and style information for building websites and applications using the USDT branding.
 
 ## Getting Started
 
@@ -10,12 +10,12 @@ The USDT library contains UI components and style information for building websi
 * assets
 * css
 * scripts
-* index.html
-* app-template.html
+* styleguide
 
 ### Components and Style Guide
 
-To get started, navigate to the index.html page to see a list of styled components and how to implement them in your application or website. There are examples for each component in the style guide along with source code to help you implement it within your project.
+To view the components and styles, navigate to the styleguide home.html page located under the styleguide folder. There are examples for each component in the style guide along with source code to help you implement it within your project.
 
-There is also an app page template (app-template.html) that can be used to help you get started with building an application style layout. 
 
+## Contributing
+Coming soon

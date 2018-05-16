@@ -1,31 +1,4 @@
-// Variables for the USDT Styles
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Source+Sans+Pro:300,400,600,700");
 
-$usdt:                usdt- !default;
-
-$em-base:             10px;
-$base-font-size:      1.7rem !default;
-$small-font-size:     1.4rem !default;
-$lead-font-size:      2rem !default;
-$title-font-size:     5.2rem !default;
-$h1-font-size:        4rem !default;
-$h2-font-size:        3rem !default;
-$h3-font-size:        2rem !default;
-$h4-font-size:        1.7rem !default;
-$h5-font-size:        1.5rem !default;
-$h6-font-size:        1.3rem !default;
-$base-line-height:    1.5 !default;
-$heading-line-height: 1.3 !default;
-$lead-line-height:    1.7 !default;
-
-$helvetica: helvetica, arial, sans-serif;
-$georgia: georgia, serif;
-$font-sans:           'Source Sans Pro', $helvetica !default;
-$font-serif:          'Merriweather', $georgia !default;
-
-// TODO these should be called font-weight-${}
-$font-normal:         400 !default;
-$font-bold:           700 !default;
 
 // Color
 $color-blue:                 #0053a2 !default;
@@ -81,6 +54,7 @@ $color-cool-blue-lighter:    #64A2BD !default;
 $color-cool-blue-lightest:   #dce4ef !default;
 
 $color-purple:               #4c2c92 !default;
+$color-yellow:               #F8E71C !default;
 
 // Functional colors
 $color-primary:              $color-blue !default;
@@ -110,66 +84,53 @@ $color-action-darkest:       $color-green-darkest !default;
 $color-shadow:               rgba(#000, 0.3) !default;
 $color-transparent:          rgba(#000, 0) !default;
 
-// Mobile First Breakpoints
-$small-screen:  481px !default;
-$medium-screen: 600px !default;
-$large-screen:  1201px !default;
+/** 
+ * ## Primary
+ *
+ * @section Colors
+ * @page Style
+ * @example 
+ * <div class="wrapped-list usdt-row">
+ *  <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#0053a2"></div>
+ *      <p>#0053a2</p>
+ *      <small><code>$color-primary</code></small>
+ *   </div>
+ *   <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#083c6f"></div>
+ *      <p>#083c6f</p>
+ *      <small><code>$color-primary-dark</code></small>
+ *   </div>
+ *   <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#092645"></div>
+ *      <p>#092645</p>
+ *      <small><code>$color-primary-darkest</code></small>
+ *   </div>
+ * </div>
+ * @hideCode
+ */ 
 
-$screen-sm:         36rem !default;
-$screen-md:         48rem !default;
-$screen-lg:         62rem !default;
-$screen-xl:         75rem !default;
-$screen-xxl:        90rem !default;
-
-// Grid column counts by screen size
-$grid-columns-small: 1 !default;
-$grid-columns-medium: 6 !default;
-$grid-columns-large: 12 !default;
-
-// @media single-keyword helpers
-$small: new-breakpoint(min-width $small-screen $grid-columns-small) !default;
-$medium: new-breakpoint(min-width $medium-screen $grid-columns-medium) !default;
-$large: new-breakpoint(min-width $large-screen $grid-columns-large) !default;
-
-// Relative font and image file paths
-$font-path:   '../fonts' !default;
-$image-path:  '../img' !default;
-
-// Set $asset-pipeline to true if you're using the Rails Asset Pipeline
-$asset-pipeline:      false !default;
-
-// Magic Numbers
-$text-max-width:                66ch !default; // 66 characters per line
-$lead-max-width:                77rem !default;
-$site-max-width:                1040px !default;
-$site-margins:                  3rem !default;
-$site-margins-mobile:           1.5rem !default;
-$article-max-width:             600px !default;
-$input-max-width:               46rem !default;
-$label-border-radius:           2px !default;
-$checkbox-border-radius:        2px !default;
-$border-radius:                 3px !default;
-$button-border-radius:          5px !default;
-$box-shadow:                    0 0 2px $color-shadow !default;
-$focus-outline:                 2px dotted $color-gray-light !default;
-$focus-spacing:                 3px !default;
-$nav-width:                     951px !default;
-$header-height:                 72px !default;
-$sub-header-height:             48px !default;
-$total-header-height:           $header-height + $sub-header-height;
-$sidenav-current-border-width:  0.4rem !default; // must be in rem for math
-
-// 44 x 44 pixels hit target following Apple iOS Human Interface
-// Guidelines
-$hit-area: 4.4rem !default;
-
-$spacing-x-small: 0.5rem;
-$spacing-small: 1rem;
-$spacing-md-small: 1.5rem;
-$spacing-medium: 2rem;
-$spacing-large: 3rem;
-
-// Shadows
-@mixin box-shadow {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17);
-  }
+/**
+ *
+ * @section Secondary
+ * @sectionof Colors
+ * @example
+ * <div class="wrapped-list usdt-row">
+ *  <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#2d8fe8"></div>
+ *      <p>#2d8fe8</p>
+ *      <small><code>$color-cool-blue</code></small>
+ *   </div>
+ *   <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#e31c3d"></div>
+ *      <p>#e31c3d</p>
+ *      <small><code>$color-red</code></small>
+ *   </div>
+ *   <div class="color-swatch usdt-col-3">
+ *      <div class="color-swatch-example" style="background-color:#2e8540"></div>
+ *      <p>#2e8540</p>
+ *      <small><code>$color-green</code></small>
+ *   </div>
+ * </div>
+ * @hideCode
+ */ 

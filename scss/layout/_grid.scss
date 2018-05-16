@@ -1,5 +1,37 @@
 /*GRID*/
 
+/**
+ * This 12-column, responsive grid provides structure for website content.
+ *
+ * ### Implementation
+ * To use the grid, wrap each grid row in a `<div>` with the `usdt-row` class. 
+ * To use a grid without padding on the right and left, use the `usdt-grid-container-fluid` class instead.
+ * All grid items are full-width at small screen sizes.
+ *
+ * @section Grids
+ * @page Style
+ * 
+ * @example
+ * <div class="style-guide">
+ * <div class="usdt-grid-container grid-example">
+ *  <div class="usdt-row">
+ *    <div class="usdt-col">Column</div>
+ *    <div class="usdt-col">Column</div>
+ *    <div class="usdt-col">Column</div>
+ *  </div>
+ * </div>
+ * </div>
+ * 
+ * @code 
+ * <div class="usdt-grid-container">
+ *  <div class="usdt-row">
+ *    <div class="usdt-col">Column</div>
+ *    <div class="usdt-col">Column</div>
+ *    <div class="usdt-col">Column</div>
+ *  </div>
+ * </div>
+ */
+
 $grid-columns : 12;
 $grid-gutter: 15px;
 
@@ -13,6 +45,10 @@ $grid-gutter: 15px;
   &-lg {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  &-xlg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 

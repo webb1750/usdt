@@ -1,0 +1,34 @@
+
+// Hiding elements based on screen size
+.hidden {
+  display: none !important;
+  &-sm {
+    @media screen and (max-width: $screen-sm) {
+      display:none !important;
+    }
+  }
+  &-md-down {
+    @media screen and (max-width: $screen-md) {
+      display:none !important;
+    }
+  }
+  &-lg-down {
+    @media screen and (max-width: $screen-lg) {
+      display:none !important;
+    }
+  }
+  &-xl-down {
+    @media screen and (max-width: $screen-xl) {
+      display:none !important;
+    }
+  }
+}
+
+.no-margin {
+  margin:0 0 0 0;
+}
+
+.display-inline {
+  display: inline;
+  width: auto;
+}
