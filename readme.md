@@ -14,7 +14,7 @@ The USDT Design System contains UI components and style information for building
 
 ### Components and Style Guide
 
-To view the components and styles, navigate to the style guide home page located under the 'styleguide/home.html'. There are examples for each component along with source code to help you implement it within your project.
+To view the components and styles, navigate to the style guide home page located under the `styleguide/home.html`. There are examples for each component along with source code to help you implement it within your project.
 
 
 ## Contributing
