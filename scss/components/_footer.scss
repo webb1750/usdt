@@ -1,0 +1,66 @@
+
+/* Footer */
+
+/**
+ * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+ *
+ * ## Secondary Footer
+ * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
+ * from the content.
+ *
+ * @section Footers
+ * @page Components
+ * @example
+ * <!-- Secondary footer example -->
+ * <section class="usdt-grid-container-fluid usdt-secondary-footer">
+ *  <nav class="usdt-row">
+ *      <ul class="usdt-col footer-links">
+ *          <li><a href="#footers">Privacy Policy</a></li>
+ *          <li><a href="#footers">Google Policy</a></li>
+ *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *      </ul>
+ *  </nav>
+ * </section>
+ * <!-- Secondary footer with top margin (push) example -->
+ * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
+ *  <nav class="usdt-row">
+ *      <ul class="usdt-col footer-links">
+ *          <li><a href="#footers">Privacy Policy</a></li>
+ *          <li><a href="#footers">Google Policy</a></li>
+ *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *      </ul>
+ *  </nav>
+ * </section>
+ */
+
+.usdt-footer {
+
+}
+
+.usdt-secondary-footer {
+    background-color: $color-blue-darkest-2;
+    padding: 2rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+   
+    &.footer-push {
+        margin-top: 2rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            margin-right: 0.9rem;
+        &:last-child {
+            margin-right: 0;
+            }
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+            }
+        }
+    }
+}

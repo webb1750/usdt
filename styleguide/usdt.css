@@ -2189,6 +2189,59 @@ select {
 .is-required {
   color: #e31c3d; }
 
+/* Footer */
+/**
+ * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+ *
+ * ## Secondary Footer
+ * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
+ * from the content.
+ *
+ * @section Footers
+ * @page Components
+ * @example
+ * <!-- Secondary footer example -->
+ * <section class="usdt-grid-container-fluid usdt-secondary-footer">
+ *  <nav class="usdt-row">
+ *      <ul class="usdt-col footer-links">
+ *          <li><a href="#footers">Privacy Policy</a></li>
+ *          <li><a href="#footers">Google Policy</a></li>
+ *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *      </ul>
+ *  </nav>
+ * </section>
+ * <!-- Secondary footer with top margin (push) example -->
+ * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
+ *  <nav class="usdt-row">
+ *      <ul class="usdt-col footer-links">
+ *          <li><a href="#footers">Privacy Policy</a></li>
+ *          <li><a href="#footers">Google Policy</a></li>
+ *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *      </ul>
+ *  </nav>
+ * </section>
+ */
+.usdt-secondary-footer {
+  background-color: #0d1925;
+  padding: 2rem 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.02rem; }
+  .usdt-secondary-footer.footer-push {
+    margin-top: 2rem; }
+  .usdt-secondary-footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .usdt-secondary-footer .footer-links li {
+      list-style: none;
+      margin-right: 0.9rem; }
+      .usdt-secondary-footer .footer-links li:last-child {
+        margin-right: 0; }
+      .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
+        color: white;
+        text-decoration: none; }
+
 .usdt-header {
   background: #0053a2;
   border-bottom: none;
@@ -2221,6 +2274,15 @@ select {
     background: url(../assets/img/logo.svg) 0px center no-repeat;
     background-size: 44px 44px;
     padding-left: 3.25rem; }
+  .usdt-header .usdt-logo.no-bg-logo a {
+    background-image: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem; }
+    .usdt-header .usdt-logo.no-bg-logo a img {
+      vertical-align: middle;
+      margin-right: 0.8rem; }
   .usdt-header .login-section {
     display: flex;
     align-items: center; }

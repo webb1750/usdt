@@ -24,6 +24,21 @@
     background-size: 44px 44px; // using pixels to fix blurry svg in IE11
     padding-left: 3.25rem;
   }
+  .usdt-logo {
+    &.no-bg-logo a {
+        background-image: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+
+        img {
+          vertical-align: middle;
+          margin-right: 0.8rem;
+        }
+    }
+  }
+
   .login-section {
     display: flex;
     align-items: center;

@@ -1,3 +1,6 @@
 node_modules/*
+!node_modules/livingcss/template/*
+!node_modules/livingcss/assets/*
+!node_modules/livingcss/index.js
 .vscode/*
 node_modules/.bin/gulp

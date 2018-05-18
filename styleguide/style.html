@@ -147,7 +147,7 @@
     .livingcss__section-description a:visited,
     .livingcss__footer a,
     .livingcss__footer a:visited {
-      color: #1976d2;
+      color: #0053a2;
       text-decoration: none; }
     .livingcss__header a:hover,
     .livingcss__header a:active,
@@ -185,7 +185,7 @@
     position: relative; }
   
   .livingcss .livingcss__header-title-container {
-    background: #2196F3;
+    background: #0053a2;
     padding: 0.8125rem 0; }
   
   .livingcss .livingcss__header-title {
@@ -205,7 +205,7 @@
   .livingcss a.livingcss__nav-link--active {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #2196F3;
+    background: #0053a2;
     color: white;
     text-decoration: none; }
   
@@ -218,7 +218,7 @@
     font-size: 1rem;
     background: transparent;
     cursor: pointer;
-    background: #1976D2;
+    background: #0053a2;
     padding: 0.40625rem 0.8125rem; }
   
   /*
@@ -278,7 +278,7 @@
    * FOOTER
    */
   .livingcss .livingcss__footer {
-    background: #1976D2;
+    background: #0053a2;
     bottom: 0;
     color: #727272;
     left: 0;
@@ -10259,6 +10259,59 @@
   .is-required {
     color: #e31c3d; }
   
+  /* Footer */
+  /**
+   * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+   *
+   * ## Secondary Footer
+   * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
+   * from the content.
+   *
+   * @section Footers
+   * @page Components
+   * @example
+   * <!-- Secondary footer example -->
+   * <section class="usdt-grid-container-fluid usdt-secondary-footer">
+   *  <nav class="usdt-row">
+   *      <ul class="usdt-col footer-links">
+   *          <li><a href="#footers">Privacy Policy</a></li>
+   *          <li><a href="#footers">Google Policy</a></li>
+   *          <li><a href="#footers">Site Policies and Notices</a></li>
+   *      </ul>
+   *  </nav>
+   * </section>
+   * <!-- Secondary footer with top margin (push) example -->
+   * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
+   *  <nav class="usdt-row">
+   *      <ul class="usdt-col footer-links">
+   *          <li><a href="#footers">Privacy Policy</a></li>
+   *          <li><a href="#footers">Google Policy</a></li>
+   *          <li><a href="#footers">Site Policies and Notices</a></li>
+   *      </ul>
+   *  </nav>
+   * </section>
+   */
+  .usdt-secondary-footer {
+    background-color: #0d1925;
+    padding: 2rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem; }
+    .usdt-secondary-footer.footer-push {
+      margin-top: 2rem; }
+    .usdt-secondary-footer .footer-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .usdt-secondary-footer .footer-links li {
+        list-style: none;
+        margin-right: 0.9rem; }
+        .usdt-secondary-footer .footer-links li:last-child {
+          margin-right: 0; }
+        .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
+          color: white;
+          text-decoration: none; }
+  
   .usdt-header {
     background: #0053a2;
     border-bottom: none;
@@ -10291,6 +10344,15 @@
       background: url(../assets/img/logo.svg) 0px center no-repeat;
       background-size: 44px 44px;
       padding-left: 3.25rem; }
+    .usdt-header .usdt-logo.no-bg-logo a {
+      background-image: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem; }
+      .usdt-header .usdt-logo.no-bg-logo a img {
+        vertical-align: middle;
+        margin-right: 0.8rem; }
     .usdt-header .login-section {
       display: flex;
       align-items: center; }
@@ -10561,9 +10623,6 @@
         font-weight: 400;
         text-decoration: none;
         cursor: pointer; }
-  
-  .usdt-styleguide-content {
-    margin-left: 13rem; }
   
   .usdt-styleguide-logo {
     font-size: 3.18rem;
