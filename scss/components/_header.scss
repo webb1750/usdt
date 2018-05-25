@@ -1,3 +1,23 @@
+/* Header */
+
+/**
+ * Headers help users identify where they are and provide a quick, organized way  to reach 
+ * the main sections of a website. Our headers include branding to identify the site.
+ *
+ *
+ * @section Headers
+ * @page Components
+ * @example
+ * <!-- Header example -->
+ * <div class="usdt-header usdt-grid-container-fluid">
+ *  <div class="usdt-row space-between align-middle">
+ *    <div class="usdt-logo no-bg-logo usdt-col">
+ *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="45" width="45">U.S. DEPARTMENT OF THE TREASURY</a>
+ *    </div>
+ *   </div>
+ * </div>
+ */
+
 .usdt-header {
   background: $color-primary;
   border-bottom: none;
@@ -30,7 +50,10 @@
         padding: 0;
         display: flex;
         align-items: center;
-        font-size: 1.7rem;
+        font-size: 1rem;
+        @media screen and (min-width: $screen-sm){
+          font-size: 1.7rem;
+        }
 
         img {
           vertical-align: middle;
@@ -83,3 +106,5 @@
   @include header-padding;
   @include flex($align-middle: true, $space-between: true, $no-wrap: false);
 }
+
+

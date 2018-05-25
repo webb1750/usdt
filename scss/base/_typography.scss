@@ -136,74 +136,96 @@ h6{
 }
 .text-left {
   text-align: left;
+  justify-content: flex-start;
   @media screen and (min-width: $screen-sm){
     &-sm{
       text-align: left;
+      justify-content: flex-start;
     }
   }
   @media screen and (min-width: $screen-md){
     &-md{
       text-align: left;
+      justify-content: flex-start;
     }
   }
   @media screen and (min-width: $screen-lg){
     &-lg{
       text-align: left;
+      justify-content: flex-start;
     }
   }
   @media screen and (min-width: $screen-xl){
     &-xl{
       text-align: left;
+      justify-content: flex-start;
     }
   }
 }
 .text-center {
   text-align: center;
+  justify-content: center;
   @media screen and (min-width: $screen-sm){
     &-sm{
       text-align: center;
+      justify-content: center;
     }
   }
   @media screen and (min-width: $screen-md){
     &-md{
       text-align: center;
+      justify-content: center;
     }
   }
   @media screen and (min-width: $screen-lg){
     &-lg{
       text-align: center;
+      justify-content: center;
     }
   }
   @media screen and (min-width: $screen-xl){
     &-xl{
       text-align: center;
+      justify-content: center;
     }
   }
 }
 .text-right {
   text-align: right;
+  justify-content: flex-end;
   @media screen and (min-width: $screen-sm){
     &-sm{
       text-align: right;
+      justify-content: flex-end;
     }
   }
   @media screen and (min-width: $screen-md){
     &-md{
       text-align: right;
+      justify-content: flex-end;
     }
   }
   @media screen and (min-width: $screen-lg){
     &-lg{
       text-align: right;
+      justify-content: flex-end;
     }
   }
   @media screen and (min-width: $screen-xl){
     &-xl{
       text-align: right;
+      justify-content: flex-end;
     }
   }
 }
 
 .text-white {
   color: #fff;
+}
+
+.usdt-unstyled-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
 }

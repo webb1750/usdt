@@ -1,3 +1,125 @@
+/* Forms */
+
+/** 
+ * Form controls allow users to enter information into a page.
+ *
+ * ## Text input
+ * @section Form Controls
+ * @page Components
+ * 
+ * @example
+ * <!-- Text Input -->
+ * <label for="input-type-text">Text input label</label>
+ * <input id="input-type-text" name="input-type-text" type="text">
+ *
+ * <!-- Text Input with error -->
+ * <div class="usdt-input-error">
+ *  <label class="usdt-input-error-label" for="input-error">Text input error</label>
+ *  <span class="usdt-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
+ *  <input id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
+ * </div>
+ *
+ */
+
+ /**
+  *
+  * @section Text Area
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Text area -->
+  * <label for="input-type-textarea">Text area label</label>
+  * <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+  *
+  */
+
+  /**
+  *
+  * @section Dropdown (Select)
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Dropdown -->
+  * <form class="usdt-form">
+  *   <label for="options">Dropdown label</label>
+  *   <select id="options" name="options">
+  *     <option value>- Select -</option>
+  *     <option value="value1">Option A</option>
+  *     <option value="value2">Option B</option> 
+  *     <option value="value3">Option C</option> 
+  *   </select>
+  * </form>
+  *
+  */
+
+ /**
+  *
+  * @section Search
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Search -->
+  * <form class="usdt-search-form">
+  *  <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
+  *  <button class="usdt-search-button"><span class="sr-only">Search</span></button>
+  * </form>
+  *
+  */
+
+/**
+  *
+  * @section Checkboxes
+  * @sectionof Form Controls
+  *
+  * @example 
+  * <!-- Checkboxes button -->
+  * <fieldset class="usdt-fieldset-inputs">
+  *   <legend class="sr-only">Historical Figures 1</legend>
+  *   <ul class="usdt-unstyled-list">
+  *     <li>
+  *       <input id="washington" type="checkbox" checked name="historical-figures-1" value="washington">
+  *       <label for="washington">Booker T. Washington</label>
+  *     </li>
+  *     <li>
+  *       <input id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+  *       <label for="douglass">Frederick Douglass</label>
+  *     </li>
+  *     <li>
+  *       <input id="truth" type="checkbox" name="historical-figures-1" value="truth" disabled>
+  *       <label for="truth">Sojourner Truth</label>
+  *     </li>
+  *   </ul>
+  * </fieldset>
+  *
+  */
+
+  /**
+  *
+  * @section Radio buttons
+  * @sectionof Form Controls
+  *
+  * @example 
+  * <!-- Radio button -->
+  * <fieldset class="usdt-fieldset-inputs">
+  *   <legend class="sr-only">Historical Figures 2</legend>
+  *   <ul class="usdt-unstyled-list">
+  *     <li>
+  *       <input id="stanton" type="radio" checked name="historical-figures-2" value="stanton">
+  *       <label for="stanton">Elizabeth Cady Stanton</label>
+  *     </li>
+  *     <li>
+  *       <input id="anthony" type="radio" name="historical-figures-2" value="anthony">
+  *       <label for="anthony">Susan B. Anthony</label>
+  *     </li>
+  *     <li>
+  *       <input id="tubman" type="radio" name="historical-figures-2" value="tubman">
+  *       <label for="tubman">Harriet Tubman</label>
+  *     </li>
+  *   </ul>
+  * </fieldset>
+  *
+  */
+
 input,
 textarea,
 select {
@@ -34,6 +156,10 @@ textarea {
 label {
   display: block;
   margin-top: 1.5rem;
+}
+
+.usdt-fieldset-inputs label {
+  margin-top: 1rem;
 }
 
 select {
@@ -147,4 +273,66 @@ select {
 
 .is-required {
   color: $color-red;
+}
+
+/* Radio Buttons */
+[type=checkbox], [type=radio] {
+  position: absolute;
+  left: -999em;
+
+  + label {
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+
+    &::before {
+      background: #ffffff;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px $color-gray-medium;
+      content: '\a0';
+      display: inline-block;
+      height: 1.25rem;
+      line-height: 1.25rem;
+      margin-right: 0.6em;
+      text-indent: 0.15em;
+      vertical-align: middle\0;
+      width: 1.25rem;
+    }
+  }
+
+}
+
+
+[type=radio] + label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px $color-gray-medium;
+  height: 1rem;
+  line-height: 1rem;
+  margin-right: 0.75em;
+  width: 1rem;
+}
+
+[type=checkbox]:checked + label::before, [type=radio]:checked + label::before {
+  background-color: $color-blue;
+  box-shadow: 0 0 0 1px $color-blue;
+}
+
+[type=checkbox]:checked + label::before, [type=checkbox]:checked:disabled + label::before {
+  background-image: url(../assets/img/checkmark.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px $color-blue;
+}
+
+[type=checkbox]:disabled + label::before, [type=radio]:disabled + label::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed;
+}
+
+[type=checkbox]:disabled + label {
+  color: $color-gray-light;
 }

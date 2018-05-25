@@ -555,52 +555,73 @@ h6 {
   font-weight: 900; }
 
 .text-left {
-  text-align: left; }
+  text-align: left;
+  justify-content: flex-start; }
   @media screen and (min-width: 36rem) {
     .text-left-sm {
-      text-align: left; } }
+      text-align: left;
+      justify-content: flex-start; } }
   @media screen and (min-width: 48rem) {
     .text-left-md {
-      text-align: left; } }
+      text-align: left;
+      justify-content: flex-start; } }
   @media screen and (min-width: 62rem) {
     .text-left-lg {
-      text-align: left; } }
+      text-align: left;
+      justify-content: flex-start; } }
   @media screen and (min-width: 75rem) {
     .text-left-xl {
-      text-align: left; } }
+      text-align: left;
+      justify-content: flex-start; } }
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
   @media screen and (min-width: 36rem) {
     .text-center-sm {
-      text-align: center; } }
+      text-align: center;
+      justify-content: center; } }
   @media screen and (min-width: 48rem) {
     .text-center-md {
-      text-align: center; } }
+      text-align: center;
+      justify-content: center; } }
   @media screen and (min-width: 62rem) {
     .text-center-lg {
-      text-align: center; } }
+      text-align: center;
+      justify-content: center; } }
   @media screen and (min-width: 75rem) {
     .text-center-xl {
-      text-align: center; } }
+      text-align: center;
+      justify-content: center; } }
 
 .text-right {
-  text-align: right; }
+  text-align: right;
+  justify-content: flex-end; }
   @media screen and (min-width: 36rem) {
     .text-right-sm {
-      text-align: right; } }
+      text-align: right;
+      justify-content: flex-end; } }
   @media screen and (min-width: 48rem) {
     .text-right-md {
-      text-align: right; } }
+      text-align: right;
+      justify-content: flex-end; } }
   @media screen and (min-width: 62rem) {
     .text-right-lg {
-      text-align: right; } }
+      text-align: right;
+      justify-content: flex-end; } }
   @media screen and (min-width: 75rem) {
     .text-right-xl {
-      text-align: right; } }
+      text-align: right;
+      justify-content: flex-end; } }
 
 .text-white {
   color: #fff; }
+
+.usdt-unstyled-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0; }
 
 .hidden {
   display: none !important; }
@@ -2056,6 +2077,121 @@ button,
   .usdt-icon-button .launch {
     color: #2e8540; }
 
+/* Forms */
+/** 
+ * Form controls allow users to enter information into a page.
+ *
+ * ## Text input
+ * @section Form Controls
+ * @page Components
+ * 
+ * @example
+ * <!-- Text Input -->
+ * <label for="input-type-text">Text input label</label>
+ * <input id="input-type-text" name="input-type-text" type="text">
+ *
+ * <!-- Text Input with error -->
+ * <div class="usdt-input-error">
+ *  <label class="usdt-input-error-label" for="input-error">Text input error</label>
+ *  <span class="usdt-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
+ *  <input id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
+ * </div>
+ *
+ */
+/**
+  *
+  * @section Text Area
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Text area -->
+  * <label for="input-type-textarea">Text area label</label>
+  * <textarea id="input-type-textarea" name="input-type-textarea"></textarea>
+  *
+  */
+/**
+  *
+  * @section Dropdown (Select)
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Dropdown -->
+  * <form class="usdt-form">
+  *   <label for="options">Dropdown label</label>
+  *   <select id="options" name="options">
+  *     <option value>- Select -</option>
+  *     <option value="value1">Option A</option>
+  *     <option value="value2">Option B</option> 
+  *     <option value="value3">Option C</option> 
+  *   </select>
+  * </form>
+  *
+  */
+/**
+  *
+  * @section Search
+  * @sectionof Form Controls
+  *
+  * @example
+  * <!-- Search -->
+  * <form class="usdt-search-form">
+  *  <input id="search" name="search" type="text" placeholder="Search..." class="usdt-search-input">
+  *  <button class="usdt-search-button"><span class="sr-only">Search</span></button>
+  * </form>
+  *
+  */
+/**
+  *
+  * @section Checkboxes
+  * @sectionof Form Controls
+  *
+  * @example 
+  * <!-- Checkboxes button -->
+  * <fieldset class="usdt-fieldset-inputs">
+  *   <legend class="sr-only">Historical Figures 1</legend>
+  *   <ul class="usdt-unstyled-list">
+  *     <li>
+  *       <input id="washington" type="checkbox" checked name="historical-figures-1" value="washington">
+  *       <label for="washington">Booker T. Washington</label>
+  *     </li>
+  *     <li>
+  *       <input id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+  *       <label for="douglass">Frederick Douglass</label>
+  *     </li>
+  *     <li>
+  *       <input id="truth" type="checkbox" name="historical-figures-1" value="truth" disabled>
+  *       <label for="truth">Sojourner Truth</label>
+  *     </li>
+  *   </ul>
+  * </fieldset>
+  *
+  */
+/**
+  *
+  * @section Radio buttons
+  * @sectionof Form Controls
+  *
+  * @example 
+  * <!-- Radio button -->
+  * <fieldset class="usdt-fieldset-inputs">
+  *   <legend class="sr-only">Historical Figures 2</legend>
+  *   <ul class="usdt-unstyled-list">
+  *     <li>
+  *       <input id="stanton" type="radio" checked name="historical-figures-2" value="stanton">
+  *       <label for="stanton">Elizabeth Cady Stanton</label>
+  *     </li>
+  *     <li>
+  *       <input id="anthony" type="radio" name="historical-figures-2" value="anthony">
+  *       <label for="anthony">Susan B. Anthony</label>
+  *     </li>
+  *     <li>
+  *       <input id="tubman" type="radio" name="historical-figures-2" value="tubman">
+  *       <label for="tubman">Harriet Tubman</label>
+  *     </li>
+  *   </ul>
+  * </fieldset>
+  *
+  */
 input,
 textarea,
 select {
@@ -2093,6 +2229,9 @@ textarea {
 label {
   display: block;
   margin-top: 1.5rem; }
+
+.usdt-fieldset-inputs label {
+  margin-top: 1rem; }
 
 select {
   -moz-appearance: none;
@@ -2189,6 +2328,55 @@ select {
 .is-required {
   color: #e31c3d; }
 
+/* Radio Buttons */
+[type=checkbox], [type=radio] {
+  position: absolute;
+  left: -999em; }
+  [type=checkbox] + label, [type=radio] + label {
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 0.8rem; }
+    [type=checkbox] + label::before, [type=radio] + label::before {
+      background: #ffffff;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px #757575;
+      content: '\a0';
+      display: inline-block;
+      height: 1.25rem;
+      line-height: 1.25rem;
+      margin-right: 0.6em;
+      text-indent: 0.15em;
+      vertical-align: middle\0;
+      width: 1.25rem; }
+
+[type=radio] + label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
+  height: 1rem;
+  line-height: 1rem;
+  margin-right: 0.75em;
+  width: 1rem; }
+
+[type=checkbox]:checked + label::before, [type=radio]:checked + label::before {
+  background-color: #0053a2;
+  box-shadow: 0 0 0 1px #0053a2; }
+
+[type=checkbox]:checked + label::before, [type=checkbox]:checked:disabled + label::before {
+  background-image: url(../assets/img/checkmark.svg);
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0053a2; }
+
+[type=checkbox]:disabled + label::before, [type=radio]:disabled + label::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed; }
+
+[type=checkbox]:disabled + label {
+  color: #aeb0b5; }
+
 /* Footer */
 /**
  * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
@@ -2205,18 +2393,35 @@ select {
  *  <nav class="usdt-row">
  *      <ul class="usdt-col footer-links">
  *          <li><a href="#footers">Privacy Policy</a></li>
- *          <li><a href="#footers">Google Policy</a></li>
  *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *          <li><a href="#footers">Contact Us</a></li>
  *      </ul>
  *  </nav>
  * </section>
+ *
  * <!-- Secondary footer with top margin (push) example -->
  * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
  *  <nav class="usdt-row">
  *      <ul class="usdt-col footer-links">
  *          <li><a href="#footers">Privacy Policy</a></li>
- *          <li><a href="#footers">Google Policy</a></li>
  *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *          <li><a href="#footers">Contact Us</a></li>
+ *      </ul>
+ *  </nav>
+ * </section>
+ */
+/**
+ * For a thinner footer, you can add the `footer-thin` class to reduce to top and bottom padding.
+ * @section Thin Secondary Footer
+ * @sectionof Footers
+ * @example
+ * <!-- Secondary footer thin example -->
+ * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-thin">
+ *  <nav class="usdt-row">
+ *      <ul class="usdt-col footer-links">
+ *          <li><a href="#footers">Privacy Policy</a></li>
+ *          <li><a href="#footers">Site Policies and Notices</a></li>
+ *          <li><a href="#footers">Contact Us</a></li>
  *      </ul>
  *  </nav>
  * </section>
@@ -2229,6 +2434,8 @@ select {
   letter-spacing: 0.02rem; }
   .usdt-secondary-footer.footer-push {
     margin-top: 2rem; }
+  .usdt-secondary-footer.footer-thin {
+    padding: 1rem 1.75rem; }
   .usdt-secondary-footer .footer-links {
     display: flex;
     flex-direction: row;
@@ -2241,7 +2448,27 @@ select {
       .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
         color: white;
         text-decoration: none; }
+      .usdt-secondary-footer .footer-links li a:hover {
+        text-decoration: underline; }
 
+/* Header */
+/**
+ * Headers help users identify where they are and provide a quick, organized way  to reach 
+ * the main sections of a website. Our headers include branding to identify the site.
+ *
+ *
+ * @section Headers
+ * @page Components
+ * @example
+ * <!-- Header example -->
+ * <div class="usdt-header usdt-grid-container-fluid">
+ *  <div class="usdt-row space-between align-middle">
+ *    <div class="usdt-logo no-bg-logo usdt-col">
+ *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="45" width="45">U.S. DEPARTMENT OF THE TREASURY</a>
+ *    </div>
+ *   </div>
+ * </div>
+ */
 .usdt-header {
   background: #0053a2;
   border-bottom: none;
@@ -2279,7 +2506,10 @@ select {
     padding: 0;
     display: flex;
     align-items: center;
-    font-size: 1.7rem; }
+    font-size: 1rem; }
+    @media screen and (min-width: 36rem) {
+      .usdt-header .usdt-logo.no-bg-logo a {
+        font-size: 1.7rem; } }
     .usdt-header .usdt-logo.no-bg-logo a img {
       vertical-align: middle;
       margin-right: 0.8rem; }
@@ -2477,6 +2707,9 @@ select {
   width: 0px; }
 
 /*STYLE GUIDE*/
+p code {
+  background-color: #e8e8e8; }
+
 .style-guide {
   background-color: #fff;
   overflow: auto; }
