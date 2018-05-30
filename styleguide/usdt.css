@@ -2490,7 +2490,7 @@ select {
     top: 0;
     left: 0;
     z-index: 9999; }
-  .usdt-header .usdt-logo a {
+  .usdt-header .usdt-logo {
     font-family: "Merriweather", georgia, serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -2501,16 +2501,23 @@ select {
     background: url(../assets/img/logo.svg) 0px center no-repeat;
     background-size: 44px 44px;
     padding-left: 3.25rem; }
-  .usdt-header .usdt-logo.no-bg-logo a {
+    .usdt-header .usdt-logo a {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Merriweather", georgia, serif; }
+  .usdt-header .usdt-logo.no-bg-logo {
     background-image: none;
     padding: 0;
     display: flex;
     align-items: center;
     font-size: 1rem; }
     @media screen and (min-width: 36rem) {
-      .usdt-header .usdt-logo.no-bg-logo a {
+      .usdt-header .usdt-logo.no-bg-logo {
         font-size: 1.7rem; } }
-    .usdt-header .usdt-logo.no-bg-logo a img {
+    .usdt-header .usdt-logo.no-bg-logo a {
+      display: flex;
+      align-items: center; }
+    .usdt-header .usdt-logo.no-bg-logo img {
       vertical-align: middle;
       margin-right: 0.8rem; }
   .usdt-header .login-section {

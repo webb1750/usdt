@@ -32,7 +32,7 @@
     left: 0;
     z-index: 9999;
   }
-  .usdt-logo a {
+  .usdt-logo {
     font-family: $font-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -43,9 +43,15 @@
     background: url(../assets/img/logo.svg) 0px center no-repeat;
     background-size: 44px 44px; // using pixels to fix blurry svg in IE11
     padding-left: 3.25rem;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: $font-serif;
+    }
   }
   .usdt-logo {
-    &.no-bg-logo a {
+    &.no-bg-logo  {
         background-image: none;
         padding: 0;
         display: flex;
@@ -53,6 +59,11 @@
         font-size: 1rem;
         @media screen and (min-width: $screen-sm){
           font-size: 1.7rem;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
         }
 
         img {
