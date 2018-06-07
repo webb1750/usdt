@@ -9297,114 +9297,6 @@
     height: auto; }
   
   /**
-   * Tables show tabular data in columns and rows.
-   *
-   * #### Accessibility:
-   *
-   *  - Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
-   *  - Complex tables are tables with more than two levels of headers. Each header should be given a unique id 
-   * and each data cell should have a headers attribute with each related header cell's id listed.
-   *  - When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
-   *
-   * @section Tables
-   * @page Components
-   * @example
-   * <table class="usdt-table">
-   *  <caption>The title of your table goes here</caption>
-   *  <thead>
-   *    <tr>
-   *      <th scope="col">Appt. ID</th>
-   *      <th scope="col">Type</th>
-   *      <th scope="col">Start Date</th>
-   *      <th scope="col">End Date</th>
-   *      <th scope="col">Location</th>
-   *    </tr>
-   *   </thead>
-   *   <tbody>
-   *    <tr>
-   *      <th scope="row"><a href="#">0034</a></th>
-   *      <td>Appointment</td>
-   *      <td>11/15/2018 2:45 PM</td>
-   *      <td>11/16/2018 2:45 PM</td>
-   *      <td>Main Building</td>
-   *    </tr>
-   *    <tr>
-   *      <th scope="row"><a href="#">0034</a></th>
-   *      <td>Appointment</td>
-   *      <td>11/15/2018 2:45 PM</td>
-   *      <td>11/16/2018 2:45 PM</td>
-   *      <td>Main Building</td>
-   *    </tr>
-   *    <tr>
-   *      <th scope="row"><a href="#">0034</a></th>
-   *      <td>Appointment</td>
-   *      <td>11/15/2018 2:45 PM</td>
-   *      <td>11/16/2018 2:45 PM</td>
-   *      <td>Main Building</td>
-   *    </tr>
-   *  </tbody>
-   * </table>
-   *
-   * @code 
-   * <table class="usdt-table">
-   *  <caption>The title of your table goes here</caption>
-   *  <thead>
-   *    <tr>
-   *      <th scope="col">Appt. ID</th>
-   *      <th scope="col">Type</th>
-   *      <th scope="col">Start Date</th>
-   *      <th scope="col">End Date</th>
-   *      <th scope="col">Location</th>
-   *    </tr>
-   *   </thead>
-   *   <tbody>
-   *    <tr>
-   *      <th scope="row"><a href="#">0034</a></th>
-   *      <td>Appointment</td>
-   *      <td>11/15/2018 2:45 PM</td>
-   *      <td>11/16/2018 2:45 PM</td>
-   *      <td>Main Building</td>
-   *    </tr>
-   *  </tbody>
-   * </table>
-   *
-   */
-  .usdt-table {
-    text-align: left;
-    margin: 1em 0;
-    width: 100%; }
-    .usdt-table caption {
-      font-size: 1.25rem;
-      font-weight: 500;
-      margin-bottom: 1rem;
-      text-align: left; }
-    .usdt-table thead th {
-      padding: .5rem .5rem;
-      font-weight: 700; }
-      .usdt-table thead th a {
-        text-decoration: none;
-        color: #323a45; }
-        .usdt-table thead th a:hover, .usdt-table thead th a:focus {
-          color: #0053a2;
-          text-decoration: underline; }
-    .usdt-table tbody tr {
-      background-color: #fff; }
-      .usdt-table tbody tr:nth-child(odd) {
-        background-color: #f8f8f8; }
-      .usdt-table tbody tr th {
-        font-weight: normal;
-        padding: .5rem .5rem; }
-    .usdt-table td {
-      padding: .5rem .5rem;
-      font-weight: 400; }
-  
-  @media screen and (max-width: 600px) {
-    .usdt-table-scroll-mobile {
-      overflow-x: scroll;
-      display: block;
-      -webkit-overflow-scrolling: touch; } }
-  
-  /**
    * Accordions are a list of headers that can be clicked to hide or reveal additional content.
    *
    * #### Accessibility
@@ -10147,6 +10039,80 @@
     .usdt-icon-button .launch {
       color: #2e8540; }
   
+  /* Footer */
+  /**
+   * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+   *
+   * ## Secondary Footer
+   * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
+   * from the content.
+   *
+   * @section Footers
+   * @page Components
+   * @example
+   * <!-- Secondary footer example -->
+   * <section class="usdt-grid-container-fluid usdt-secondary-footer">
+   *  <nav class="usdt-row">
+   *      <ul class="usdt-col footer-links">
+   *          <li><a href="#footers">Privacy Policy</a></li>
+   *          <li><a href="#footers">Site Policies and Notices</a></li>
+   *          <li><a href="#footers">Contact Us</a></li>
+   *      </ul>
+   *  </nav>
+   * </section>
+   *
+   * <!-- Secondary footer with top margin (push) example -->
+   * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
+   *  <nav class="usdt-row">
+   *      <ul class="usdt-col footer-links">
+   *          <li><a href="#footers">Privacy Policy</a></li>
+   *          <li><a href="#footers">Site Policies and Notices</a></li>
+   *          <li><a href="#footers">Contact Us</a></li>
+   *      </ul>
+   *  </nav>
+   * </section>
+   */
+  /**
+   * For a thinner footer, you can add the `footer-thin` class to reduce to top and bottom padding.
+   * @section Thin Secondary Footer
+   * @sectionof Footers
+   * @example
+   * <!-- Secondary footer thin example -->
+   * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-thin">
+   *  <nav class="usdt-row">
+   *      <ul class="usdt-col footer-links">
+   *          <li><a href="#footers">Privacy Policy</a></li>
+   *          <li><a href="#footers">Site Policies and Notices</a></li>
+   *          <li><a href="#footers">Contact Us</a></li>
+   *      </ul>
+   *  </nav>
+   * </section>
+   */
+  .usdt-secondary-footer {
+    background-color: #0d1925;
+    padding: 2rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem; }
+    .usdt-secondary-footer.footer-push {
+      margin-top: 2rem; }
+    .usdt-secondary-footer.footer-thin {
+      padding: 1rem 1.75rem; }
+    .usdt-secondary-footer .footer-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .usdt-secondary-footer .footer-links li {
+        list-style: none;
+        margin-right: 0.9rem; }
+        .usdt-secondary-footer .footer-links li:last-child {
+          margin-right: 0; }
+        .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
+          color: white;
+          text-decoration: none; }
+        .usdt-secondary-footer .footer-links li a:hover {
+          text-decoration: underline; }
+  
   /* Forms */
   /** 
    * Form controls allow users to enter information into a page.
@@ -10447,80 +10413,6 @@
   [type=checkbox]:disabled + label {
     color: #aeb0b5; }
   
-  /* Footer */
-  /**
-   * Footers serve site visitors who arrive at the bottom of a page without finding what they want.
-   *
-   * ## Secondary Footer
-   * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
-   * from the content.
-   *
-   * @section Footers
-   * @page Components
-   * @example
-   * <!-- Secondary footer example -->
-   * <section class="usdt-grid-container-fluid usdt-secondary-footer">
-   *  <nav class="usdt-row">
-   *      <ul class="usdt-col footer-links">
-   *          <li><a href="#footers">Privacy Policy</a></li>
-   *          <li><a href="#footers">Site Policies and Notices</a></li>
-   *          <li><a href="#footers">Contact Us</a></li>
-   *      </ul>
-   *  </nav>
-   * </section>
-   *
-   * <!-- Secondary footer with top margin (push) example -->
-   * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
-   *  <nav class="usdt-row">
-   *      <ul class="usdt-col footer-links">
-   *          <li><a href="#footers">Privacy Policy</a></li>
-   *          <li><a href="#footers">Site Policies and Notices</a></li>
-   *          <li><a href="#footers">Contact Us</a></li>
-   *      </ul>
-   *  </nav>
-   * </section>
-   */
-  /**
-   * For a thinner footer, you can add the `footer-thin` class to reduce to top and bottom padding.
-   * @section Thin Secondary Footer
-   * @sectionof Footers
-   * @example
-   * <!-- Secondary footer thin example -->
-   * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-thin">
-   *  <nav class="usdt-row">
-   *      <ul class="usdt-col footer-links">
-   *          <li><a href="#footers">Privacy Policy</a></li>
-   *          <li><a href="#footers">Site Policies and Notices</a></li>
-   *          <li><a href="#footers">Contact Us</a></li>
-   *      </ul>
-   *  </nav>
-   * </section>
-   */
-  .usdt-secondary-footer {
-    background-color: #0d1925;
-    padding: 2rem 1.75rem;
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: 0.02rem; }
-    .usdt-secondary-footer.footer-push {
-      margin-top: 2rem; }
-    .usdt-secondary-footer.footer-thin {
-      padding: 1rem 1.75rem; }
-    .usdt-secondary-footer .footer-links {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .usdt-secondary-footer .footer-links li {
-        list-style: none;
-        margin-right: 0.9rem; }
-        .usdt-secondary-footer .footer-links li:last-child {
-          margin-right: 0; }
-        .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
-          color: white;
-          text-decoration: none; }
-        .usdt-secondary-footer .footer-links li a:hover {
-          text-decoration: underline; }
-  
   /* Header */
   /**
    * Headers help users identify where they are and provide a quick, organized way  to reach 
@@ -10782,6 +10674,114 @@
     transform: rotate(0deg);
     top: 0px;
     width: 0px; }
+  
+  /**
+   * Tables show tabular data in columns and rows.
+   *
+   * #### Accessibility:
+   *
+   *  - Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
+   *  - Complex tables are tables with more than two levels of headers. Each header should be given a unique id 
+   * and each data cell should have a headers attribute with each related header cell's id listed.
+   *  - When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+   *
+   * @section Tables
+   * @page Components
+   * @example
+   * <table class="usdt-table">
+   *  <caption>The title of your table goes here</caption>
+   *  <thead>
+   *    <tr>
+   *      <th scope="col">Appt. ID</th>
+   *      <th scope="col">Type</th>
+   *      <th scope="col">Start Date</th>
+   *      <th scope="col">End Date</th>
+   *      <th scope="col">Location</th>
+   *    </tr>
+   *   </thead>
+   *   <tbody>
+   *    <tr>
+   *      <th scope="row"><a href="#">0034</a></th>
+   *      <td>Appointment</td>
+   *      <td>11/15/2018 2:45 PM</td>
+   *      <td>11/16/2018 2:45 PM</td>
+   *      <td>Main Building</td>
+   *    </tr>
+   *    <tr>
+   *      <th scope="row"><a href="#">0034</a></th>
+   *      <td>Appointment</td>
+   *      <td>11/15/2018 2:45 PM</td>
+   *      <td>11/16/2018 2:45 PM</td>
+   *      <td>Main Building</td>
+   *    </tr>
+   *    <tr>
+   *      <th scope="row"><a href="#">0034</a></th>
+   *      <td>Appointment</td>
+   *      <td>11/15/2018 2:45 PM</td>
+   *      <td>11/16/2018 2:45 PM</td>
+   *      <td>Main Building</td>
+   *    </tr>
+   *  </tbody>
+   * </table>
+   *
+   * @code 
+   * <table class="usdt-table">
+   *  <caption>The title of your table goes here</caption>
+   *  <thead>
+   *    <tr>
+   *      <th scope="col">Appt. ID</th>
+   *      <th scope="col">Type</th>
+   *      <th scope="col">Start Date</th>
+   *      <th scope="col">End Date</th>
+   *      <th scope="col">Location</th>
+   *    </tr>
+   *   </thead>
+   *   <tbody>
+   *    <tr>
+   *      <th scope="row"><a href="#">0034</a></th>
+   *      <td>Appointment</td>
+   *      <td>11/15/2018 2:45 PM</td>
+   *      <td>11/16/2018 2:45 PM</td>
+   *      <td>Main Building</td>
+   *    </tr>
+   *  </tbody>
+   * </table>
+   *
+   */
+  .usdt-table {
+    text-align: left;
+    margin: 1em 0;
+    width: 100%; }
+    .usdt-table caption {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-align: left; }
+    .usdt-table thead th {
+      padding: .5rem .5rem;
+      font-weight: 700; }
+      .usdt-table thead th a {
+        text-decoration: none;
+        color: #323a45; }
+        .usdt-table thead th a:hover, .usdt-table thead th a:focus {
+          color: #0053a2;
+          text-decoration: underline; }
+    .usdt-table tbody tr {
+      background-color: #fff; }
+      .usdt-table tbody tr:nth-child(odd) {
+        background-color: #f8f8f8; }
+      .usdt-table tbody tr th {
+        font-weight: normal;
+        padding: .5rem .5rem; }
+    .usdt-table td {
+      padding: .5rem .5rem;
+      font-weight: 400; }
+  
+  @media screen and (max-width: 600px) {
+    .usdt-table-scroll-mobile {
+      overflow-x: scroll;
+      display: block;
+      -webkit-overflow-scrolling: touch; } }
   
   /*STYLE GUIDE*/
   p code {

@@ -1,0 +1,121 @@
+/**
+ * Tables show tabular data in columns and rows.
+ *
+ * #### Accessibility:
+ *
+ *  - Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
+ *  - Complex tables are tables with more than two levels of headers. Each header should be given a unique id 
+ * and each data cell should have a headers attribute with each related header cell's id listed.
+ *  - When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+ *
+ * @section Tables
+ * @page Components
+ * @example
+ * <table class="usdt-table">
+ *  <caption>The title of your table goes here</caption>
+ *  <thead>
+ *    <tr>
+ *      <th scope="col">Appt. ID</th>
+ *      <th scope="col">Type</th>
+ *      <th scope="col">Start Date</th>
+ *      <th scope="col">End Date</th>
+ *      <th scope="col">Location</th>
+ *    </tr>
+ *   </thead>
+ *   <tbody>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *  </tbody>
+ * </table>
+ *
+ * @code 
+ * <table class="usdt-table">
+ *  <caption>The title of your table goes here</caption>
+ *  <thead>
+ *    <tr>
+ *      <th scope="col">Appt. ID</th>
+ *      <th scope="col">Type</th>
+ *      <th scope="col">Start Date</th>
+ *      <th scope="col">End Date</th>
+ *      <th scope="col">Location</th>
+ *    </tr>
+ *   </thead>
+ *   <tbody>
+ *    <tr>
+ *      <th scope="row"><a href="#">0034</a></th>
+ *      <td>Appointment</td>
+ *      <td>11/15/2018 2:45 PM</td>
+ *      <td>11/16/2018 2:45 PM</td>
+ *      <td>Main Building</td>
+ *    </tr>
+ *  </tbody>
+ * </table>
+ *
+ */
+
+// Tables
+.usdt-table {
+    text-align: left;
+    margin: 1em 0;
+    width: 100%;
+  
+    caption {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    thead th {
+      padding: .5rem .5rem;
+      font-weight: 700;
+      a {
+        text-decoration: none;
+        color: $color-gray-dark;
+        &:hover, &:focus {
+          color: $color-primary;
+          text-decoration: underline;
+        }
+      }
+    }
+    tbody tr {
+      background-color: #fff;
+      &:nth-child(odd) {
+        background-color: $color-gray-lightest-lite;
+      }
+      th {
+        font-weight: normal;
+        padding: .5rem .5rem;
+      }
+    }
+    td {
+      padding: .5rem .5rem;
+      font-weight: 400;
+    }
+  }
+  .usdt-table-scroll-mobile {
+    @media screen and (max-width: $medium-screen) {
+      overflow-x: scroll;
+      display: block;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
