@@ -336,3 +336,13 @@ select {
 [type=checkbox]:disabled + label {
   color: $color-gray-light;
 }
+
+[type=checkbox]:focus + label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+}
+
+[type=radio]:focus + label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 6px;
+}

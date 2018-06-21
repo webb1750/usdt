@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Source+Sans+Pro:300,400,600,700");
 /** 
  * ## Primary
@@ -1975,31 +1976,43 @@ button,
  *
  * ## Secondary Footer
  * If you need extra margin above the footer, you can add the class `footer-push` to add more spacing
- * from the content.
+ * from the section above.
  *
  * @section Footers
  * @page Components
  * @example
- * <!-- Secondary footer example -->
- * <section class="usdt-grid-container-fluid usdt-secondary-footer">
- *  <nav class="usdt-row">
- *      <ul class="usdt-col footer-links">
- *          <li><a href="#footers">Privacy Policy</a></li>
- *          <li><a href="#footers">Site Policies and Notices</a></li>
- *          <li><a href="#footers">Contact Us</a></li>
- *      </ul>
- *  </nav>
- * </section>
- *
- * <!-- Secondary footer with top margin (push) example -->
+ * <!-- Secondary Footer with languages, social media icons, and push class -->
  * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-push">
- *  <nav class="usdt-row">
- *      <ul class="usdt-col footer-links">
- *          <li><a href="#footers">Privacy Policy</a></li>
- *          <li><a href="#footers">Site Policies and Notices</a></li>
- *          <li><a href="#footers">Contact Us</a></li>
- *      </ul>
- *  </nav>
+ *      <nav class="usdt-row">
+ *          <div class="usdt-col-md-9">
+ *              <ul class="lang-menu footer-links">
+ *                   <li><a href="https://www.treasury.gov/lan/ara" lang="ar" title="Arabic">العربية</a></li>
+ *                   <li><a href="https://www.treasury.gov/lan/ch" lang="zh" title="Chinese">中文</a></li>
+ *                   <li><a href="https://www.treasury.gov/lan/es" lang="es" title="Spanish">Español</a></li>
+ *                   <li><a href="https://www.treasury.gov/lan/kor" lang="ko" title="Korean">한국어</a></li>
+ *                   <li><a href="https://www.treasury.gov/lan/tag" lang="tl" title="Tagalog">Tagalog</a></li>
+ *                   <li><a href="https://www.treasury.gov/lan/viet" lang="vi" title="Vietnamese">TiếngViệt</a></li>
+ *              </ul>
+ *              <ul class="footer-links">
+ *                  <li><a href="https://www.treasury.gov/SitePolicies/Pages/privacy.aspx">Privacy Policy</a></li>
+ *                  <li><a href="https://www.treasury.gov/SitePolicies/Pages/Google-Privacy-Information.aspx">Google Privacy</a></li>
+ *                  <li><a href="https://www.treasury.gov/privacy/Pages/default.aspx">Privacy Act</a></li>
+ *                  <li><a href="https://www.treasury.gov/Pages/site-map.aspx" title="Site Map">Site Map</a></li>
+ *                  <li><a href="https://www.treasury.gov/SitePolicies/Pages/site-policy.aspx" title="Site Policies and Notices">Site Policies and Notices</a></li>
+ *                  <li><a href="https://www.treasury.gov/resource-center/faqs/Pages/default.aspx" title="FAQs">FAQs</a></li>
+ *                  <li><a href="https://www.treasury.gov/pages/tgovproblemsfeedbackform.aspx" title="Feedback">Feedback</a></li>
+ *                  <li><a href="https://www.treasury.gov/careers/Pages/default.aspx" title="Careers">Careers</a></li>
+ *                  <li><a href="https://www.treasury.gov/accessibility" title="Accessibility">Accessibility</a></li>
+ *               </ul>
+ *              <div class="site-plugins">Required Plug-ins <a href="http://get.adobe.com/reader/" class="external">Adobe&reg; Reader&reg;</a>, <a href="http://www.adobe.com/go/getflashplayer" class="external">Adobe&reg; Flash Player</a>, <a href="https://www.microsoft.com/en-us/download/details.aspx?id=10" class="external">MS Excel Viewer</a></div>
+ *           </div>
+ *           <div class="social-icons usdt-col-md-3">
+ *              <ul>
+ *                  <li class="twitter first"><a title="twitter" href="https://twitter.com/USTreasury" class="external"><span>Twitter</span> </a></li>
+ *                  <li class="facebook"><a title="facebook" href="https://facebook.com/ustreasury" class="external"><span>Facebook</span></a></li>
+ *              </ul>
+ *          </div>
+ *      </nav>              
  * </section>
  */
 /**
@@ -2010,11 +2023,13 @@ button,
  * <!-- Secondary footer thin example -->
  * <section class="usdt-grid-container-fluid usdt-secondary-footer footer-thin">
  *  <nav class="usdt-row">
- *      <ul class="usdt-col footer-links">
- *          <li><a href="#footers">Privacy Policy</a></li>
- *          <li><a href="#footers">Site Policies and Notices</a></li>
- *          <li><a href="#footers">Contact Us</a></li>
- *      </ul>
+ *      <div class="usdt-col">
+ *          <ul class="footer-links">
+ *              <li><a href="#footers">Privacy Policy</a></li>
+ *              <li><a href="#footers">Site Policies and Notices</a></li>
+ *              <li><a href="#footers">Contact Us</a></li>
+ *          </ul>
+ *      </div>
  *  </nav>
  * </section>
  */
@@ -2023,7 +2038,7 @@ button,
   padding: 2rem 1.75rem;
   font-size: 0.9rem;
   font-weight: 300;
-  letter-spacing: 0.02rem; }
+  color: #fff; }
   .usdt-secondary-footer.footer-push {
     margin-top: 2rem; }
   .usdt-secondary-footer.footer-thin {
@@ -2031,17 +2046,77 @@ button,
   .usdt-secondary-footer .footer-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 0.25rem 0;
+    padding: 0; }
     .usdt-secondary-footer .footer-links li {
-      list-style: none;
-      margin-right: 0.9rem; }
+      list-style: none; }
+      .usdt-secondary-footer .footer-links li::after {
+        content: ' \2022 ';
+        padding: 0 5px;
+        color: #fff; }
       .usdt-secondary-footer .footer-links li:last-child {
         margin-right: 0; }
+        .usdt-secondary-footer .footer-links li:last-child::after {
+          content: '';
+          padding: 0; }
       .usdt-secondary-footer .footer-links li a:link, .usdt-secondary-footer .footer-links li a:visited {
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        opacity: 0.6; }
       .usdt-secondary-footer .footer-links li a:hover {
         text-decoration: underline; }
+    .usdt-secondary-footer .footer-links.lang-menu {
+      margin: 0;
+      padding: 0; }
+      .usdt-secondary-footer .footer-links.lang-menu li {
+        margin: 0; }
+        .usdt-secondary-footer .footer-links.lang-menu li::after {
+          padding: 0 5px;
+          content: ' | ';
+          color: #fff; }
+        .usdt-secondary-footer .footer-links.lang-menu li:last-child::after {
+          content: '';
+          padding: 0; }
+        .usdt-secondary-footer .footer-links.lang-menu li a {
+          opacity: 0.9; }
+  .usdt-secondary-footer .site-plugins {
+    opacity: 0.6;
+    font-style: italic;
+    color: #fff;
+    margin-top: 0.75rem; }
+    .usdt-secondary-footer .site-plugins a, .usdt-secondary-footer .site-plugins a:hover, .usdt-secondary-footer .site-plugins a:visited {
+      color: #fff; }
+  .usdt-secondary-footer .social-icons {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    align-content: right;
+    justify-content: flex-end; }
+    .usdt-secondary-footer .social-icons ul {
+      margin: 0;
+      padding: 0; }
+      .usdt-secondary-footer .social-icons ul li {
+        margin: 0;
+        vertical-align: middle;
+        display: inline-block; }
+        .usdt-secondary-footer .social-icons ul li a {
+          margin-right: 10px;
+          vertical-align: middle;
+          opacity: 1;
+          width: 36px;
+          height: 36px;
+          display: block; }
+          .usdt-secondary-footer .social-icons ul li a span {
+            display: none; }
+        .usdt-secondary-footer .social-icons ul li.twitter a {
+          background: url(../assets/img/twitter.png) 0 -36px no-repeat; }
+          .usdt-secondary-footer .social-icons ul li.twitter a:hover {
+            background-position: 0 1px !important; }
+        .usdt-secondary-footer .social-icons ul li.facebook a {
+          background: url(../assets/img/facebook.png) 0 -36px no-repeat; }
+          .usdt-secondary-footer .social-icons ul li.facebook a:hover {
+            background-position: 0 0px !important; }
 
 /* Forms */
 /** 
@@ -2342,6 +2417,14 @@ select {
 
 [type=checkbox]:disabled + label {
   color: #aeb0b5; }
+
+[type=checkbox]:focus + label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px; }
+
+[type=radio]:focus + label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 6px; }
 
 /* Header */
 /**
