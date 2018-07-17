@@ -10507,11 +10507,11 @@
    * @page Components
    * @example
    * <!-- Header example -->
-   * <div class="usdt-header usdt-grid-container-fluid">
+   * <div class="usdt-header header-lg usdt-grid-container-fluid">
    *  <div class="usdt-row space-between align-middle">
-   *    <div class="usdt-logo no-bg-logo usdt-col">
-   *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="45" width="45">U.S. DEPARTMENT OF THE TREASURY</a>
-   *    </div>
+   *    <h1 class="usdt-logo no-bg-logo usdt-col">
+   *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="64" width="64">U.S. DEPARTMENT OF THE TREASURY</a>
+   *    </h1>
    *   </div>
    * </div>
    */
@@ -10536,6 +10536,8 @@
       top: 0;
       left: 0;
       z-index: 9999; }
+    .usdt-header.header-lg {
+      height: auto; }
     .usdt-header .usdt-logo {
       font-family: "Merriweather", georgia, serif;
       text-decoration: none;
@@ -10546,7 +10548,13 @@
       font-weight: 300;
       background: url(../assets/img/logo.svg) 0px center no-repeat;
       background-size: 44px 44px;
-      padding-left: 3.25rem; }
+      padding-left: 3.25rem;
+      margin: 0;
+      margin-left: 15px; }
+      @media screen and (min-width: 36rem) {
+        .usdt-header .usdt-logo {
+          padding-top: 20px;
+          padding-bottom: 20px; } }
       .usdt-header .usdt-logo a {
         text-decoration: none;
         color: #fff;
@@ -10557,10 +10565,11 @@
       padding-left: 15px;
       display: flex;
       align-items: center;
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin: 0; }
       @media screen and (min-width: 36rem) {
         .usdt-header .usdt-logo.no-bg-logo {
-          font-size: 1.7rem; } }
+          font-size: 1.8rem; } }
       .usdt-header .usdt-logo.no-bg-logo a {
         display: flex;
         align-items: center; }
@@ -11516,21 +11525,21 @@ from the section above.</p></div>
 the main sections of a website. Our headers include branding to identify the site.</p></div>
 
 <livingcss-example><!-- Header example -->
-<div class="usdt-header usdt-grid-container-fluid">
+<div class="usdt-header header-lg usdt-grid-container-fluid">
  <div class="usdt-row space-between align-middle">
-   <div class="usdt-logo no-bg-logo usdt-col">
-     <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="45" width="45">U.S. DEPARTMENT OF THE TREASURY</a>
-   </div>
+   <h1 class="usdt-logo no-bg-logo usdt-col">
+     <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="64" width="64">U.S. DEPARTMENT OF THE TREASURY</a>
+   </h1>
   </div>
 </div></livingcss-example>
 
 <div class="livingcss__section-markup">
   <pre class="livingcss__section-code"><code class="language-markup">&lt;!-- Header example --&gt;
-&lt;div class&#x3D;&quot;usdt-header usdt-grid-container-fluid&quot;&gt;
+&lt;div class&#x3D;&quot;usdt-header header-lg usdt-grid-container-fluid&quot;&gt;
  &lt;div class&#x3D;&quot;usdt-row space-between align-middle&quot;&gt;
-   &lt;div class&#x3D;&quot;usdt-logo no-bg-logo usdt-col&quot;&gt;
-     &lt;a href&#x3D;&quot;#headers&quot;&gt;&lt;img src&#x3D;&quot;../assets/img/seal.svg&quot; alt&#x3D;&quot;Seal of the U.S. Department of the Treasury - 1789&quot; height&#x3D;&quot;45&quot; width&#x3D;&quot;45&quot;&gt;U.S. DEPARTMENT OF THE TREASURY&lt;/a&gt;
-   &lt;/div&gt;
+   &lt;h1 class&#x3D;&quot;usdt-logo no-bg-logo usdt-col&quot;&gt;
+     &lt;a href&#x3D;&quot;#headers&quot;&gt;&lt;img src&#x3D;&quot;../assets/img/seal.svg&quot; alt&#x3D;&quot;Seal of the U.S. Department of the Treasury - 1789&quot; height&#x3D;&quot;64&quot; width&#x3D;&quot;64&quot;&gt;U.S. DEPARTMENT OF THE TREASURY&lt;/a&gt;
+   &lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
