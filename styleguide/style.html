@@ -10507,13 +10507,13 @@
    * @page Components
    * @example
    * <!-- Header example -->
-   * <div class="usdt-header header-lg usdt-grid-container-fluid">
+   * <header class="usdt-header header-lg usdt-grid-container-fluid">
    *  <div class="usdt-row space-between align-middle">
    *    <h1 class="usdt-logo no-bg-logo usdt-col">
    *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="64" width="64">U.S. DEPARTMENT OF THE TREASURY</a>
    *    </h1>
    *   </div>
-   * </div>
+   * </header>
    */
   .usdt-header {
     background: #0053a2;
@@ -10530,7 +10530,7 @@
     justify-content: space-between; }
     @media screen and (min-width: 36rem) {
       .usdt-header {
-        padding: 0 1.75rem; } }
+        padding: 0 1.88rem; } }
     .usdt-header.header-fixed {
       position: fixed;
       top: 0;
@@ -10619,7 +10619,7 @@
     justify-content: space-between; }
     @media screen and (min-width: 36rem) {
       .usdt-sub-header {
-        padding: 0 1.75rem; } }
+        padding: 0 1.88rem; } }
   
   /* US Government Official Site Banner */
   .usa-gov-header {
@@ -10635,7 +10635,7 @@
     justify-content: space-between; }
     @media screen and (min-width: 36rem) {
       .usa-gov-header {
-        padding: 0 1.75rem; } }
+        padding: 0 1.88rem; } }
     .usa-gov-header .header-title {
       font-style: italic;
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -10679,7 +10679,7 @@
    * @sectionof Headers
    * @example
    * <!-- US Government Official Site Banner  -->
-   * <div class="usa-gov-header usdt-grid-container-fluid">
+   * <section class="usa-gov-header usdt-grid-container-fluid">
    *  <div class="usdt-row space-between align-middle">
    *    <div class="header-title usdt-col-5">
    *      <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
@@ -10693,8 +10693,75 @@
    *      </ul>
    *    </div>
    *   </div>
-   * </div>
+   * </section>
    */
+  /**
+   * Styling for the main navigation of your site.
+   *
+   * @section Navigation
+   * @page Components
+   * @example
+   * <!-- Navigation -->
+   * <nav role="navigation" class="usdt-nav-menu usdt-grid-container-fluid">
+   *  <div class="usdt-row">
+   *     <ul>
+   *      <li><a class="nav-link active" href="#">Section Title</a></li>
+   *      <li><a class="nav-link" href="#">Section Title</a></li>
+   *      <li><a class="nav-link" href="#">Section Title</a></li>
+   *      <li><a class="nav-link" href="#">Section Title</a></li>
+   *      <li><a class="nav-link" href="#">Section Title</a></li>
+   *     </ul>
+   *   </div>
+   * </nav>
+   */
+  /* Navigation */
+  .usdt-nav-menu {
+    background: #083c6f;
+    transition: all .4s ease; }
+    .usdt-nav-menu ul {
+      position: relative;
+      list-style: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      flex-flow: row; }
+      .usdt-nav-menu ul li {
+        margin: 0;
+        padding: 0; }
+        .usdt-nav-menu ul li:last-of-type .nav-link {
+          margin-right: 0px; }
+        .usdt-nav-menu ul li a {
+          text-decoration: none; }
+    .usdt-nav-menu .nav-link {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-right: 50px;
+      font-size: 1rem;
+      line-height: 1.8;
+      position: relative; }
+      .usdt-nav-menu .nav-link::after {
+        transition: transform .3s ease-out,border-color .3s ease-out;
+        position: absolute;
+        display: block;
+        bottom: -19px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: scaleX(0);
+        border-top: 3px solid transparent;
+        content: '';
+        padding-bottom: inherit; }
+      .usdt-nav-menu .nav-link:hover::after, .usdt-nav-menu .nav-link:focus::after, .usdt-nav-menu .nav-link.active::after {
+        border-top-color: #F8E71C;
+        transform: scaleX(1); }
+  
   .usdt-sub-nav ul {
     padding: 0;
     margin: 0;

@@ -1,3 +1,81 @@
+
+/**
+ * Styling for the main navigation of your site.
+ *
+ * @section Navigation
+ * @page Components
+ * @example
+ * <!-- Navigation -->
+ * <nav role="navigation" class="usdt-nav-menu usdt-grid-container-fluid">
+ *  <div class="usdt-row">
+ *     <ul>
+ *      <li><a class="nav-link active" href="#">Section Title</a></li>
+ *      <li><a class="nav-link" href="#">Section Title</a></li>
+ *      <li><a class="nav-link" href="#">Section Title</a></li>
+ *      <li><a class="nav-link" href="#">Section Title</a></li>
+ *      <li><a class="nav-link" href="#">Section Title</a></li>
+ *     </ul>
+ *   </div>
+ * </nav>
+ */
+
+
+/* Navigation */
+.usdt-nav-menu {
+  background: $color-blue-darker;
+  transition: all .4s ease;
+
+  ul {
+    position: relative;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    @include flex($align-middle: true, $space-between: false, $no-wrap: false);
+    flex-flow: row;
+    li {
+      margin:0;
+      padding:0;
+      &:last-of-type .nav-link {
+        margin-right: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      
+    }
+  }
+  .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    font-size: 1rem;
+    line-height: 1.8;
+    position: relative;
+
+    &::after {
+      transition: transform .3s ease-out,border-color .3s ease-out;
+      position: absolute;
+      display: block;
+      bottom: -19px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      transform: scaleX(0);
+      border-top: 3px solid transparent;
+      content: '';
+      padding-bottom: inherit;
+    }
+
+    &:hover::after, &:focus::after, &.active::after {
+      border-top-color: $color-yellow;
+      transform: scaleX(1);
+    } 
+  }
+}
+
 .usdt-sub-nav {
   ul {
     padding: 0;
