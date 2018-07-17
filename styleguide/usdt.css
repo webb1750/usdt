@@ -2482,7 +2482,8 @@ select {
       font-family: "Merriweather", georgia, serif; }
   .usdt-header .usdt-logo.no-bg-logo {
     background-image: none;
-    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
     display: flex;
     align-items: center;
     font-size: 1rem; }
@@ -2540,6 +2541,7 @@ select {
     .usdt-sub-header {
       padding: 0 1.75rem; } }
 
+/* US Government Official Site Banner */
 .usa-gov-header {
   height: 40px;
   background: url(../assets/img/superheader.png) center center no-repeat #fff;

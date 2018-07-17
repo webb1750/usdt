@@ -53,7 +53,8 @@
   .usdt-logo {
     &.no-bg-logo  {
         background-image: none;
-        padding: 0;
+        padding-right: $grid-gutter;
+        padding-left: $grid-gutter;
         display: flex;
         align-items: center;
         font-size: 1rem;
@@ -118,6 +119,7 @@
   @include flex($align-middle: true, $space-between: true, $no-wrap: false);
 }
 
+/* US Government Official Site Banner */
 .usa-gov-header {
   height: 40px;
   background: url(../assets/img/superheader.png) center center no-repeat #fff;
