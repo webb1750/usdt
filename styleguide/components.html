@@ -10611,6 +10611,79 @@
       .usdt-sub-header {
         padding: 0 1.75rem; } }
   
+  .usa-gov-header {
+    height: 40px;
+    background: url(../assets/img/superheader.png) center center no-repeat #fff;
+    background-size: cover;
+    padding: 0 3.5vw;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (min-width: 36rem) {
+      .usa-gov-header {
+        padding: 0 1.75rem; } }
+    .usa-gov-header .header-title {
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 300;
+      font-size: 0.82rem;
+      color: #5b616b;
+      display: flex;
+      align-items: center; }
+    .usa-gov-header .header-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.82rem; }
+      .usa-gov-header .header-links ul li {
+        display: inline-block;
+        font-family: "Merriweather", georgia, serif; }
+        .usa-gov-header .header-links ul li a {
+          display: block;
+          text-align: center;
+          margin-left: 13px;
+          padding: 11px 14px;
+          color: #323a45;
+          text-decoration: none;
+          transition: background-color .3s;
+          font-family: "Merriweather", georgia, serif; }
+          .usa-gov-header .header-links ul li a:hover, .usa-gov-header .header-links ul li a:focus {
+            text-decoration: underline;
+            background-color: rgba(0, 0, 0, 0.1); }
+    .usa-gov-header .usa-flag-icon {
+      width: 21px;
+      vertical-align: middle;
+      margin-right: 7px; }
+  
+  /**
+   * We recommend that all federal government sites include the “official government site” banner and a logo or site name. 
+   * The banner helps people identify that your organization is part of the government, while the logo or site name helps 
+   * visitors understand what your site is and what it does.
+   *
+   *
+   * @section US Government Official Site Banner
+   * @sectionof Headers
+   * @example
+   * <!-- US Government Official Site Banner  -->
+   * <div class="usa-gov-header usdt-grid-container-fluid">
+   *  <div class="usdt-row space-between align-middle">
+   *    <div class="header-title usdt-col-5">
+   *      <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+   *    </div>
+   *    <div class="header-links usdt-col-7">
+   *      <ul class="text-right">
+   *        <li><a href="#">Accessibility</a></li>
+   *        <li><a href="#">Languages</a></li>
+   *        <li><a href="#">Contact</a></li>
+   *        <li><a href="#">Log In</a></li>
+   *      </ul>
+   *    </div>
+   *   </div>
+   * </div>
+   */
   .usdt-sub-nav ul {
     padding: 0;
     margin: 0;
@@ -11460,7 +11533,48 @@ the main sections of a website. Our headers include branding to identify the sit
 &lt;/div&gt;</code></pre>
 </div>
 
-        </article>
+<section class="livingcss__section" id="headers-us-government-official-site-banner">
+  <h2>US Government Official Site Banner</h2><div class="livingcss__section-description"><p>We recommend that all federal government sites include the “official government site” banner and a logo or site name. 
+The banner helps people identify that your organization is part of the government, while the logo or site name helps 
+visitors understand what your site is and what it does.</p></div>
+
+<livingcss-example><!-- US Government Official Site Banner  -->
+<div class="usa-gov-header usdt-grid-container-fluid">
+ <div class="usdt-row space-between align-middle">
+   <div class="header-title usdt-col-5">
+     <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+   </div>
+   <div class="header-links usdt-col-7">
+     <ul class="text-right">
+       <li><a href="#">Accessibility</a></li>
+       <li><a href="#">Languages</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Log In</a></li>
+     </ul>
+   </div>
+  </div>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;!-- US Government Official Site Banner  --&gt;
+&lt;div class&#x3D;&quot;usa-gov-header usdt-grid-container-fluid&quot;&gt;
+ &lt;div class&#x3D;&quot;usdt-row space-between align-middle&quot;&gt;
+   &lt;div class&#x3D;&quot;header-title usdt-col-5&quot;&gt;
+     &lt;img class&#x3D;&quot;usa-flag-icon&quot; src&#x3D;&quot;../assets/img/usflag.png&quot; alt&#x3D;&quot;U.S. flag&quot;&gt; An official website of the United States Government
+   &lt;/div&gt;
+   &lt;div class&#x3D;&quot;header-links usdt-col-7&quot;&gt;
+     &lt;ul class&#x3D;&quot;text-right&quot;&gt;
+       &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Accessibility&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Languages&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Log In&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+</section>        </article>
         <article class="livingcss__article" id="tables">
           <h1 class="livingcss__article-title">Tables</h1><div class="livingcss__section-description"><p>Tables show tabular data in columns and rows.</p>
 <h4 id="accessibility-">Accessibility:</h4>

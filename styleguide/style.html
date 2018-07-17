@@ -10611,6 +10611,79 @@
       .usdt-sub-header {
         padding: 0 1.75rem; } }
   
+  .usa-gov-header {
+    height: 40px;
+    background: url(../assets/img/superheader.png) center center no-repeat #fff;
+    background-size: cover;
+    padding: 0 3.5vw;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (min-width: 36rem) {
+      .usa-gov-header {
+        padding: 0 1.75rem; } }
+    .usa-gov-header .header-title {
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 300;
+      font-size: 0.82rem;
+      color: #5b616b;
+      display: flex;
+      align-items: center; }
+    .usa-gov-header .header-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.82rem; }
+      .usa-gov-header .header-links ul li {
+        display: inline-block;
+        font-family: "Merriweather", georgia, serif; }
+        .usa-gov-header .header-links ul li a {
+          display: block;
+          text-align: center;
+          margin-left: 13px;
+          padding: 11px 14px;
+          color: #323a45;
+          text-decoration: none;
+          transition: background-color .3s;
+          font-family: "Merriweather", georgia, serif; }
+          .usa-gov-header .header-links ul li a:hover, .usa-gov-header .header-links ul li a:focus {
+            text-decoration: underline;
+            background-color: rgba(0, 0, 0, 0.1); }
+    .usa-gov-header .usa-flag-icon {
+      width: 21px;
+      vertical-align: middle;
+      margin-right: 7px; }
+  
+  /**
+   * We recommend that all federal government sites include the “official government site” banner and a logo or site name. 
+   * The banner helps people identify that your organization is part of the government, while the logo or site name helps 
+   * visitors understand what your site is and what it does.
+   *
+   *
+   * @section US Government Official Site Banner
+   * @sectionof Headers
+   * @example
+   * <!-- US Government Official Site Banner  -->
+   * <div class="usa-gov-header usdt-grid-container-fluid">
+   *  <div class="usdt-row space-between align-middle">
+   *    <div class="header-title usdt-col-5">
+   *      <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+   *    </div>
+   *    <div class="header-links usdt-col-7">
+   *      <ul class="text-right">
+   *        <li><a href="#">Accessibility</a></li>
+   *        <li><a href="#">Languages</a></li>
+   *        <li><a href="#">Contact</a></li>
+   *        <li><a href="#">Log In</a></li>
+   *      </ul>
+   *    </div>
+   *   </div>
+   * </div>
+   */
   .usdt-sub-nav ul {
     padding: 0;
     margin: 0;

@@ -118,4 +118,81 @@
   @include flex($align-middle: true, $space-between: true, $no-wrap: false);
 }
 
+.usa-gov-header {
+  height: 40px;
+  background: url(../assets/img/superheader.png) center center no-repeat #fff;
+  background-size: cover;
+  @include header-padding;
+  @include flex($align-middle: true, $space-between: true, $no-wrap: false);
+
+  .header-title {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 0.82rem;
+    color: $color-gray;
+    display: flex;
+    align-items: center;
+  }
+  .header-links {
+    ul {
+      list-style: none;
+      padding:0;
+      margin:0;
+      font-size: 0.82rem;
+      li {
+        display: inline-block;
+        font-family: $font-serif;
+        a {
+          display: block;
+          text-align: center;
+          margin-left: 13px;
+          padding: 11px 14px;
+          color: $color-gray-dark;
+          text-decoration: none;
+          transition: background-color .3s;
+          font-family: $font-serif;
+
+          &:hover, &:focus {
+            text-decoration: underline;
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
+  }
+  .usa-flag-icon {
+    width: 21px;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}
+
+/**
+ * We recommend that all federal government sites include the “official government site” banner and a logo or site name. 
+ * The banner helps people identify that your organization is part of the government, while the logo or site name helps 
+ * visitors understand what your site is and what it does.
+ *
+ *
+ * @section US Government Official Site Banner
+ * @sectionof Headers
+ * @example
+ * <!-- US Government Official Site Banner  -->
+ * <div class="usa-gov-header usdt-grid-container-fluid">
+ *  <div class="usdt-row space-between align-middle">
+ *    <div class="header-title usdt-col-5">
+ *      <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+ *    </div>
+ *    <div class="header-links usdt-col-7">
+ *      <ul class="text-right">
+ *        <li><a href="#">Accessibility</a></li>
+ *        <li><a href="#">Languages</a></li>
+ *        <li><a href="#">Contact</a></li>
+ *        <li><a href="#">Log In</a></li>
+ *      </ul>
+ *    </div>
+ *   </div>
+ * </div>
+ */
+
 
