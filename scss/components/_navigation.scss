@@ -29,8 +29,6 @@
   ul {
     position: relative;
     list-style: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin: 0;
     @include flex($align-middle: true, $space-between: false, $no-wrap: false);
     flex-flow: row;
@@ -55,12 +53,15 @@
     font-size: 1rem;
     line-height: 1.8;
     position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
 
     &::after {
       transition: transform .3s ease-out,border-color .3s ease-out;
       position: absolute;
       display: block;
-      bottom: -19px;
+      bottom: -15px;
       left: 0;
       right: 0;
       width: 100%;

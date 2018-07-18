@@ -2646,8 +2646,6 @@ select {
   .usdt-nav-menu ul {
     position: relative;
     list-style: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin: 0;
     display: -webkit-flex;
     display: flex;
@@ -2670,12 +2668,15 @@ select {
     margin-right: 50px;
     font-size: 1rem;
     line-height: 1.8;
-    position: relative; }
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block; }
     .usdt-nav-menu .nav-link::after {
       transition: transform .3s ease-out,border-color .3s ease-out;
       position: absolute;
       display: block;
-      bottom: -19px;
+      bottom: -15px;
       left: 0;
       right: 0;
       width: 100%;
