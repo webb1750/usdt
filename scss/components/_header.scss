@@ -9,23 +9,21 @@
  * @page Components
  * @example
  * <!-- Header example -->
- * <header class="usdt-header header-lg usdt-grid-container-fluid">
- *  <div class="usdt-row space-between align-middle">
- *    <h1 class="usdt-logo no-bg-logo usdt-col">
- *      <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="64" width="64">U.S. DEPARTMENT OF THE TREASURY</a>
- *    </h1>
- *   </div>
+ * <header class="usdt-header header-lg">
+ *  <div class="usdt-container wide">
+ *    <div class="usdt-row space-between align-middle">
+ *      <h1 class="usdt-logo no-bg-logo usdt-col">
+ *        <a href="#headers"><img src="../assets/img/seal.svg" alt="Seal of the U.S. Department of the Treasury - 1789" height="64" width="64">U.S. DEPARTMENT OF THE TREASURY</a>
+ *      </h1>
+ *    </div>
+ *  </div>
  * </header>
  */
 
 .usdt-header {
   background: $color-primary;
-  border-bottom: none;
-  text-align: left;
   height: $header-height;
-  width: 100%;
   @include header-padding;
-  @include flex($align-middle: true, $space-between: true, $no-wrap: false);
   &.header-fixed {
     position: fixed;
     top: 0;
@@ -130,12 +128,11 @@
 }
 
 /* US Government Official Site Banner */
-.usa-gov-header {
+.usdt-gov-header {
   height: 40px;
   background: url(../assets/img/superheader.png) center center no-repeat #fff;
   background-size: cover;
   @include header-padding;
-  @include flex($align-middle: true, $space-between: true, $no-wrap: false);
 
   .header-title {
     font-style: italic;
@@ -190,18 +187,20 @@
  * @sectionof Headers
  * @example
  * <!-- US Government Official Site Banner  -->
- * <section class="usa-gov-header usdt-grid-container-fluid">
- *  <div class="usdt-row space-between align-middle">
- *    <div class="header-title usdt-col-5">
- *      <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
- *    </div>
- *    <div class="header-links usdt-col-7">
- *      <ul class="text-right">
- *        <li><a href="#">Accessibility</a></li>
- *        <li><a href="#">Languages</a></li>
- *        <li><a href="#">Contact</a></li>
- *        <li><a href="#">Log In</a></li>
- *      </ul>
+ * <section class="usdt-gov-header">
+ *  <div class="usdt-container wide">
+ *    <div class="usdt-row space-between align-middle">
+ *      <div class="header-title usdt-col-5">
+ *        <img class="usa-flag-icon" src="../assets/img/usflag.png" alt="U.S. flag"> An official website of the United States Government
+ *      </div>
+ *      <div class="header-links usdt-col-7">
+ *        <ul class="text-right">
+ *          <li><a href="#">Accessibility</a></li>
+ *          <li><a href="#">Languages</a></li>
+ *          <li><a href="#">Contact</a></li>
+ *          <li><a href="#">Log In</a></li>
+ *        </ul>
+ *      </div>
  *    </div>
  *   </div>
  * </section>

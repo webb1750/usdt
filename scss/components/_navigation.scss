@@ -6,15 +6,17 @@
  * @page Components
  * @example
  * <!-- Navigation -->
- * <nav role="navigation" class="usdt-nav-menu usdt-grid-container-fluid">
- *  <div class="usdt-row">
- *     <ul>
- *      <li><a class="nav-link active" href="#">Section Title</a></li>
- *      <li><a class="nav-link" href="#">Section Title</a></li>
- *      <li><a class="nav-link" href="#">Section Title</a></li>
- *      <li><a class="nav-link" href="#">Section Title</a></li>
- *      <li><a class="nav-link" href="#">Section Title</a></li>
- *     </ul>
+ * <nav role="navigation" class="usdt-nav-menu">
+ *  <div class="usdt-container wide">
+ *    <div class="usdt-row">
+ *      <ul class="usdt-col">
+ *        <li><a class="nav-link active" href="#">Section Title</a></li>
+ *        <li><a class="nav-link" href="#">Section Title</a></li>
+ *        <li><a class="nav-link" href="#">Section Title</a></li>
+ *        <li><a class="nav-link" href="#">Section Title</a></li>
+ *        <li><a class="nav-link" href="#">Section Title</a></li>
+ *      </ul>
+ *    </div>
  *   </div>
  * </nav>
  */
@@ -23,8 +25,7 @@
 /* Navigation */
 .usdt-nav-menu {
   background: $color-blue-darker;
-  transition: all .4s ease;
-
+  @include header-padding;
   ul {
     position: relative;
     list-style: none;
