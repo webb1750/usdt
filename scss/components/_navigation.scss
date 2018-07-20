@@ -13,8 +13,7 @@
  *        <li><a class="nav-link active" href="#">Section Title</a></li>
  *        <li><a class="nav-link" href="#">Section Title</a></li>
  *        <li><a class="nav-link" href="#">Section Title</a></li>
- *        <li><a class="nav-link" href="#">Section Title</a></li>
- *        <li><a class="nav-link" href="#">Section Title</a></li>
+ *        <li class="search-menu"><a class="nav-link" href="#">Search</a></li>
  *      </ul>
  *    </div>
  *   </div>
@@ -41,7 +40,15 @@
       a {
         text-decoration: none;
       }
-      
+
+      &.search-menu {
+        margin-left: auto;
+        a {
+          padding-left: 30px;
+          background: url('../assets/img/search-icon.svg') 0 50% no-repeat;
+          background-size: 23px 23px;
+      }
+     }
     }
   }
   .nav-link {

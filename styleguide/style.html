@@ -10659,7 +10659,7 @@
       margin-right: 7px; }
   
   /**
-   * We recommend that all federal government sites include the “official government site” banner and a logo or site name. 
+   * We recommend that all public Treasury sites include the “official government site” banner and a logo or site name. 
    * The banner helps people identify that your organization is part of the government, while the logo or site name helps 
    * visitors understand what your site is and what it does.
    *
@@ -10700,8 +10700,7 @@
    *        <li><a class="nav-link active" href="#">Section Title</a></li>
    *        <li><a class="nav-link" href="#">Section Title</a></li>
    *        <li><a class="nav-link" href="#">Section Title</a></li>
-   *        <li><a class="nav-link" href="#">Section Title</a></li>
-   *        <li><a class="nav-link" href="#">Section Title</a></li>
+   *        <li class="search-menu"><a class="nav-link" href="#">Search</a></li>
    *      </ul>
    *    </div>
    *   </div>
@@ -10731,6 +10730,12 @@
           margin-right: 0px; }
         .usdt-nav-menu ul li a {
           text-decoration: none; }
+        .usdt-nav-menu ul li.search-menu {
+          margin-left: auto; }
+          .usdt-nav-menu ul li.search-menu a {
+            padding-left: 30px;
+            background: url("../assets/img/search-icon.svg") 0 50% no-repeat;
+            background-size: 23px 23px; }
     .usdt-nav-menu .nav-link {
       color: #fff;
       text-transform: uppercase;
